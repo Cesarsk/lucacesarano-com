@@ -1,0 +1,47 @@
+.NavBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh;
+    padding-left: 20%;
+    padding-right: 20%;
+    justify-content: center;
+    color: rgb(63, 63, 63);
+    min-height: 5vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    color:white;
+    height: auto;
+}
+  
+.blue-column {
+    background-color: blue;
+    height: 100px;
+}
+  
+.green-column {
+    background-color: green;
+    height: 100px;
+}
+
+.NavBar a.NavBar-link:hover, a.NavBar-link:active {
+    color: rgb(247, 168, 84);
+    text-decoration: none;
+}
+
+.NavBar a.NavBar-link:link, a.NavBar-link:visited {
+    color: white;
+    text-decoration: none;
+  }
