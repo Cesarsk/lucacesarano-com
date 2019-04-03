@@ -22,7 +22,12 @@ export default class NavBar extends Component {
                     </div>
                     <div class='column'>
                         <div class='column'>
-                            BLOG
+                        <a className="NavBar-link"
+                   href="https://github.com/cesarsk"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                   GITHUB</a>
+
                         </div>
                     </div>
                     <div class='column'>
