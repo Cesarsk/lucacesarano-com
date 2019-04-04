@@ -12,12 +12,7 @@ export default class NavBar extends Component {
                 <div class='row'>
                     <div class='column'>
                         <div class='column'>
-                            ABOUT
-                        </div>
-                    </div>
-                    <div class='column'>
-                        <div class='column'>
-                            WORK
+                        <a href='#about' class='NavBar-link'> ABOUT </a>
                         </div>
                     </div>
                     <div class='column'>

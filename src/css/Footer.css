@@ -7,7 +7,6 @@
     color: white;
   }
 
-
 .Footer-link {
     color: #61dafb;
     text-decoration: none;
@@ -16,3 +15,35 @@
 .InLine {
     display:inline;
   }
+
+.Footer-mail {
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: colorcycle;
+    animation-duration: 10s;
+    fill: white;
+    margin-left: 20px;
+    margin-right: 30px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+.Footer-social {
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: colorcycle;
+    animation-duration: 10s;
+    text-decoration: none;  
+    fill: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+@keyframes colorcycle
+{
+  0%   {fill: red;}
+  25%  {fill: yellow;}
+  50%  {fill: rgb(83, 123, 255);}
+  75%  {fill: rgb(40, 206, 40);}
+  100% {fill: red;}
+}
