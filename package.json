@@ -1,12 +1,16 @@
 {
-  "name": "es4-my-app",
+  "name": "luca-cesarano",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-router-dom": "^5.0.0",
+    "react-router-hash-link": "^1.2.1",
     "react-scripts": "2.1.8",
-    "react-scrollable-anchor": "^0.6.1"
+    "react-scrollable-anchor": "^0.6.1",
+    "ts-pnp": "^1.0.1",
+    "typescript": "^3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",

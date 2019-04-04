@@ -1,0 +1,54 @@
+<svg width="100%" height="100%" viewBox="0 0 620 620"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+  
+  <style type="text/css"><![CDATA[
+    .show {display:initial;}
+    .hide {display:none;}
+    .cl1 {display:none;}
+    .cl2 {display:none;}
+    .cl3 {display:none;}
+    .cl4 {display:initial;}    
+    .c0 {stroke:white;}
+    .c1 {stroke:white;}
+    .c2 {stroke:white;}
+    .c3 {stroke:white;}
+    .c4 {stroke:white;}
+  ]]>
+  </style>
+
+  <g transform="translate(10,10)" class="c0" style="fill:none;fill-opacity:0.5;stroke-width:2px;stroke-linecap:round;">
+    <animate attributeName="class" values="c4;c3;c2;c1;c0;c1;c2;c3;c4;c4" dur="5s" repeatCount="indefinite"/>
+    <g id="s2">
+      <path id="s1" d="M150,40.2l300,0M300,40.2l-75,129.9L300,300l75,-129.9l-75,-129.9" />
+      <use xlink:href="#s1" transform="rotate(60,300,300)" />
+      <use xlink:href="#s1" transform="rotate(120,300,300)" />
+      <use xlink:href="#s1" transform="rotate(180,300,300)" />
+      <use xlink:href="#s1" transform="rotate(240,300,300)" />
+      <use xlink:href="#s1" transform="rotate(300,300,300)" />
+    </g>
+    <g class="cl1">
+      <animate attributeName="class" values="hide;hide;hide;show c1;hide;show c1;hide;hide;hide;hide" dur="5s" repeatCount="indefinite"/>
+      <use xlink:href="#s2" transform="rotate(30,300,300)" />
+    </g>
+    <g class="cl2">
+      <animate attributeName="class" values="hide;hide;show c2;hide;hide;hide;show c2;hide;hide;hide" dur="5s" repeatCount="indefinite"/>
+      <use xlink:href="#s2" transform="rotate(20,300,300)" />
+      <use xlink:href="#s2" transform="rotate(40,300,300)" />
+    </g>
+    <g class="cl3">
+      <animate attributeName="class" values="hide;show c3;hide;hide;hide;hide;hide;show c3;hide;hide" dur="5s" repeatCount="indefinite"/>
+      <use xlink:href="#s2" transform="rotate(15,300,300)" />
+      <use xlink:href="#s2" transform="rotate(30,300,300)" />
+      <use xlink:href="#s2" transform="rotate(45,300,300)" />
+    </g>
+    <g class="cl4">
+      <animate attributeName="class" values="show c4;hide;hide;hide;hide;hide;hide;hide;show c4;show c4" dur="5s" repeatCount="indefinite"/>
+      <use xlink:href="#s2" transform="rotate(10,300,300)" />
+      <use xlink:href="#s2" transform="rotate(20,300,300)" />
+      <use xlink:href="#s2" transform="rotate(30,300,300)" />
+      <use xlink:href="#s2" transform="rotate(40,300,300)" />
+      <use xlink:href="#s2" transform="rotate(50,300,300)" />
+    </g>
+  </g>
+</svg>
