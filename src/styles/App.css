@@ -6,6 +6,7 @@
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 30vmin;
+  padding: 30px;
   pointer-events: none;
 }
 
@@ -30,7 +31,7 @@
 
 .App-animation-color-cycle {
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: ease;
   animation-name: colorcycle;
   animation-duration: 10s;
   text-decoration: none;

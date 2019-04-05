@@ -5,6 +5,7 @@
     align-items: center;
     font-size: calc(6px + 1vmin);
     color: white;
+    letter-spacing: 2px;
   }
 
 .Footer-link {
@@ -30,7 +31,7 @@
 
 .Footer-social {
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: ease;
     animation-name: colorcycle;
     animation-duration: 10s;
     text-decoration: none;  

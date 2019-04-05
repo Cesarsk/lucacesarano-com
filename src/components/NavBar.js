@@ -4,10 +4,6 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { BrowserRouter } from 'react-router-dom';
 
 export default class NavBar extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div class='NavBar'>

@@ -1,24 +1,74 @@
 .About {
+    padding: 50px;
     min-height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: calc(4px + 2vmin);
+    justify-content: baseline;
+    text-align: justify;
+    font-size: 32px;
     color: white;
+    letter-spacing: 2px;
   }
+
+.About-text-main {
+  font-size: 36px;
+  line-height: 1.5em;
+}
+
+.About-text-subtitle {
+  font-size: 24px;
+}
+
+.About-text {
+  font-size: 12px;
+  line-height: 2em;
+  text-transform: uppercase;
+}
 
 .InLine {
     display:inline;
   }
   
 .About-relocate {
-    padding: 10px;
+  font-size: 11px;
+  line-height: 2em;
+  text-transform: uppercase;
   }
-
 
 .About-link {
     color: #61dafb;
     text-decoration: none;
   }
-  
+
+.profile-picture-about {
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: colorcyclepic;
+  text-decoration: none;
+  display: block;
+  height: 300px;
+  width: 300px;
+  max-height: 300px;
+  max-width: 300px;
+  min-height: 300px;
+  min-width: 300px;
+  margin-right: 60px;
+  border-radius: 360px;
+  border: 4px solid rgba(76,175,80,.6);
+}
+
+@keyframes colorcyclepic
+{
+  0%   {border-color: red;}
+  25%  {border-color: yellow;}
+  50%  {border-color: rgb(83, 123, 255);}
+  75%  {border-color: rgb(40, 206, 40);}
+  100% {border-color: red;}
+}
+

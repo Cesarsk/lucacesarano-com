@@ -14,6 +14,8 @@ export default class App extends Component {
         <div id= "about"> <About/> </div>      
         <div id= "contact"> <Footer/> </div>      
         </div>
+        
     );
-  }
+  }  
 }
+
