@@ -29,6 +29,10 @@
     vertical-align: middle;
   }
 
+.Footer-copyright {
+  padding:20px;
+}
+
 .Footer-social {
     animation-iteration-count: infinite;
     animation-timing-function: ease;
@@ -37,7 +41,6 @@
     text-decoration: none;  
     fill: white;
     padding: 20px;
-    margin-bottom: 20px;
 }
 
 @keyframes colorcycle

@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react'
 
 export default function SocialBadge(props) {
-        console.log(props)
-
         return (
             <svg
             className='Footer-social'
