@@ -42,33 +42,56 @@
   }
 
 .profile-picture-about {
-  animation-duration: 10s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: colorcyclepic;
+  display: none;
+  height: 100px;
+  width: 100px;
+  max-height: 100px;
+  max-width: 100px;
+  min-height: 100px;
+  min-width: 100px;
+  border-radius: 360px;
+  border: 2px solid rgba(76, 175, 80, 0.6);
   text-decoration: none;
-  display: block;
-  height: 300px;
-  width: 300px;
-  max-height: 300px;
-  max-width: 300px;
-  min-height: 300px;
-  min-width: 300px;
   margin-right: 60px;
   border-radius: 360px;
-  border: 4px solid rgba(76,175,80,.6);
+  display: none
 }
+
+/* desktop-medium */
+@media all and (min-width: 841px) {    
+  .profile-picture-about {
+      display: block;
+      
+      height: 300px;
+      width: 300px;
+      max-height: 300px;
+      max-width: 300px;
+      min-height: 300px;
+      min-width: 300px;
+  
+      margin-right: 60px;
+  
+      border-radius: 360px;
+      border: 4px solid rgba(76, 175, 80, 0.6);
+
+      animation-duration: 10s;
+      animation-timing-function: ease;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-fill-mode: none;
+      animation-play-state: running;
+      animation-name: colorcyclepic;
+    }
+}
+
 
 @keyframes colorcyclepic
 {
-  0%   {border-color: red;}
-  25%  {border-color: yellow;}
-  50%  {border-color: rgb(83, 123, 255);}
-  75%  {border-color: rgb(40, 206, 40);}
-  100% {border-color: red;}
+  0%   {border-color: #38844B;}
+  25%  {border-color: #1E5ADF;}
+  50%  {border-color: #C63D2D;}
+  75%  {border-color: #F4AA3C;}
+  100% {border-color:#38844B;}
 }
 

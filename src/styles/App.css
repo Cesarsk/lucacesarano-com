@@ -39,10 +39,10 @@
 
 @keyframes colorcycle
 {
-  0%   {color: red;}
-  25%  {color: yellow;}
-  50%  {color: rgb(83, 123, 255);}
-  75%  {color: rgb(40, 206, 40);}
-  100% {color: red;}
+  0%   {color: #38844B;}
+  25%  {color: #1E5ADF;}
+  50%  {color: #C63D2D;}
+  75%  {color: #F4AA3C;}
+  100% {color: #38844B;}
 }
 
