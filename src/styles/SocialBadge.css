@@ -1,0 +1,40 @@
+.SocialBadge {
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-name: colorcycle;
+    animation-duration: 10s;
+    text-decoration: none;
+    fill: white;
+    padding: 20px;
+    margin-right: 20px;
+    overflow: visible;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 360px;
+}
+
+.SocialBadge:hover {
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25), 0 6px 10px rgba(0, 0, 0, 0.22);
+}
+
+.Inline {
+    display: inline;
+}
+
+@keyframes colorcycle {
+    0% {
+        fill: #38844B;
+    }
+    25% {
+        fill: #1E5ADF;
+    }
+    50% {
+        fill: #C63D2D;
+    }
+    75% {
+        fill: #F4AA3C;
+    }
+    100% {
+        fill: #38844B;
+    }
+}

@@ -33,16 +33,6 @@
   padding:20px;
 }
 
-.Footer-social {
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-name: colorcycle;
-    animation-duration: 10s;
-    text-decoration: none;  
-    fill: white;
-    padding: 20px;
-}
-
 @keyframes colorcycle
 {
   0%   {fill: #38844B;}

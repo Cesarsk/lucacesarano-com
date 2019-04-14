@@ -11,8 +11,17 @@
 }
 
 .NavBar-link {
+    margin: 8px;
+    padding: 16px;
     text-decoration: none;
+    overflow: visible;
+    display: inline-block;
     cursor: pointer;
+    border-radius: 360px;
+}
+
+.NavBar-link:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .row {
@@ -21,21 +30,21 @@
     flex-wrap: wrap;
     width: 100%;
 }
-  
+
 .column {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-    color:white;
+    color: white;
     height: auto;
 }
-  
+
 .blue-column {
     background-color: blue;
     height: 100px;
 }
-  
+
 .green-column {
     background-color: green;
     height: 100px;
@@ -49,4 +58,4 @@
 .NavBar a.NavBar-link:link, a.NavBar-link:visited {
     color: white;
     text-decoration: none;
-  }
+}

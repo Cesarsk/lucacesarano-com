@@ -10,7 +10,6 @@ export default class NavBar extends Component {
                     <div className='column'>
                         <div className='column'>
                             <Link
-                                className="NavBar-Link"
                                 activeClass="active"
                                 to="#about"
                                 spy={true}
@@ -33,7 +32,6 @@ export default class NavBar extends Component {
                     <div className='column'>
                         <div className='column'>
                             <Link
-                                className="NavBar-Link"
                                 activeClass="active"
                                 to="#contact"
                                 spy={true}
