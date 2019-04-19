@@ -4,7 +4,6 @@ import '../styles/SocialBadge.css'
 export default function SocialBadge(props) {
     return (
         <div className="SocialBadge" onClick={() => {
-            console.log("Test")
             openInNewTab(""+props.link)
         }}>
             <svg

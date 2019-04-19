@@ -19,9 +19,9 @@ export default class Footer extends Component {
             rel="noopener noreferrer">
             LUCA.CESARANO1@GMAIL.COM</a>
         </p>
-        <p>
+        <div>
           {socialComponents}
-        </p>
+        </div>
         <div className = 'Footer-copyright'>
           MADE WITH <p style={{ color: '#ff2100', display: 'inline' }}>❤</p> USING <a className="Footer-link" href="https://reactjs.org/">REACT</a>
         </div>

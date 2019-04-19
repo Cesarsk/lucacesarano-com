@@ -1,0 +1,23 @@
+.dots {
+}
+
+.canvas {
+  background: inherit;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: colorcycledots;
+}
+
+@keyframes colorcycledots
+{
+  0%   {color: #38844B;}
+  25%  {color: #1E5ADF;}
+  50%  {color: #C63D2D;}
+  75%  {color: #F4AA3C;}
+  100% {color:#38844B;}
+}
