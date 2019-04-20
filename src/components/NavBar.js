@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "../styles/NavBar.css"
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
 
 export default class NavBar extends Component {
     render() {
@@ -21,12 +21,22 @@ export default class NavBar extends Component {
                     </div>
                     <div className='column'>
                         <div className='column'>
-                            <a className="NavBar-link"
-                                href="https://github.com/cesarsk"
+                            <Link
+                                activeClass="active"
+                                to="#work"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                                className='NavBar-link'>WORK</Link>
+                        </div>
+                    </div>
+                    <div className='column'>
+                        <div className='column'>
+                            <a
+                                href="https://medium.com/@luca.cesarano1"
                                 target="_blank"
-                                rel="noopener noreferrer">
-                                GITHUB</a>
-
+                                className='NavBar-link'>BLOG</a>
                         </div>
                     </div>
                     <div className='column'>
@@ -42,7 +52,7 @@ export default class NavBar extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         );
     }
 }

@@ -30,7 +30,7 @@ function init() {
 }
 
 function initHeader() {
-    width = window.innerWidth / 2;
+    width = 960;
     height = window.innerHeight / 2;
     target = {
         x: width / 2,
@@ -124,8 +124,8 @@ function scrollCheck() {
     else animateHeader = true;
 }
 
-function resize() {    
-    width = window.innerWidth / 2;
+function resize() {
+    width = 960;
     height = window.innerHeight / 2;
     //container.style.height = height + 'px';
     ctx.canvas.width = width;

@@ -2,6 +2,10 @@
 }
 
 .canvas {
+  display: inline-block;
+  z-index: 1;
+
+  width: 100%;
   background: inherit;
   animation-duration: 10s;
   animation-timing-function: ease;
