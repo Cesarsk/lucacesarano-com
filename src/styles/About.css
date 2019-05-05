@@ -95,7 +95,7 @@
     flex-wrap: wrap;
   }
   .About-profile-column {
-    padding-left: 10%;
+    padding-left: 0%;
     flex-direction: column;
     flex-basis: 100%;
     flex: 0;
