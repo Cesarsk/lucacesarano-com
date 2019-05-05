@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import '../styles/About.css'
 import profilePic from '../resources/profile-pic.jpg';
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 //https://reactjs.org/warnings/invalid-hook-call-warning.html
-
+/*
 function RenderContainer() {
   return (
     <Container>
@@ -41,8 +38,8 @@ function RenderContainer() {
     </Container>
   )
 }
-
-function RenderContainerTest() {
+*/
+function RenderContainer() {
   return (
     <div className="About-row">
       <div className="About-profile-column">
@@ -81,7 +78,7 @@ export default class About extends Component {
   render() {
     return (
       <div className="About" id={this.props.id}>
-        {RenderContainerTest()}
+        {RenderContainer()}
       </div>
     );
   }

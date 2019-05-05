@@ -1,5 +1,5 @@
 .About {
-  padding-top: 100px;
+  padding-top: 50px;
   min-height: 40vh;
   display: flex;
   flex-direction: column;
@@ -12,11 +12,10 @@
 }
 
 .About-row {
-  margin-left:30%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
 }
 
 .About-text-name {
@@ -40,11 +39,11 @@
 }
 
 .About-text-subtitle {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .About-text {
-  font-size: 12px;
+  font-size: 11px;
   line-height: 2em;
   text-transform: uppercase;
 }
@@ -78,19 +77,45 @@
 /* desktop-medium */
 
 @media all and (min-width: 840px) {
+  .About {
+    padding-top: 50px;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 32px;
+    color: white;
+    letter-spacing: 2px;
+  }
+  .About-row {
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .About-profile-column {
+    padding-left: 10%;
     flex-direction: column;
     flex-basis: 100%;
-    flex: 1;  
+    flex: 0;
     display: block;
   }
-
+  .About-bio-column {
+    padding-left: 10%;
+    align-self: center;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+  }
   .profile-picture-about {
     display: block;
     height: 300px;
     width: 300px;
     max-height: 300px;
     max-width: 100%;
+    min-height: 300px;
+    min-width: 300px;
     border-radius: 360px;
     border: 4px solid rgba(76, 175, 80, 0.6);
     animation-duration: 10s;
@@ -102,6 +127,32 @@
     animation-play-state: running;
     animation-name: colorcyclepic;
   }
+  .About-text-main {
+    display: inline;
+    font-size: 36px;
+    line-height: 1.5em;
+  }
+  .About-text-subtitle {
+    font-size: 24px;
+  }
+  .About-text {
+    font-size: 12px;
+    line-height: 2em;
+    text-transform: uppercase;
+  }
+  .About-relocate {
+    font-size: 11px;
+    line-height: 2em;
+    text-transform: uppercase;
+  }
+}
+
+@media all and (min-width: 1750px) {
+  .About-row {
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 @keyframes colorcyclepic {
@@ -112,7 +163,6 @@
   25% {
     color: #1E5ADF;
     border-color: #1E5ADF;
-
   }
   50% {
     color: #C63D2D;

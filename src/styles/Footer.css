@@ -1,43 +1,113 @@
 .Footer {
-    min-height: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: calc(6px + 1vmin);
-    color: white;
-    letter-spacing: 2px;
-  }
+  padding-top: 50px;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(6px + 1vmin);
+  color: white;
+  letter-spacing: 2px;
+}
 
 .Footer-link {
-    color: #61dafb;
-    text-decoration: none;
-  }
+  color: #61dafb;
+  text-decoration: none;
+}
 
 .InLine {
-    display:inline;
-  }
+  display: inline;
+}
 
-.Footer-mail {
+.Footer-copyright {
+  padding: 20px;
+}
+
+.Footer-socials {
+  padding: 50px;
+}
+
+/* desktop-x-small */
+
+@media all and (min-width: 320px) and (max-width: 374px) {
+  .Footer-socials {
+    padding: 20px;
+  }
+  .Footer-reach-text {
+    display: none;
+  }
+  .Footer-mail-icon {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: colorcycle;
     animation-duration: 10s;
-    fill: white;
-    margin-left: 20px;
-    margin-right: 30px;
+    display: flex;
+    width: 75%;
+    padding: 10%;
+    vertical-align: middle;
+  }
+}
+
+/* desktop-small */
+
+@media all and (min-width: 375px) and (max-width: 475px) {
+  .Footer-mail {
+    padding-top: 20px;
+  }
+  .Footer-mail-icon {
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: colorcycle;
+    animation-duration: 10s;
+    padding: 10px;
     display: inline-block;
     vertical-align: middle;
   }
-
-.Footer-copyright {
-  padding:20px;
 }
 
-@keyframes colorcycle
-{
-  0%   {fill: #38844B;}
-  25%  {fill: #1E5ADF;}
-  50%  {fill: #C63D2D;}
-  75%  {fill: #F4AA3C;}
-  100% {fill: #38844B;}
+@media all and (min-width: 476px) and (max-width: 768px) {
+  .Footer-mail {
+    padding-top: 20px;
+  }
+  .Footer-mail-icon {
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: colorcycle;
+    animation-duration: 10s;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 2560px) {
+  .Footer-mail {
+    padding-top: 20px;
+  }
+  .Footer-mail-icon {
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: colorcycle;
+    animation-duration: 10s;
+    padding: 15px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+@keyframes colorcycle {
+  0% {
+    fill: #38844B;
+  }
+  25% {
+    fill: #1E5ADF;
+  }
+  50% {
+    fill: #C63D2D;
+  }
+  75% {
+    fill: #F4AA3C;
+  }
+  100% {
+    fill: #38844B;
+  }
 }

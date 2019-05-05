@@ -4,14 +4,18 @@ import TweenLite from 'gsap/TweenLite'
 import 'gsap/CSSPlugin'
 import { Circ } from 'gsap/EasePack'
 
-var width, height, container, canvas, ctx, points, target, animateHeader = true
-var posx, posy
+//var container
+var canvas, ctx, points, target, animateHeader = true
+//var posx, posy
+
+var width = window.innerWidth / 2;
+var height = window.innerHeight / 2;
 
 export default class App extends React.Component {
     componentDidMount() {
-        init()
-        posx = 0
-        posy = 0
+        initHeader();
+        initAnimation();
+        addListeners();    
     }
 
     render() {
@@ -23,32 +27,25 @@ export default class App extends React.Component {
     }
 }
 
-function init() {
-    initHeader();
-    initAnimation();
-    addListeners();
-}
-
 function initHeader() {
-    width = 960;
-    height = window.innerHeight / 2;
     target = {
-        x: width / 2,
-        y: height / 2
+        x: window.innerWidth / 2,
+        y: (height + 60) / 2
     };
 
-    container = document.getElementById('dots');
+    //container = document.getElementById('dots');
     //container.style.height = height + 'px';
+    //container.style.width = window.innerWidth + 'px';
 
     canvas = document.getElementById('canvas');
-    canvas.width = width;
-    canvas.height = height;
+    canvas.width = window.innerWidth;
+    canvas.height = height + 60;
     ctx = canvas.getContext('2d');
 
     // create points
     points = [];
-    for (var x = 0; x < width; x = x + width / 20) {
-        for (var y = 0; y < height; y = y + height / 20) {
+    for (var x = 0; x < window.innerWidth; x = x + width / 5) {
+        for (var y = 0; y < height; y = y + height / 8) {
             var px = x + Math.random() * width / 100;
             var py = y + Math.random() * height / 100;
             var p = {
@@ -107,6 +104,20 @@ function addListeners() {
     window.addEventListener("scroll", scrollCheck);
 }
 
+function resize() {
+    //width = 960;
+    //height = 960 / 2;
+    //container.style.height = height + 'px';
+    //container.style.width = window.innerWidth+ 'px';
+
+    ctx.canvas.width = window.innerWidth;
+    ctx.canvas.height = height;
+    target = {
+        x: window.innerWidth / 2,
+        y: height / 2
+    };
+}
+/*
 function mouseMove(e) {
     if (e.pageX || e.pageY) {
         posx = e.pageX;
@@ -118,22 +129,10 @@ function mouseMove(e) {
     target.x = posx;
     target.y = posy;
 }
-
+*/
 function scrollCheck() {
     if (document.body.scrollTop > height) animateHeader = false;
     else animateHeader = true;
-}
-
-function resize() {
-    width = 960;
-    height = window.innerHeight / 2;
-    //container.style.height = height + 'px';
-    ctx.canvas.width = width;
-    ctx.canvas.height = height;
-    target = {
-        x: width / 2,
-        y: height / 2
-    };
 }
 
 // animation
@@ -208,7 +207,6 @@ function circle(pos, rad, color) {
         ctx.beginPath();
         ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
         const element = document.querySelector('.canvas')
-        const color = element.style.color
         const style = getComputedStyle(element);
         ctx.fillStyle = style.color;
         ctx.fill();
