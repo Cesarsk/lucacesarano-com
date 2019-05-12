@@ -4,6 +4,7 @@ import NavBar from './NavBar'
 import About from './About'
 import Footer from './Footer'
 import Dots from './Dots'
+import Work from './Work'
 export default class App extends Component {
 
   render() {
@@ -12,6 +13,7 @@ export default class App extends Component {
         <NavBar />
         <Dots />
         <About id="#about" />
+        <Work id="#work" />
         <Footer id="#contact" />
       </div>
     );
