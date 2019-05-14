@@ -43,7 +43,7 @@
 }
 
 .About-text {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 2em;
   text-transform: uppercase;
 }
@@ -53,7 +53,7 @@
 }
 
 .About-relocate {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 2em;
   text-transform: uppercase;
 }
@@ -78,8 +78,7 @@
 
 @media all and (min-width: 840px) {
   .About {
-    padding-top: 50px;
-    min-height: 40vh;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,17 +140,9 @@
     text-transform: uppercase;
   }
   .About-relocate {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 2em;
     text-transform: uppercase;
-  }
-}
-
-@media all and (min-width: 1750px) {
-  .About-row {
-    width: 50%;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 }
 
