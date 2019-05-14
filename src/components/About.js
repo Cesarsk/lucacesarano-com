@@ -43,7 +43,7 @@ function RenderContainer() {
   return (
     <div className="About-row">
       <div className="About-profile-column">
-        <img className="profile-picture-about" alt="profile-pic" src={profilePic}></img>
+        <img className="About-profile-picture" alt="profile-pic" src={profilePic}></img>
       </div>
       <div className="About-bio-column">
         <div className="Inline">

@@ -1,10 +1,9 @@
 .About {
-  padding-top: 50px;
-  min-height: 40vh;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: baseline;
+  justify-content: center;
   text-align: justify;
   font-size: 32px;
   color: white;
@@ -13,9 +12,64 @@
 
 .About-row {
   display: flex;
+  padding: 10px;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 90%;
+}
+
+/* Profile Picture Column */
+.About-profile-column {
+  padding-right: 50px;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 0;
+  display: block;
+}
+
+/* Biography Column */
+.About-bio-column {
+  padding-top: 20px;
+  align-self: center;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+.About-profile-picture {
+  display: block;
+  height: 300px;
+  width: 300px;
+  max-height: 300px;
+  max-width: 100%;
+  min-height: 300px;
+  min-width: 300px;
+  border-radius: 360px;
+  border: 4px solid rgba(76, 175, 80, 0.6);
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: colorcyclepic;
+}
+.About-text-main {
+  display: inline;
+  font-size: 36px;
+  line-height: 1.5em;
+}
+.About-text-subtitle {
+  font-size: 24px;
+}
+.About-text {
+  font-size: 12px;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+.About-relocate {
+  font-size: 12px;
+  line-height: 2em;
+  text-transform: uppercase;
 }
 
 .About-text-name {
@@ -63,87 +117,11 @@
   text-decoration: none;
 }
 
-.About-profile-column {
-  display: none;
-}
-
 .About-bio-column {
   align-self: center;
   flex-direction: column;
   flex-basis: 100%;
   flex: 2;
-}
-
-/* desktop-medium */
-
-@media all and (min-width: 840px) {
-  .About {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-    font-size: 32px;
-    color: white;
-    letter-spacing: 2px;
-  }
-  .About-row {
-    padding: 10px;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .About-profile-column {
-    padding-left: 0%;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 0;
-    display: block;
-  }
-  .About-bio-column {
-    padding-left: 10%;
-    align-self: center;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 2;
-  }
-  .profile-picture-about {
-    display: block;
-    height: 300px;
-    width: 300px;
-    max-height: 300px;
-    max-width: 100%;
-    min-height: 300px;
-    min-width: 300px;
-    border-radius: 360px;
-    border: 4px solid rgba(76, 175, 80, 0.6);
-    animation-duration: 10s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: colorcyclepic;
-  }
-  .About-text-main {
-    display: inline;
-    font-size: 36px;
-    line-height: 1.5em;
-  }
-  .About-text-subtitle {
-    font-size: 24px;
-  }
-  .About-text {
-    font-size: 12px;
-    line-height: 2em;
-    text-transform: uppercase;
-  }
-  .About-relocate {
-    font-size: 12px;
-    line-height: 2em;
-    text-transform: uppercase;
-  }
 }
 
 @keyframes colorcyclepic {
