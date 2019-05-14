@@ -1,9 +1,7 @@
 .About {
-  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: justify;
   font-size: 32px;
   color: white;
@@ -12,12 +10,12 @@
 
 .About-row {
   display: flex;
-  padding: 10px;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 /* Profile Picture Column */
+
 .About-profile-column {
   padding-right: 50px;
   flex-direction: column;
@@ -26,14 +24,6 @@
   display: block;
 }
 
-/* Biography Column */
-.About-bio-column {
-  padding-top: 20px;
-  align-self: center;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 2;
-}
 .About-profile-picture {
   display: block;
   height: 300px;
@@ -53,19 +43,46 @@
   animation-play-state: running;
   animation-name: colorcyclepic;
 }
+
+@media all and (max-width: 700px) {
+  .About {
+    display: block;
+  }
+  .About-profile-picture {
+    display: none;
+  }
+  .About-profile-column {
+    display: none;
+  }
+}
+
+/* Biography Column */
+
+.About-bio-column {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
 .About-text-main {
   display: inline;
   font-size: 36px;
   line-height: 1.5em;
 }
+
 .About-text-subtitle {
   font-size: 24px;
 }
+
 .About-text {
   font-size: 12px;
   line-height: 2em;
   text-transform: uppercase;
 }
+
 .About-relocate {
   font-size: 12px;
   line-height: 2em;
@@ -86,42 +103,13 @@
   animation-name: colorcyclepic;
 }
 
-.About-text-main {
-  display: inline;
-  font-size: 36px;
-  line-height: 1.5em;
-}
-
-.About-text-subtitle {
-  font-size: 22px;
-}
-
-.About-text {
-  font-size: 12px;
-  line-height: 2em;
-  text-transform: uppercase;
-}
-
 .Inline {
   display: inline;
-}
-
-.About-relocate {
-  font-size: 12px;
-  line-height: 2em;
-  text-transform: uppercase;
 }
 
 .About-link {
   color: #61dafb;
   text-decoration: none;
-}
-
-.About-bio-column {
-  align-self: center;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 2;
 }
 
 @keyframes colorcyclepic {
