@@ -17,6 +17,7 @@
 /* Profile Picture Column */
 
 .About-profile-column {
+  padding-left: 10px;
   padding-right: 50px;
   flex-direction: column;
   flex-basis: 100%;

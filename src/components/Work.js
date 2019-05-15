@@ -5,7 +5,7 @@ function RenderContainer() {
   return (
     <div className="Work">
       <div className="Work-section">
-        <p>Warning: this section is in progress, do not take it as it is.</p>
+        <p className="Work-warning">Warning: this section is in progress, do not take it as it is.</p>
         <p>Leader of the project: <a className="Work-link" href="https://play.google.com/store/apps/details?id=com.cesarsk.say_it">Say It! Android Application (~ 27k users, 4.7/5.0 ★)</a>.</p>
         <p>I enjoy developing games and experiment with them using Unity 3D, check out their code on Github.</p>
         <p>I'm getting more and more in ❤ with JavaScript and its libraries.</p>

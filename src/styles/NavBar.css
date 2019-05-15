@@ -10,8 +10,7 @@
     align-items: center;
     /* align vertical */
     color: rgb(63, 63, 63);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 700;
@@ -19,7 +18,7 @@
 }
 
 .NavBar-link {
-    margin: 11px;
+    margin: 12px;
     text-decoration: none;
     overflow: visible;
     display: inline-block;
@@ -70,14 +69,4 @@
         border-radius: 10px;
         transition: all 0.6s cubic-bezier(.25, .8, .25, 1);
     }
-}
-
-/* desktop-small */
-
-@media all and (min-width: 481px) and (max-width: 840px) {
-}
-
-/* desktop-medium */
-
-@media all and (min-width: 841px) {
 }
