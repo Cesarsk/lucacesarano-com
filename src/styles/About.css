@@ -17,8 +17,8 @@
 /* Profile Picture Column */
 
 .About-profile-column {
-  padding-left: 10px;
-  padding-right: 50px;
+  padding-left: 15px;
+  padding-right: 30px;
   flex-direction: column;
   flex-basis: 100%;
   flex: 0;
@@ -26,6 +26,9 @@
 }
 
 .About-profile-picture {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   display: block;
   height: 300px;
   width: 300px;
@@ -61,7 +64,7 @@
 
 .About-bio-column {
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 15px;
   padding-top: 20px;
   flex-direction: column;
   flex-basis: 100%;

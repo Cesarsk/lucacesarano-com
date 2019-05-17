@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: calc(6px + 1vmin);
+  font-size: 12px;
   color: white;
   letter-spacing: 2px;
 }
@@ -14,13 +14,13 @@
   text-decoration: none;
 }
 
-.InLine {
+.Inline {
   display: inline;
 }
 
 .Footer-copyright {
   padding: 20px;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .Footer-socials {
