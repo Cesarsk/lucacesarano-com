@@ -55,7 +55,6 @@ export default class NavBar extends Component {
                     <div className='column'>
                         <div className='column'>
                             <div className='item'>
-
                                 <a
                                     href="https://medium.com/@luca.cesarano1"
                                     rel="noopener noreferrer"

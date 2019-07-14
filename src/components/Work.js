@@ -11,17 +11,19 @@ function RenderContainer() {
         <p>I'm getting more and more in ❤ with JavaScript and its libraries.</p>
         <p>Hopefully graduating (C.Eng M.S.) in 2020.</p>
         <br />
-        <p>Some of my papers (italian only):</p>
+        <p>Some of my papers:</p>
         <div className="Work-list">
-          <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=1WsVjOP9xpIrpVilui2RKrgmnSwNaXYa8">» The Snake Game - A VHDL Version</a>
+          <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=1gerM3pgIGp7vLc9ejO-Udra004sWmSb3">» An Example of a MLP Classifier in KNIME <span role="img" aria-label="uk-flag">🇬🇧</span></a>
           <br />
-          <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=15m9ufagojrG0bpe4lWANFg_u9f_oaH4u">» Realtà Aumentata: stato dell’arte delle tecnologie</a>
+          <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=1WsVjOP9xpIrpVilui2RKrgmnSwNaXYa8">» The Snake Game - A VHDL Version <span role="img" aria-label="it-flag">🇮🇹</span></a>
           <br />
-          <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=0B0mCfgWu1kQeR2hCVTIxUEFaV2s">» QR-Code on Augmented Reality</a> <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://github.com/Cesarsk/Android-QR-Code-on-AR">[Github]</a>
+          <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=15m9ufagojrG0bpe4lWANFg_u9f_oaH4u">» Realtà Aumentata: stato dell’arte delle tecnologie <span role="img" aria-label="it-flag">🇮🇹</span></a>
           <br />
-          <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=0B0mCfgWu1kQeeXh6bGJfTG9GV0E">» IA Forecast Prediction</a>
+          <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=0B0mCfgWu1kQeR2hCVTIxUEFaV2s">» QR-Code on Augmented Reality <span role="img" aria-label="it-flag">🇮🇹</span></a> <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://github.com/Cesarsk/Android-QR-Code-on-AR">[Github]</a>
           <br />
-          <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=0B0mCfgWu1kQeeWVPUzY1NlZVSE0">» Database Comics Store</a>
+          <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=0B0mCfgWu1kQeeXh6bGJfTG9GV0E">» IA Forecast Prediction <span role="img" aria-label="it-flag">🇮🇹</span></a>
+          <br />
+          <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=0B0mCfgWu1kQeeWVPUzY1NlZVSE0">» Database Comics Store <span role="img" aria-label="it-flag">🇮🇹</span></a>
         </div>
       </div>
 

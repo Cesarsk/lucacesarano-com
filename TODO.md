@@ -19,17 +19,22 @@
 
 []      Sezione segreta
 
-[x]     Cambiare Favicon
+[]      Ricambiare Favicon
 []      Sistemare Meta Tags (attendere qualche giorno e controllare)
 []      Sticky Nav Bar
 []      Sostituire favicon con immagine brasile su meta data tags per cambio preview
 []      Quando si poggia il mouse su un elemento (hover) deve attivarsi un'animazione che gradualmente fa comparire, per esempio nel caso di nav bar, la box shadow.
 []      Quando si scrolla e compare l'ombra sotto la nav bar, deve comparire gradualmente, attivando un'animazione.
+[]      Reach me out a sinistra con i social
+[]      Say hi nella sezione reach me out
+[]      Rendere non selezionabile socialBadge
 
 *-----------*
 *---BUGS:---*
 *-----------*
 []      Seppur in rare circostanze, se si passa da un breakpoint piccolo (caricare la pagina direttamente da layout mobile) per poi passare ad un breakpoint ampio (tipo 4K), DOTS smette di funzionare, o meglio, a causa di com'è fatta la generazione di punti. FIX IDEA: con il resize le coordinate del vettore POINTS vanno riposizionate.
+[]      Sistemare ombra navbar che si nasconde sotto immagine profilo
+[]      I pulsanti nella top bar dev'essere cliccabile anche il background, non solo il testo per attivare i link
 
 *-----------*
 *---DONE:---*
@@ -41,3 +46,4 @@
 [x]     Centrare verticalmente Foto Profilo
 [x]     Prima di cominciare la sezione WORK bisogna sistemare per bene i breakpoint
 [x]     Sistemare Box Shadow Social Badge
+[x]     Cambiare Favicon
