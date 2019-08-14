@@ -62,7 +62,7 @@ function RenderContainer() {
           <p className="About-text">FOR ADDITIONAL INFORMATION:
           <a
               className="About-link"
-              href="https://docs.google.com/document/d/177EnbipKrSDezdCW10ok0LZR79PuPTtBrqViSfJT_ZU/"
+              href="https://drive.google.com/file/d/1j9gbKs6qa3qYqZFFvhucAFdae2V_59ae/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"> HERE IS MY CV.
           </a>
