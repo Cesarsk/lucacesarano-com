@@ -16,7 +16,7 @@ function RenderContainer() {
             href="https://cesarsk.github.io/AI-GA-on-MAS/">» An Application of Genetic Algorithms (GA) to a Multi-Agent-System <span role="img" aria-label="uk-flag">🇬🇧</span></a>
           <br />
           <a className="Work-link" rel="noopener noreferrer" target="_blank"
-            href="https://lucacesarano.com/">» This Website [made in React]<span role="img" aria-label="uk-flag">🇬🇧</span></a>
+            href="https://lucacesarano.com/">» This Website [made in React] <span role="img" aria-label="uk-flag">🇬🇧</span></a>
           <br />
         </div>
         <br />
