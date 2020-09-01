@@ -21,13 +21,13 @@ function RenderContainer() {
         </div>
         <br />
 
-        <p>Cool project's repo:</p>
+        <p>Alfred - our Super AI:</p>
         <div className="Work-list">
           <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://github.com/FerrariAndrea/AlfredTheRealButler">» Alfred - The Cyber Butler <span role="img" aria-label="uk-flag">🇬🇧</span></a>
         </div>
         <br />
 
-        <p>Some of my papers (2013-2020):</p>
+        <p>Some stuff I wrote during University (2013-2020):</p>
         <div className="Work-list">
           <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1kyY_U1fVYOItwn51I720NJVn4jfcuIEY/view">» An application of Genetic Algorithms to a Multi-Agent-System <span role="img" aria-label="uk-flag">🇬🇧</span></a>
           <br />

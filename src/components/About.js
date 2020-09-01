@@ -54,9 +54,9 @@ function RenderContainer() {
         <span className="About-text-subtitle">I'M A COMPUTER ENGINEER</span>
         <br></br>
         <br></br>
-        <span className="About-text">I AM A LOVER OF TECHNOLOGY AND PHILOSOPHY</span>
+        <span className="About-text">I LIKE TO CODE STUFF OF ANY KIND</span>
         <br></br>
-        <span className="About-text">THAT'S WHY I DREAM TO BECOME THE BEST SOFTWARE ENGINEER.</span>
+        <span className="About-text">AND I DREAM TO BECOME THE BEST SOFTWARE ENGINEER.</span>
         <br></br>
         <div className="Inline">
           <p className="About-text">FOR ADDITIONAL INFORMATION:
