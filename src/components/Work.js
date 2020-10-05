@@ -8,6 +8,7 @@ function RenderContainer() {
         <p>Leader of the project: <a className="Work-link" href="https://play.google.com/store/apps/details?id=com.cesarsk.say_it">Say It! Android Application (~ 27k users, 4.7/5.0 ★)</a>.</p>
         <p>I enjoy developing lots of things, check it out on my Github Page.</p>
         <p>I'm getting more and more in <p style={{ color: '#ff2100', display: 'inline' }}>❤</p> with JavaScript and its libraries.</p>
+        <p>Check out my Blog, I'm publishing some cool projects developed in Python and extra nerd stuff.</p>
         <p>Graduating (C.Eng. M.S.) in 2021.</p>
         <br />
         <p>Try my live demos: </p>

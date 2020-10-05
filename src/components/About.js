@@ -58,6 +58,13 @@ function RenderContainer() {
         <br></br>
         <span className="About-text">AND I DREAM TO BECOME THE BEST SOFTWARE ENGINEER.</span>
         <br></br>
+        <span className="About-text">I'M ITALIAN, I TOOK MY BACHELOR'S DEGREE IN NAPLES...</span>
+        <br></br>
+        <span className="About-text">...AND NOW I'M TAKING MY MASTER'S DEGREE IN BOLOGNA.</span>
+        <br></br>
+        <span className="About-text">I'M CURRENTLY WORKING ON MY FINAL THESIS AT <a className="Work-link" href="https://www.uoc.edu/portal/en/index.html">UOC UNIVERSITY IN BARCELONA (SPAIN)</a> IN <a className="Work-link" href="https://dpcsicso.wordpress.com/members/">ICSO LAB</a>.</span>
+        <br></br>
+
         <div className="Inline">
           <p className="About-text">FOR ADDITIONAL INFORMATION:
           <a
