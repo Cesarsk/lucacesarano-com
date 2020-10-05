@@ -56,26 +56,16 @@ function RenderContainer() {
         <br></br>
         <span className="About-text">I LIKE TO CODE STUFF OF ANY KIND</span>
         <br></br>
-        <span className="About-text">AND I DREAM TO BECOME THE BEST SOFTWARE ENGINEER.</span>
+        <span className="About-text">DREAMING TO BECOME THE BEST SOFTWARE ENGINEER.</span>
+        <br></br>
         <br></br>
         <span className="About-text">I'M ITALIAN, I TOOK MY BACHELOR'S DEGREE IN NAPLES...</span>
         <br></br>
         <span className="About-text">...AND NOW I'M TAKING MY MASTER'S DEGREE IN BOLOGNA.</span>
         <br></br>
-        <span className="About-text">I'M CURRENTLY WORKING ON MY FINAL THESIS AT <a className="Work-link" href="https://www.uoc.edu/portal/en/index.html">UOC UNIVERSITY IN BARCELONA (SPAIN)</a> IN <a className="Work-link" href="https://dpcsicso.wordpress.com/members/">ICSO LAB</a>.</span>
+        <span className="About-text">I'M CURRENTLY WORKING ON MY FINAL THESIS AT</span>
         <br></br>
-
-        <div className="Inline">
-          <p className="About-text">FOR ADDITIONAL INFORMATION:
-          <a
-              className="About-link"
-              href="https://drive.google.com/file/d/1B9mAfi38EWLkLXPKlhfG_-R2kZbqxMCe/"
-              target="_blank"
-              rel="noopener noreferrer"> HERE IS MY CV
-          </a>.
-          </p>
-          <p className="About-relocate">FREE TO HIRE AND RELOCATE.</p>
-        </div>
+        <span className="About-text"> <a className="Work-link" href="https://www.uoc.edu/portal/en/index.html">UOC UNIVERSITY IN BARCELONA (SPAIN)</a> IN <a className="Work-link" href="https://dpcsicso.wordpress.com/members/">ICSO LAB</a>.</span>
       </div>
     </div>
   )
