@@ -56,7 +56,7 @@ export default class NavBar extends Component {
                         <div className='column'>
                             <div className='item'>
                                 <a
-                                    href="https://medium.com/@luca.cesarano1"
+                                    href="https://lucacesarano.medium.com/"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                     className='NavBar-link'>BLOG</a>
