@@ -11,16 +11,14 @@ function RenderContainer() {
               className="About-link"
               href="https://drive.google.com/file/d/1B9mAfi38EWLkLXPKlhfG_-R2kZbqxMCe/"
               target="_blank"
-              rel="noopener noreferrer"> HERE IS MY CV
-          </a>. FREE TO HIRE AND RELOCATE.
+              rel="noopener noreferrer"> CHECK MY CV
+          </a> (I UPDATE IT PERIODICALLY).
           </p>
           <p className="About-relocate"></p>
         </div>
-        <p>Leader of the project: <a className="Work-link" href="https://play.google.com/store/apps/details?id=com.cesarsk.say_it">Say It! Android Application (~ 27k users, 4.7/5.0 ★)</a>.</p>
         <p>I enjoy developing lots of things, check it out on my <a className="Work-link" href="https://github.com/cesarsk">Github</a> Page.</p>
-        <p>I'm getting more and more in <p style={{ color: '#ff2100', display: 'inline' }}>❤</p> with JavaScript and its libraries.</p>
+        <p>I'm getting more and more in <p style={{ color: '#ff2100', display: 'inline' }}>❤</p> with Python, Devops, and IAAS.</p>
         <p>Check out my <a className="Work-link" href="https://medium.com/@luca.cesarano1">Blog</a>, I'm publishing some cool projects developed in Python and extra nerd stuff.</p>
-        <p>Graduating (C.Eng. M.S.) in Mar 2021.</p>
         <br />
         <p>Try my live demos: </p>
         <div className="Work-list">
@@ -36,6 +34,12 @@ function RenderContainer() {
         <p>Alfred - our Super AI:</p>
         <div className="Work-list">
           <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://github.com/FerrariAndrea/AlfredTheRealButler">» Alfred - The Cyber Butler <span role="img" aria-label="uk-flag">🇬🇧</span></a>
+        </div>
+        <br />
+
+        <p>Say It! App</p>
+        <div className="Work-list">
+          <a className="Work-link" href="https://play.google.com/store/apps/details?id=com.cesarsk.say_it"> Say It! For Android(~ 30k users, 4.7/5.0 ★) 🇬🇧</a>
         </div>
         <br />
 

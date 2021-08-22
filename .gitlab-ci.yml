@@ -1,0 +1,6 @@
+stages:
+  - build
+  - deploy
+
+include:
+  - local: .master.gitlab-ci.yml

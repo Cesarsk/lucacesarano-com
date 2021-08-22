@@ -19,3 +19,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### `deployment`
 
 `firebase deploy`
+
+### `troubleshooting`
+
+to install firebase:
+
+        https://firebase.google.com/docs/cli#windows-npm

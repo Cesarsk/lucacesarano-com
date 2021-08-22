@@ -1,0 +1,24 @@
+prod:build:
+  stage: build
+  image:
+    name: hub.docker.com/r/andreysenov/firebase-tools
+  only:
+    refs:
+      - master
+  variables:
+    WORKSPACE: prod
+  script:
+    - npm run build
+
+prod:deploy:
+  stage: deploy
+  image:
+    name: hub.docker.com/r/andreysenov/firebase-tools
+  only:
+    refs:
+      - master
+  variables:
+    WORKSPACE: prod
+  script:
+    - firebase use lucacesarano-com --token "$FIREBASE_TOKEN"
+    - firebase deploy -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --only hosting:lucacesarano-com --non-interactive --token "$FIREBASE_TOKEN"

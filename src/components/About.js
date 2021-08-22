@@ -48,24 +48,25 @@ function RenderContainer() {
       <div className="About-bio-column">
         <div className="Inline">
           <span className="About-text-main">HELLO, I'M </span>
-          <span className="About-text-name">LUCA</span>
+          <span className="About-text-name">LOU</span>
         </div>
         <br></br>
         <span className="About-text-subtitle">I'M A COMPUTER ENGINEER</span>
+
         <br></br>
         <br></br>
-        <span className="About-text">I LIKE TO CODE STUFF OF ANY KIND</span>
+        <span className="About-text">I'M ITALIAN, I TOOK MY BACHELOR'S DEGREE IN NAPLES</span>
         <br></br>
-        <span className="About-text">DREAMING TO BECOME THE BEST SOFTWARE ENGINEER.</span>
+        <span className="About-text">AND MY MASTER'S DEGREE IN BOLOGNA.</span>
         <br></br>
+        <span className="About-text">I DEVELOPED MY FINAL THESIS AT</span>
         <br></br>
-        <span className="About-text">I'M ITALIAN, I TOOK MY BACHELOR'S DEGREE IN NAPLES...</span>
+        <span className="About-text"><a className="Work-link" href="https://www.uoc.edu/portal/en/index.html">UOC UNIVERSITY IN BARCELONA (SPAIN)</a> IN <a className="Work-link" href="https://dpcsicso.wordpress.com/members/">ICSO LAB</a>.</span>
         <br></br>
-        <span className="About-text">...AND NOW I'M TAKING MY MASTER'S DEGREE IN BOLOGNA.</span>
+        <span className="About-text">CURRENTLY I'M WORKING AS A CLOUD SOLUTION ENGINEER AND DEVOPS ENGINEER</span>
         <br></br>
-        <span className="About-text">I'M CURRENTLY WORKING ON MY FINAL THESIS AT</span>
-        <br></br>
-        <span className="About-text"> <a className="Work-link" href="https://www.uoc.edu/portal/en/index.html">UOC UNIVERSITY IN BARCELONA (SPAIN)</a> IN <a className="Work-link" href="https://dpcsicso.wordpress.com/members/">ICSO LAB</a>.</span>
+        <span className="About-text">AT <a className="Work-link" href="https://www.reply.com/storm-reply/en/">STORM REPLY</a> IN THE FINANCIAL SERVICES UNIT IN TURIN.</span>
+
       </div>
     </div>
   )
