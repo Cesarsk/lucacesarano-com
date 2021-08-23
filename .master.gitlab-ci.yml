@@ -30,8 +30,8 @@ prod:deploy:
   variables:
     WORKSPACE: prod
   script:
-    - ls -a
-    - ls -a ..
+    - cat artifact_file
+    - ls -a 
     - ls build
     - ls public
     #- npm install -g firebase-tools
