@@ -39,7 +39,7 @@ function RenderContainer() {
 
         <p>Say It! App</p>
         <div className="Work-list">
-          <a className="Work-link" href="https://play.google.com/store/apps/details?id=com.cesarsk.say_it"> Say It! For Android(~ 30k users, 4.7/5.0 ★) 🇬🇧</a>
+          <a className="Work-link" href="https://play.google.com/store/apps/details?id=com.cesarsk.say_it"> Say It! For Android(~ 30k users, 4.7/5.0 <span role="img">★</span>) 🇬🇧</a>
         </div>
         <br />
 

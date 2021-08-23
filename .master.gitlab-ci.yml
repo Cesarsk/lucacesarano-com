@@ -14,7 +14,7 @@ prod:build:
 prod:deploy:
   stage: deploy
   image:
-    name: hub.docker.com/r/andreysenov/firebase-tools
+    name: node
   only:
     refs:
       - master
