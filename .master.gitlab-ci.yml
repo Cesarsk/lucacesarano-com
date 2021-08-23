@@ -1,7 +1,7 @@
 prod:build:
   stage: build
-  image:
-    name: node
+  #image:
+    #name: node
   only:
     refs:
       - master
@@ -20,8 +20,8 @@ prod:build:
 
 prod:deploy:
   stage: deploy
-  image:
-    name: node
+  #image:
+    #name: node
   dependencies:
     - prod:build
   only:
