@@ -23,7 +23,7 @@ prod:deploy:
   image:
     name: node
   dependencies:
-    - build
+    - prod:build
   only:
     refs:
       - master
