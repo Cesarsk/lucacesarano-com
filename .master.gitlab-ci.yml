@@ -20,10 +20,10 @@ prod:build:
 
 prod:deploy:
   stage: deploy
-  dependencies:
-    - build
   image:
     name: node
+  dependencies:
+    - build
   only:
     refs:
       - master
