@@ -8,7 +8,7 @@ prod:build:
   variables:
     WORKSPACE: prod
   script:
-    - cat "hello world" >> artifact_file
+    - echo "hello world" >> artifact_file
     #- npm install react
     #- npm run build
   artifacts:
