@@ -14,7 +14,7 @@ prod:build:
   artifacts:
     paths:
       - .artifact_file
-      - ./build
+      - ./build ./artifact/build
       - ./public
     expire_in: 1 day
 
