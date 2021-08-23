@@ -13,7 +13,7 @@ prod:build:
     #- npm run build
   artifacts:
     paths:
-      - .artifact_file
+      - artifact_file
       - ./build ./artifact/build
       - ./public
     expire_in: 1 day
