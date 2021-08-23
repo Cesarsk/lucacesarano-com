@@ -10,6 +10,11 @@ prod:build:
   script:
     - npm install react
     - npm run build
+  artifacts:
+    paths:
+      - ./build
+      - ./public
+    expire_in: 1 day
 
 prod:deploy:
   stage: deploy
