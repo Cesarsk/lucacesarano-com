@@ -12,7 +12,7 @@ prod:build:
     - npm run build
   artifacts:
     paths:
-      - /build
+      - ./build
     expire_in: 1 hour
 
 prod:deploy:
