@@ -3,4 +3,5 @@ stages:
   - deploy
 
 include:
+  - local: .develop.gitlab-ci.yml
   - local: .master.gitlab-ci.yml
