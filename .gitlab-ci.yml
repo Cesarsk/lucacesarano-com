@@ -3,5 +3,5 @@ stages:
   - deploy
 
 include:
-  - local: pipelines/develop.gitlab-ci.yml
-  - local: pipelines/master.gitlab-ci.yml
+  - local: develop.gitlab-ci.yml
+  - local: master.gitlab-ci.yml
