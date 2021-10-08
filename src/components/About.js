@@ -63,7 +63,7 @@ function RenderContainer() {
         <br></br>
         <span className="About-text"><a className="Work-link" href="https://www.uoc.edu/portal/en/index.html">UOC UNIVERSITY IN BARCELONA (SPAIN)</a> IN <a className="Work-link" href="https://dpcsicso.wordpress.com/members/">ICSO LAB</a>.</span>
         <br></br>
-        <span className="About-text">CURRENTLY I'M WORKING AS A CLOUD SOLUTION ENGINEER AND DEVOPS ENGINEER</span>
+        <span className="About-text">CURRENTLY I'M WORKING AS A CLOUD SOLUTIONS ARCHITECT AND DEVOPS ENGINEER</span>
         <br></br>
         <span className="About-text">AT <a className="Work-link" href="https://www.reply.com/storm-reply/en/">STORM REPLY</a> IN THE FINANCIAL SERVICES UNIT IN TURIN.</span>
 
