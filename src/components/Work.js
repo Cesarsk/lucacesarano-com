@@ -39,7 +39,13 @@ function RenderContainer() {
 
         <p>Say It! App</p>
         <div className="Work-list">
-          <a className="Work-link" href="https://play.google.com/store/apps/details?id=com.cesarsk.say_it"> Say It! For Android(~ 30k users, 4.7/5.0 <span role="img" aria-label="uk-flag">★</span>) <span role="img" aria-label="uk-flag">🇬🇧</span></a>
+          <a className="Work-link" href="https://play.google.com/store/apps/details?id=com.cesarsk.say_it"> Say It! For Android (~ 30k users, 4.7/5.0 <span role="img" aria-label="uk-flag">★</span>) <span role="img" aria-label="uk-flag">🇬🇧</span></a>
+        </div>
+        <br />
+
+        <p>Publications:</p>
+        <div className="Work-list">
+          <a className="Work-link" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9624984"> IEEE ACCESS - A Real-time Energy-Saving Mechanism in Internet of Vehicles Systems <span role="img" aria-label="uk-flag">🇬🇧</span></a>
         </div>
         <br />
 

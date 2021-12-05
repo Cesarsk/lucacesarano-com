@@ -1,7 +1,7 @@
 develop:build:
   stage: build
   image:
-    name: node
+    name: node:16.13.1
   only:
     refs:
       - develop
@@ -16,7 +16,7 @@ develop:build:
 develop:deploy:
   stage: deploy
   image:
-    name: node
+    name: node:16.13.1
   dependencies:
     - develop:build
   only:
