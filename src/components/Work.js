@@ -43,6 +43,12 @@ function RenderContainer() {
         </div>
         <br />
 
+        <p>Publications:</p>
+        <div className="Work-list">
+          <a className="Work-link" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9624984"> IEEE ACCESS INTERNATIONAL JOURNAL - A Real-time Energy-Saving Mechanism in Internet of Vehicles Systems <span role="img" aria-label="uk-flag">🇬🇧</span></a>
+        </div>
+        <br />
+
         <p>Some stuff I wrote during University (2013-2020):</p>
         <div className="Work-list">
           <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1kyY_U1fVYOItwn51I720NJVn4jfcuIEY/view">» An application of Genetic Algorithms to a Multi-Agent-System <span role="img" aria-label="uk-flag">🇬🇧</span></a>
