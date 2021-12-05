@@ -45,7 +45,7 @@ function RenderContainer() {
 
         <p>Publications:</p>
         <div className="Work-list">
-          <a className="Work-link" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9624984"> IEEE ACCESS INTERNATIONAL JOURNAL - A Real-time Energy-Saving Mechanism in Internet of Vehicles Systems <span role="img" aria-label="uk-flag">🇬🇧</span></a>
+          <a className="Work-link" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9624984"> IEEE ACCESS - A Real-time Energy-Saving Mechanism in Internet of Vehicles Systems <span role="img" aria-label="uk-flag">🇬🇧</span></a>
         </div>
         <br />
 
