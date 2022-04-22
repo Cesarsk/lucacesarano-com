@@ -9,7 +9,7 @@ function RenderContainer() {
           <p className="About-text">FOR ADDITIONAL INFORMATION:
           <a
               className="About-link"
-              href="https://drive.google.com/file/d/1B9mAfi38EWLkLXPKlhfG_-R2kZbqxMCe/"
+              href="https://drive.google.com/file/d/1z_s31i35-ZkyEhBt_xRybwtPPVnbP7J_/view"
               target="_blank"
               rel="noopener noreferrer"> CHECK MY CV
           </a> (I UPDATE IT PERIODICALLY).
@@ -49,6 +49,8 @@ function RenderContainer() {
         </div>
         <br />
 
+        <p>Check out my book suggestions:</p>
+        
         <p>Some stuff I wrote during University (2013-2020):</p>
         <div className="Work-list">
           <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1kyY_U1fVYOItwn51I720NJVn4jfcuIEY/view">» An application of Genetic Algorithms to a Multi-Agent-System <span role="img" aria-label="uk-flag">🇬🇧</span></a>
