@@ -12,7 +12,7 @@ function RenderContainer() {
               href="https://drive.google.com/file/d/1z_s31i35-ZkyEhBt_xRybwtPPVnbP7J_/view"
               target="_blank"
               rel="noopener noreferrer"> CHECK MY CV
-          </a> (I UPDATE IT PERIODICALLY).
+          </a>.
           </p>
           <p className="About-relocate"></p>
         </div>
