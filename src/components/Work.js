@@ -18,7 +18,7 @@ function RenderContainer() {
         </div>
         <p>I enjoy developing lots of things, check it out on my <a className="Work-link" href="https://github.com/cesarsk">Github</a> Page.</p>
         <p>I'm getting more and more in <p style={{ color: '#ff2100', display: 'inline' }}>❤</p> with Python, Devops, and IAAS.</p>
-        <p>Check out my <a className="Work-link" href="https://medium.com/@luca.cesarano1">Blog</a>, I'm publishing some cool projects developed in Python and extra nerd stuff.</p>
+        <p>Check out my <a className="Work-link" href="https://lucacesarano.medium.com/">Blog</a>, I'm publishing some cool projects developed in Python and extra nerd stuff.</p>
         <br />
         <p>Try my live demos: </p>
         <div className="Work-list">
