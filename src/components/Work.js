@@ -31,15 +31,11 @@ function RenderContainer() {
         </div>
         <br />
 
-        <p>Alfred - our Super AI:</p>
+        <p>Open Source Projects:</p>
         <div className="Work-list">
           <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://github.com/FerrariAndrea/AlfredTheRealButler">» Alfred - The Cyber Butler <span role="img" aria-label="uk-flag">🇬🇧</span></a>
-        </div>
-        <br />
-
-        <p>Say It! App</p>
-        <div className="Work-list">
-          <a className="Work-link" href="https://play.google.com/store/apps/details?id=com.cesarsk.say_it"> Say It! For Android (~ 30k users, 320 reviews, 4.9/5.0 <span role="img" aria-label="uk-flag">★</span>) <span role="img" aria-label="uk-flag">🇬🇧</span></a>
+          <br />
+          <a className="Work-link" href="https://play.google.com/store/apps/details?id=com.cesarsk.say_it">» Say It! For Android (~ 30k users, 320 reviews, 4.9/5.0 <span role="img" aria-label="uk-flag">★</span>) <span role="img" aria-label="uk-flag">🇬🇧</span></a>
         </div>
         <br />
 
@@ -62,7 +58,6 @@ function RenderContainer() {
           <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=sr_1_1?crid=27B5CYILRUYVP&keywords=clean+architecture&qid=1650671061&sprefix=clean+architectu%2Caps%2C149&sr=8-1">» Clean Architecture: A Craftsman's Guide to Software Structure and Design <span role="img" aria-label="uk-flag">🇬🇧</span></a>
           <br />
         </div>
-        <br />
 
         <p>Some stuff I wrote during University (2013-2020):</p>
         <div className="Work-list">
