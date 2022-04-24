@@ -47,7 +47,7 @@ function RenderContainer() {
 
         <p>Check out my book suggestions:</p>
         <div className="Work-list">
-          <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://www.amazon.com/Site-Reliability-Workbook-Practical-Implement/dp/1492029505/ref=sr_1_1?crid=A3DQIGZL1TNT&keywords=sre&qid=1650671020&sprefix=s%2Caps%2C231&sr=8-1">» The Site Reliability Workbook: Practical Ways to Implement SRE <span role="img" aria-label="uk-flag">🇬🇧</span></a>
+          <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://www.amazon.com/Site-Reliability-Engineering-Production-Systems/dp/149192912X/ref=sr_1_1?crid=X8YWINNQW1XE&keywords=sre+site+reliability+engineering&qid=1650799906&sprefix=sre+site+reliability+engineeri%2Caps%2C166&sr=8-1">» Site Reliability Engineering: How Google Runs Production Systems <span role="img" aria-label="uk-flag">🇬🇧</span></a>
           <br />
           <a className="Work-link" rel="noopener noreferrer" target="_blank" href="https://www.amazon.com/Kubernetes-Running-Dive-Future-Infrastructure/dp/109811020X/ref=sr_1_2?crid=31HBVY0EDCUU1&keywords=kubernetes+up+and+running&qid=1650671033&sprefix=kubernetes+up+and+runnin%2Caps%2C164&sr=8-2">» Kubernetes: Up and Running: Dive into the Future of Infrastructure <span role="img" aria-label="uk-flag">🇬🇧</span></a>
           <br />
