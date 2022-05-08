@@ -11,7 +11,6 @@ export default class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        <Dots />
         <About id="#about" />
         <Work id="#work" />
         <Footer id="#contact" />
