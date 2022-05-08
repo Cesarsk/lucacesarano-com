@@ -3,7 +3,6 @@ import '../styles/App.css'
 import NavBar from './NavBar'
 import About from './About'
 import Footer from './Footer'
-import Dots from './Dots'
 import Work from './Work'
 export default class App extends Component {
 
