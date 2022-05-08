@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/Dots.css';
-import TweenLite from 'gsap/TweenLite'
+import TweenLite from 'gsap'
 import 'gsap/CSSPlugin'
-import { Circ } from 'gsap/EasePack'
+import { Circ } from 'gsap'
 
 //var container
 var canvas, ctx, points, target, animateHeader = true
