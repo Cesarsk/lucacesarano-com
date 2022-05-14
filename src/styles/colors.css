@@ -1,0 +1,12 @@
+:root {
+    --main-bg-color: #1D2021;
+    --font-color: #dcdcdc;
+    --link-color: #fbd01d;
+    --hover-item-color: rgba(255, 255, 255, 0.22);
+
+    /* cycle colors */
+    --cycle-first-color: #38844B;
+    --cycle-second-color: #1E5ADF;
+    --cycle-third-color: #C63D2D;
+    --cycle-fourth-color: #F4AA3C;
+}

@@ -9,7 +9,7 @@
 
 .Work-section {
   font-size: 12px;
-  color: white;
+  color: var(--font-color);
   letter-spacing: 2px;
   text-align: left;
   justify-content: left;
@@ -22,7 +22,7 @@
 }
 
 .Work-link {
-  color: #f9cf35;
+  color: var(--link-color);
   text-decoration: none;
 }
 
