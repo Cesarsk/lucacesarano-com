@@ -16,7 +16,7 @@
     font-weight: 700;
     line-height: 1em;
     overflow: hidden;
-    background-color: none;
+    background-color: var(--main-bg-color);
     position: fixed;
     /* Set the navbar to fixed position */
     top: 0;
@@ -35,7 +35,7 @@
 
 .item:hover {
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.119);
+    background-color: var(--hover-item-color);
 }
 
 .row {
@@ -49,7 +49,7 @@
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-    color: white;
+    color: var(--font-color);
     padding: 3px;
 }
 
@@ -62,11 +62,11 @@
 .NavBar a.NavBar-link:hover, a.NavBar-link:active {
     text-decoration: none;
     user-select: none;
-    color: white;
+    color: var(--font-color);
 }
 
 .NavBar a.NavBar-link:link, a.NavBar-link:visited {
-    color: white;
+    color: var(--font-color);
     user-select: none;
     text-decoration: none;
 }

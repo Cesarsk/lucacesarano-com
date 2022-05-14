@@ -58,7 +58,7 @@ function RenderContainer() {
                 </div>
                 <br/>
 
-                <p>Check out my book suggestions:</p>
+                <p>Book suggestions:</p>
                 <div className="Work-list">
                     <a className="Work-link" rel="noopener noreferrer" target="_blank"
                        href="https://www.amazon.com/Site-Reliability-Engineering-Production-Systems/dp/149192912X/ref=sr_1_1?crid=X8YWINNQW1XE&keywords=sre+site+reliability+engineering&qid=1650799906&sprefix=sre+site+reliability+engineeri%2Caps%2C166&sr=8-1">»
@@ -87,47 +87,46 @@ function RenderContainer() {
                     <br/>
                 </div>
 
+                <br/>
                 <p>Some stuff I wrote during University (2013-2020):</p>
+                <p>Artificial Intelligence:</p>
                 <div className="Work-list">
                     <a className="Work-link" rel="noopener noreferrer" target="_blank"
                        href="https://drive.google.com/file/d/1kyY_U1fVYOItwn51I720NJVn4jfcuIEY/view">» An application of
                         Genetic Algorithms to a Multi-Agent-System <span role="img" aria-label="uk-flag">🇬🇧</span></a>
                     <br/>
                     <a className="Work-link" rel="noopener noreferrer" target="_blank"
-                       href="https://drive.google.com/file/d/1doKws8vu9DOB_twX7VU5cpSJXYQgMmHb/view">» [Full] Simulation
-                        of a Project Proposal for VERTIS <span role="img" aria-label="it-flag">🇮🇹</span></a>
-                    <br/>
-                    <a className="Work-link" rel="noopener noreferrer" target="_blank"
-                       href="https://drive.google.com/file/d/1hvek738hk9ptWqdAyPyQ3CA-yAiKbzDi/view">» [Keynote]
-                        Simulation of a Project Proposal for VERTIS <span role="img"
-                                                                          aria-label="it-flag">🇮🇹</span></a>
-                    <br/>
-                    <a className="Work-link" rel="noopener noreferrer" target="_blank"
                        href="https://drive.google.com/open?id=1xHqsh4hD99Po2HjKU5iFwpznFfX6_u9L">» An Example of a MLP
                         Classifier in KNIME <span role="img" aria-label="uk-flag">🇬🇧</span></a>
-                    <br/>
-                    <a className="Work-link" rel="noopener noreferrer" target="_blank"
-                       href="https://drive.google.com/open?id=1b1qHpluzVhwtIL7HD5x64vFUJGQbC34A">» The Snake Game - A
-                        VHDL Version <span role="img" aria-label="it-flag">🇮🇹</span></a>
-                    <br/>
+
+                </div>
+                <p>Augmented Reality:</p>
+                <div className="Work-list">
                     <a className="Work-link" rel="noopener noreferrer" target="_blank"
                        href="https://drive.google.com/open?id=1AmN-PM7Vc90qQ4wPdh8AtLGtgWvc6kq2">» Realtà Aumentata:
                         stato dell’arte delle tecnologie <span role="img" aria-label="it-flag">🇮🇹</span></a>
                     <br/>
+
                     <a className="Work-link" rel="noopener noreferrer" target="_blank"
                        href="https://drive.google.com/open?id=1Pgjcs3dDSMqB8z9VkImFVzOEt75ikmcb">» QR-Code on Augmented
                         Reality <span role="img" aria-label="it-flag">🇮🇹</span></a> <a className="Work-link"
                                                                                          rel="noopener noreferrer"
                                                                                          target="_blank"
                                                                                          href="https://github.com/Cesarsk/Android-QR-Code-on-AR">[Github]</a>
-                    <br/>
+                </div>
+                <p>VHDL:</p>
+                <div className="Work-list">
                     <a className="Work-link" rel="noopener noreferrer" target="_blank"
-                       href="https://drive.google.com/open?id=1RrpdGmXn4s97QCU95QrANPEfI2n7Y2cj">» IA Forecast
-                        Prediction <span role="img" aria-label="it-flag">🇮🇹</span></a>
+                       href="https://drive.google.com/open?id=1b1qHpluzVhwtIL7HD5x64vFUJGQbC34A">» The Snake Game - A
+                        VHDL Version <span role="img" aria-label="it-flag">🇮🇹</span></a>
                     <br/>
+
+                </div>
+                <p>Project Management:</p>
+                <div className="Work-list">
                     <a className="Work-link" rel="noopener noreferrer" target="_blank"
-                       href="https://drive.google.com/open?id=1bLaLkaTrnGeG-7BZR6QrgpxG3WP18zo1">» Database Comics
-                        Store <span role="img" aria-label="it-flag">🇮🇹</span></a>
+                       href="https://drive.google.com/file/d/1doKws8vu9DOB_twX7VU5cpSJXYQgMmHb/view">» [Full] Simulation
+                        of a Project Proposal for VERTIS <span role="img" aria-label="it-flag">🇮🇹</span></a>
                 </div>
             </div>
 
