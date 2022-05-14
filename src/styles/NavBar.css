@@ -34,7 +34,7 @@
 }
 
 .item:hover {
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: var(--hover-item-color);
 }
 
@@ -50,13 +50,12 @@
     flex-basis: 100%;
     flex: 1;
     color: var(--font-color);
-    padding: 3px;
 }
 
 .item {
     position: relative;
     user-select: none;
-    padding: 5px;
+    padding: 20px 15px;
 }
 
 .NavBar a.NavBar-link:hover, a.NavBar-link:active {
@@ -66,9 +65,9 @@
 }
 
 .NavBar a.NavBar-link:link, a.NavBar-link:visited {
-    color: var(--font-color);
     user-select: none;
     text-decoration: none;
+    color: var(--font-color);
 }
 
 /* desktop-x-small */
@@ -77,6 +76,7 @@
     .NavBar {
         height: 60px;
     }
+
     .NavBar-link {
         font-size: 10px;
         margin: 11px;
