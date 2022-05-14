@@ -33,21 +33,18 @@ export default class NavBar extends Component {
                                     smooth={true}
                                     offset={-70}
                                     duration={500}
-                                    className='NavBar-link'>ABOUT</Link>
+                                    className='NavBar-link'>HOME</Link>
                             </div>
                         </div>
                     </div>
                     <div className='column'>
                         <div className='column'>
                             <div className='item'>
-                                <Link
-                                    activeClass="active"
-                                    to="#work"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-70}
-                                    duration={500}
-                                    className='NavBar-link'>WORK</Link>
+                                <a
+                                    href="https://drive.google.com/file/d/1z_s31i35-ZkyEhBt_xRybwtPPVnbP7J_/view"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    className='NavBar-link'>RESUME</a>
                             </div>
                         </div>
                     </div>
