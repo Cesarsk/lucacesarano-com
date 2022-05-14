@@ -58,7 +58,7 @@ function RenderContainer() {
                 </div>
                 <br/>
 
-                <p>Check out my book suggestions:</p>
+                <p>Book suggestions:</p>
                 <div className="Work-list">
                     <a className="Work-link" rel="noopener noreferrer" target="_blank"
                        href="https://www.amazon.com/Site-Reliability-Engineering-Production-Systems/dp/149192912X/ref=sr_1_1?crid=X8YWINNQW1XE&keywords=sre+site+reliability+engineering&qid=1650799906&sprefix=sre+site+reliability+engineeri%2Caps%2C166&sr=8-1">»
