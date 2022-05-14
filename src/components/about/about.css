@@ -1,5 +1,5 @@
 .About {
-    padding-top: 15vh;
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,9 +49,10 @@
     animation-name: colorcyclepic;
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 750px) {
     .About {
         display: block;
+        padding-top: 80px;
     }
 
     .About-profile-picture {

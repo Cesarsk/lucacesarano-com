@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
-import '../styles/App.css'
-import NavBar from './NavBar'
-import About from './About'
-import Footer from './Footer'
-import Work from './Work'
+import Navbar from '../navbar/navbar'
+import About from '../about/about'
+import Footer from '../footer/footer'
+import Work from '../work/work'
 export default class App extends Component {
 
   render() {
     return (
       <div className="App">
-        <NavBar />
+        <Navbar />
         <About id="#about" />
         <Work id="#work" />
         <Footer id="#contact" />

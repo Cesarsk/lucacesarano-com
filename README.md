@@ -32,10 +32,7 @@ You may look into other projects of mine via my website, just browser it and che
 
 ## Run developing environment
 
-    brew install node
-    npm install react-scripts
-    npm install gsap
-    npm install react-scroll
+    install dependencies in package.json
     npm start
 
 ### Tags

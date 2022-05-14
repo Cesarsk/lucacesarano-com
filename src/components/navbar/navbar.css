@@ -55,7 +55,7 @@
 .item {
     position: relative;
     user-select: none;
-    padding: 20px 12px;
+    padding: 20px 15px;
 }
 
 .NavBar a.NavBar-link:hover, a.NavBar-link:active {

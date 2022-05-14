@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import "../styles/NavBar.css"
+import "./navbar.css"
 import {Link} from 'react-scroll'
 
-export default class NavBar extends Component {
+export default class Navbar extends Component {
     state = {
         shadowScroll: '0 0 0',
     }
@@ -23,20 +23,6 @@ export default class NavBar extends Component {
         return (
             <div style={{boxShadow: this.state.shadowScroll}} className='NavBar'>
                 <div className='row'>
-                    <div className='column'>
-                        <div className='column'>
-                            <Link
-                                activeClass="active"
-                                to="#about"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={500}
-                                className='NavBar-link'>
-                                <div className='item'>HOME</div>
-                            </Link>
-                        </div>
-                    </div>
                     <div className='column'>
                         <div className='column'>
                             <a

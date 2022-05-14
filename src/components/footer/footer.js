@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import '../styles/Footer.css'
-import SocialBadge from '../api/SocialBadge.js'
-import socials from "../api/socials.js"
+import './footer.css'
+import Socialbadge from '../socialbadge/socialbadge.js'
+import socials from '../socialbadge/socials.js'
 
-const socialComponents = socials.map(social => <SocialBadge key={social.id} link={social.link} path={social.path} />)
+const socialComponents = socials.map(social => <Socialbadge key={social.id} link={social.link} path={social.path} />)
 
 export default class Footer extends Component {
   render() {

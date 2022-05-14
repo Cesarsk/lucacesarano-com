@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import '../styles/About.css'
-import profilePic from '../resources/profile-pic.jpg';
+import './about.css'
+import profilePic from '../../resources/profile-pic.jpg';
 
 //https://reactjs.org/warnings/invalid-hook-call-warning.html
 /*

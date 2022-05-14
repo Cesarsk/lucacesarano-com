@@ -10,3 +10,15 @@
     --cycle-third-color: #C63D2D;
     --cycle-fourth-color: #F4AA3C;
 }
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
