@@ -19,7 +19,7 @@ CI / CD is set up in the project, there are two pipelines:
 
 ## React
 
-The website is entirely developed in React and it's a one-page app.
+The website is entirely developed in React.
 
 ## Firebase
 

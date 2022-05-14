@@ -1,3 +1,0 @@
-gsap
-react-scripts
-react-scroll
