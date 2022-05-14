@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../styles/Work.css'
+import './work.css'
 
 function RenderContainer() {
     return (<div className="Work">
