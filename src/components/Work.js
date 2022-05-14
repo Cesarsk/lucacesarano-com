@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import '../styles/Work.css'
 
 function RenderContainer() {
-    return (
-        <div className="Work">
+    return (<div className="Work">
             <div className="Work-section">
                 <span className="About-text">Here you will find everything about me.</span>
                 <div className="Inline">
@@ -52,7 +51,7 @@ function RenderContainer() {
                 <p>Publications:</p>
                 <div className="Work-list">
                     <a className="Work-link"
-                       href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9624984"> IEEE ACCESS - A
+                       href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9624984">» IEEE ACCESS - A
                         Real-time Energy-Saving Mechanism in Internet of Vehicles Systems <span role="img"
                                                                                                 aria-label="uk-flag">🇬🇧</span></a>
                 </div>
@@ -86,9 +85,9 @@ function RenderContainer() {
                                                                                                        aria-label="uk-flag">🇬🇧</span></a>
                     <br/>
                 </div>
-
                 <br/>
-                <p>Some stuff I wrote during University (2013-2020):</p>
+                <br/>
+                <p>Some stuff I wrote during University:</p>
                 <p>Artificial Intelligence:</p>
                 <div className="Work-list">
                     <a className="Work-link" rel="noopener noreferrer" target="_blank"
@@ -102,11 +101,6 @@ function RenderContainer() {
                 </div>
                 <p>Augmented Reality:</p>
                 <div className="Work-list">
-                    <a className="Work-link" rel="noopener noreferrer" target="_blank"
-                       href="https://drive.google.com/open?id=1AmN-PM7Vc90qQ4wPdh8AtLGtgWvc6kq2">» Realtà Aumentata:
-                        stato dell’arte delle tecnologie <span role="img" aria-label="it-flag">🇮🇹</span></a>
-                    <br/>
-
                     <a className="Work-link" rel="noopener noreferrer" target="_blank"
                        href="https://drive.google.com/open?id=1Pgjcs3dDSMqB8z9VkImFVzOEt75ikmcb">» QR-Code on Augmented
                         Reality <span role="img" aria-label="it-flag">🇮🇹</span></a> <a className="Work-link"
@@ -125,21 +119,18 @@ function RenderContainer() {
                 <p>Project Management:</p>
                 <div className="Work-list">
                     <a className="Work-link" rel="noopener noreferrer" target="_blank"
-                       href="https://drive.google.com/file/d/1doKws8vu9DOB_twX7VU5cpSJXYQgMmHb/view">» [Full] Simulation
+                       href="https://drive.google.com/file/d/1doKws8vu9DOB_twX7VU5cpSJXYQgMmHb/view">» Simulation
                         of a Project Proposal for VERTIS <span role="img" aria-label="it-flag">🇮🇹</span></a>
                 </div>
             </div>
 
-        </div>
-    )
+        </div>)
 }
 
 export default class Work extends Component {
     render() {
-        return (
-            <div className="Work" id={this.props.id}>
+        return (<div className="Work" id={this.props.id}>
                 {RenderContainer()}
-            </div>
-        );
+            </div>);
     }
 }
