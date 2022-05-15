@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "An Application of Genetic Algorithms (GA) to a Multi-Agent-System",
+    "url": "https://cesarsk.github.io/AI-GA-on-MAS/",
+    "lang": "eng"
+  },
+  {
+    "id": 2,
+    "name": "Alfred - The Cyber Butler",
+    "url": "https://github.com/FerrariAndrea/AlfredTheRealButler",
+    "lang": "eng"
+  },
+  {
+    "id": 3,
+    "name": "Say It! For Android (~ 30k users, 320 reviews, 4.9/5.0",
+    "url": "https://play.google.com/store/apps/details?id=com.cesarsk.say_it",
+    "lang": "eng"
+  },
+  {
+    "id": 4,
+    "name": "This CI/CD enabled Website",
+    "url": "https://gitlab.com/lu.cesarano/lucacesarano-com",
+    "lang": "eng"
+  },
+  {
+    "id": 5,
+    "name": "IEEE ACCESS - A Real-time Energy-Saving Mechanism in Internet of Vehicles Systems",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9624984",
+    "lang": "eng"
+  },
+  {
+    "id": 6,
+    "name": "Site Reliability Engineering: How Google Runs Production Systems",
+    "url": "https://www.amazon.com/Site-Reliability-Engineering-Production-Systems/dp/149192912X/ref=sr_1_1?crid=X8YWINNQW1XE&keywords=sre+site+reliability+engineering&qid=1650799906&sprefix=sre+site+reliability+engineeri%2Caps%2C166&sr=8-1",
+    "lang": "eng"
+  },
+  {
+    "id": 7,
+    "name": "Kubernetes: Up and Running: Dive into the Future of Infrastructure",
+    "url": "https://www.amazon.com/Kubernetes-Running-Dive-Future-Infrastructure/dp/109811020X/ref=sr_1_2?crid=31HBVY0EDCUU1&keywords=kubernetes+up+and+running&qid=1650671033&sprefix=kubernetes+up+and+runnin%2Caps%2C164&sr=8-2",
+    "lang": "eng"
+  },
+  {
+    "id": 8,
+    "name": "The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations",
+    "url": "https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1950508404/ref=sr_1_1?crid=X5U454XQBXYP&keywords=the+devops+handbook&qid=1650671070&sprefix=the+devops+handbo%2Caps%2C155&sr=8-1",
+    "lang": "eng"
+  },
+  {
+    "id": 9,
+    "name": "Clean Code: A Handbook of Agile Software Craftsmanship",
+    "url": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?crid=6XDJD1SAEY0X&keywords=code+clean&qid=1650671053&sprefix=code+cle%2Caps%2C166&sr=8-1",
+    "lang": "eng"
+  },
+  {
+    "id": 10,
+    "name": "Clean Architecture: A Craftsman's Guide to Software Structure and Design",
+    "url": "https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=sr_1_1?crid=27B5CYILRUYVP&keywords=clean+architecture&qid=1650671061&sprefix=clean+architectu%2Caps%2C149&sr=8-1",
+    "lang": "eng"
+  },
+  {
+    "id": 11,
+    "name": "An application of Genetic Algorithms to a Multi-Agent-System",
+    "url": "https://drive.google.com/file/d/1kyY_U1fVYOItwn51I720NJVn4jfcuIEY/view",
+    "lang": "eng"
+  },
+  {
+    "id": 12,
+    "name": "An Example of a MLP Classifier in KNIME",
+    "url": "https://drive.google.com/open?id=1xHqsh4hD99Po2HjKU5iFwpznFfX6_u9L",
+    "lang": "eng"
+  },
+  {
+    "id": 13,
+    "name": "QR-Code on Augmented Reality",
+    "url": "https://drive.google.com/open?id=1Pgjcs3dDSMqB8z9VkImFVzOEt75ikmcb",
+    "lang": "ita"
+  },
+  {
+    "id": 14,
+    "name": "The Snake Game - A VHDL Version",
+    "url": "https://drive.google.com/open?id=1b1qHpluzVhwtIL7HD5x64vFUJGQbC34A",
+    "lang": "ita"
+  },
+  {
+    "id": 15,
+    "name": "Simulation of a Project Proposal for VERTIS",
+    "url": "https://drive.google.com/file/d/1doKws8vu9DOB_twX7VU5cpSJXYQgMmHb/view",
+    "lang": "ita"
+  }
+]
