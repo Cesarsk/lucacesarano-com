@@ -8,12 +8,12 @@ e-mail me.
 
 ## Technology Stack
 
-## Frontend
+### Frontend
 
 For the website itself, React and Javascript are used. I'm not a frontend developer expert, so I use this website as a
 Sandbox to keep my content online and, at the same, to experiment with the said technology.
 
-## Gitlab Runner
+### Gitlab Runner
 
 CI / CD is set up in the project, there are two pipelines:
 
@@ -24,7 +24,7 @@ CI / CD is set up in the project, there are two pipelines:
 
       a marge request triggers this pipeline that buidl and deploy on lucacesarano.com
 
-## Firebase
+### Firebase
 
 Firebase was used for hosting the content, behind a Cloudflare provider for the domain. It's free (Spark Plan) so it's
 very useful to develop your website virtually for free.
