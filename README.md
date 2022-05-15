@@ -1,10 +1,17 @@
 # Welcome to lucacesarano.com
 
-This is my enabled CI / CD website developed in React. Feel free to give it a look and if you need some info, just send
-me an e-mail.
+This is my enabled CI / CD website developed in React. Feel free to give it a look and if you need some info, just
+e-mail me.
 
 disclaimer: even though nothing blocks you from branching this project, I'd really like to know how and why are you
 branching it, so please hit me up :)
+
+## Technology Stack
+
+## Website
+
+For the website itself, React and Javascript are used. I'm not a frontend developer expert, so I use this website as a
+Sandbox to keep my content online and, at the same, to experiment with the said technology.
 
 ## Gitlab Runner
 
@@ -15,26 +22,24 @@ CI / CD is set up in the project, there are two pipelines:
       code in this pipeline are built and then deployed on beta.lucacesarano.com
 - master:
 
-      code in this pipeline are build and then deployed on lucacesarano.com
-
-## React
-
-The website is entirely developed in React.
+      a marge request triggers this pipeline that buidl and deploy on lucacesarano.com
 
 ## Firebase
 
-Firebase was used for hosting purpose, behind a Cloudflare provider for the domain. It's free (Spark Plan) so it's very
-useful to develop your website at almost no cost (you just need to buy the domain but that cost really a few).
-
-### Other Projects
-
-You may look into other projects of mine via my website, just browser it and check it out.
+Firebase was used for hosting the content, behind a Cloudflare provider for the domain. It's free (Spark Plan) so it's
+very useful to develop your website virtually for free.
 
 ## Run developing environment
 
+    clone repository
     install dependencies in package.json
     npm start
 
-### Tags
+## About me
 
-*REACT, CI/CD, DEVOPS, PIPELINES, RUNNER, FREE, WEBSITE, CHEAP, DOMAIN, FIREBASE, CLOUDFLARE*
+Check also out my other projects available on https://lucacesarano.com or get in contact and let's speak about
+technology.
+
+## Tags
+
+*REACT, CI/CD, DEVOPS, PIPELINES, RUNNER, FREE, WEBSITE, CHEAP, DOMAIN, FIREBASE, CLOUDFLARE, JAVASCRIPT*
