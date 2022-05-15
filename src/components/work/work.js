@@ -9,7 +9,8 @@ const elements = data.map((elem) => {
             <Card.Body>
                 <Card.Text>
                     <a className="About-link" href={elem.url} target="_blank" rel="noopener noreferrer">
-                        » {elem.lang === "eng" ? <span role="img" aria-label="uk-flag">🇬🇧</span> : <span role="img" aria-label="it-flag">🇮🇹</span>} » {elem.name}</a>
+                        » {elem.lang === "eng" ? <span role="img" aria-label="uk-flag">🇬🇧</span> :
+                        <span role="img" aria-label="it-flag">🇮🇹</span>} » {elem.name}</a>
                 </Card.Text>
             </Card.Body>
         </Card>
@@ -42,7 +43,6 @@ export default class Work extends Component {
 
                     <p>Try my live demos: </p>
                     <div className="Work-list">
-                        {elements.slice(0, 1)}
                         <br/>
                     </div>
 
@@ -78,4 +78,3 @@ export default class Work extends Component {
         )
     }
 }
-
