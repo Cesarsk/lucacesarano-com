@@ -3,8 +3,8 @@
 This is my enabled CI / CD website developed in React. Feel free to give it a look and if you need some info, just
 e-mail me.
 
-disclaimer: even though nothing blocks you from branching this project, I'd really like to know how and why are you
-branching it, so please hit me up :)
+### You're free to work but...
+...I am curious to know how you're going to use this template, so send me a message! 
 
 ## Technology Stack
 
