@@ -3,7 +3,6 @@ import {Card} from 'react-bootstrap';
 import './work.css'
 import data from './data.json'
 
-// » <span role="img" aria-label="it-flag">🇮🇹</span> »
 const elements = data.map((elem) => {
     return (
         <Card key={elem.id}>
