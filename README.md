@@ -8,7 +8,7 @@ e-mail me.
 
 ## Technology Stack
 
-## Website
+## Frontend
 
 For the website itself, React and Javascript are used. I'm not a frontend developer expert, so I use this website as a
 Sandbox to keep my content online and, at the same, to experiment with the said technology.
