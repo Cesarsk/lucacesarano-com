@@ -43,6 +43,7 @@ export default class Work extends Component {
 
                     <p>Try my live demos: </p>
                     <div className="Work-list">
+                        {elements.slice(0, 1)}
                         <br/>
                     </div>
 
