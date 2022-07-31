@@ -24,12 +24,12 @@ export default class Work extends Component {
                 <div className="Work-section">
                     <span className="About-text">Here you will find everything about me.</span>
                     <div className="Inline">
-                        <p className="About-text">If you're a company that wants to reach out:
+                        <p className="About-text">My Resume is available at the following link:
                             <a
                                 className="About-link"
                                 href="https://drive.google.com/file/d/1z_s31i35-ZkyEhBt_xRybwtPPVnbP7J_/view"
                                 target="_blank"
-                                rel="noopener noreferrer"> CHECK MY CV
+                                rel="noopener noreferrer"> CLICK ME
                             </a>.
                         </p>
                         <p className="About-relocate"></p>

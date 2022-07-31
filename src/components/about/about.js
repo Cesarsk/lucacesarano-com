@@ -18,11 +18,11 @@ function RenderContainer() {
                 <br></br>
                 <span className="About-text">Welcome to my space!</span>
                 <br></br>
-                <span className="About-text">I work as a Site Reliability Engineer and Cloud Solutions Architect</span>
+                <span className="About-text">I work as a Senior <a className="Work-link" href="https://sre.google/">Site Reliability Engineer</a></span>
                 <br></br>
-                <span className="About-text">AT <a className="Work-link" href="https://www.reply.com/storm-reply/en/">STORM REPLY</a> IN THE FINANCIAL SERVICES UNIT.</span>
+                <span className="About-text">AT <a className="Work-link" href="https://www.sygnum.com/">SYGNUM</a> in Zürich, Switzerland.</span>
                 <br></br>
-                <span className="About-text">I <p style={{color: '#ff2100', display: 'inline'}}>❤</p> new technologies and their impact on the world.</span>
+                <span className="About-text">I <p style={{color: '#ff2100', display: 'inline'}}>❤</p> technology and its impact on the world.</span>
             </div>
         </div>
     )
