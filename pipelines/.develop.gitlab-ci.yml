@@ -16,7 +16,7 @@ develop:build:
 develop:deploy:
   stage: deploy
   image:
-    name: firebase-tools:12.8.0
+    name: andreysenov/firebase-tools
   dependencies:
     - develop:build
   only:
