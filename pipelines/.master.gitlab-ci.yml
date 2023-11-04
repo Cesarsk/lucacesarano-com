@@ -23,8 +23,8 @@ prod:deploy:
     refs:
       - master
   before_script:
-    - echo $FIARD_PRIVATE_KEY > "/private-key.json"
-    - export GOOGLE_APPLICATION_CREDENTIALS="/private-key.json"
+    - echo $FIARD_PRIVATE_KEY > "$HOME/private-key.json"
+    - export GOOGLE_APPLICATION_CREDENTIALS="$HOME/private-key.json"
   script:
     - firebase use "lucacesarano-com"
     - firebase deploy -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --only hosting:lucacesarano-com --non-interactive
