@@ -22,7 +22,10 @@ develop:deploy:
   only:
     refs:
       - develop
+  before_script:
+    - echo $FIARD_PRIVATE_KEY > "/private-key.json"
+    - export GOOGLE_APPLICATION_CREDENTIALS="/private-key.json"
   script:
     - npm install -g firebase-tools
-    - firebase use "lucacesarano-com" --token "$FIREBASE_TOKEN"
-    - firebase deploy -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --only hosting:beta-lucacesarano-com --non-interactive --token "$FIREBASE_TOKEN"
+    - firebase use "lucacesarano-com"
+    - firebase deploy -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --only hosting:beta-lucacesarano-com --non-interactive
