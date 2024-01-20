@@ -26,7 +26,7 @@ export default class Navbar extends Component {
                     <div className='column'>
                         <div className='column'>
                             <a
-                                href={process.env.URL_RESUME}
+                                href="https://lucacesarano.com/resume"
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className='NavBar-link'>
