@@ -27,7 +27,7 @@ export default class Work extends Component {
                         <p className="About-text">My Resume is available at the following link:
                             <a
                                 className="About-link"
-                                href="https://drive.google.com/file/d/1z_s31i35-ZkyEhBt_xRybwtPPVnbP7J_/view"
+                                href="https://lucacesarano.com/resume"
                                 target="_blank"
                                 rel="noopener noreferrer"> CLICK ME
                             </a>.
@@ -71,7 +71,7 @@ export default class Work extends Component {
 
                     <div className="Work-list">
                         {elements.slice(10, 13)}
-                        {elements.slice(13, 16)}
+                        {elements.slice(13, 15)}
                     </div>
 
                 </div>

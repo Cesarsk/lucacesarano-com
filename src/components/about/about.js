@@ -18,7 +18,7 @@ function RenderContainer() {
                 <br></br>
                 <span className="About-text">Welcome to my space!</span>
                 <br></br>
-                <span className="About-text">I work as a Tech Lead, <a className="Work-link" href="https://sre.google/">Site Reliability Engineer</a></span>
+                <span className="About-text">I work as a Tech Lead <a className="Work-link" href="https://sre.google/">Site Reliability Engineer</a></span>
                 <br></br>
                 <span className="About-text">AT <a className="Work-link" href="https://www.sygnum.com/">SYGNUM</a> in Zürich, Switzerland.</span>
                 <br></br>
