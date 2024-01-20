@@ -26,7 +26,7 @@ export default class Navbar extends Component {
                     <div className='column'>
                         <div className='column'>
                             <a
-                                href="https://drive.google.com/file/d/1z_s31i35-ZkyEhBt_xRybwtPPVnbP7J_/view"
+                                href={process.env.URL_RESUME}
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className='NavBar-link'>
