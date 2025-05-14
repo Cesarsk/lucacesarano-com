@@ -57,34 +57,48 @@
   },
   {
     "id": 10,
+    "name": "System Design Interview Vol.1 / Vol.2 by Alex Xu",
+    "url": "https://www.amazon.com/s?k=system+design+interview&crid=2GPU4J1AKC9U0&sprefix=system+design+intervie%2Caps%2C264",
+    "category": "books",
+    "lang": "eng"
+  },
+  {
+    "id": 11,
+    "name": "The Linux Programming Interface",
+    "url": "https://nostarch.com/tlpi",
+    "category": "books",
+    "lang": "eng"
+  },
+  {
+    "id": 12,
     "name": "The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations",
     "url": "https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1950508404/ref=sr_1_1?crid=X5U454XQBXYP&keywords=the+devops+handbook&qid=1650671070&sprefix=the+devops+handbo%2Caps%2C155&sr=8-1",
     "category": "books",
     "lang": "eng"
   },
   {
-    "id": 11,
+    "id": 13,
     "name": "An application of Genetic Algorithms to a Multi-Agent-System",
     "url": "https://lucacesarano.com/genetic",
     "category": "university",
     "lang": "eng"
   },
   {
-    "id": 12,
+    "id": 14,
     "name": "An Example of a MLP Classifier in KNIME",
     "url": "https://lucacesarano.com/mlp",
     "category": "university",
     "lang": "eng"
   },
   {
-    "id": 13,
+    "id": 15,
     "name": "The Snake Game - A VHDL Version",
     "url": "https://lucacesarano.com/snake",
     "category": "university",
     "lang": "ita"
   },
   {
-    "id": 14,
+    "id": 16,
     "name": "Simulation of a Project Proposal for VERTIS",
     "url": "https://lucacesarano.com/vertis",
     "category": "university",

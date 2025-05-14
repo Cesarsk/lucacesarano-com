@@ -63,15 +63,15 @@ export default class Work extends Component {
                     <p>Book suggestions:</p>
 
                     <div className="Work-list">
-                        {elements.slice(4, 9)}
+                        {elements.slice(4, 11)}
                         <br/>
                     </div>
 
                     <p>Some stuff I wrote during University:</p>
 
                     <div className="Work-list">
-                        {elements.slice(9, 12)}
-                        {elements.slice(12, 14)}
+                        {elements.slice(11, 14)}
+                        {elements.slice(14, 16)}
                     </div>
 
                 </div>
