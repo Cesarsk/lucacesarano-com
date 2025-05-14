@@ -49,29 +49,29 @@ export default class Work extends Component {
 
                     <p>Open Source Projects:</p>
                     <div className="Work-list">
-                        {elements.slice(1, 4)}
+                        {elements.slice(1, 3)}
                         <br/>
                     </div>
 
                     <p>Publications:</p>
 
                     <div className="Work-list">
-                        {elements.slice(4, 5)}
+                        {elements.slice(3, 4)}
                         <br/>
                     </div>
 
                     <p>Book suggestions:</p>
 
                     <div className="Work-list">
-                        {elements.slice(5, 10)}
+                        {elements.slice(4, 9)}
                         <br/>
                     </div>
 
                     <p>Some stuff I wrote during University:</p>
 
                     <div className="Work-list">
-                        {elements.slice(10, 13)}
-                        {elements.slice(13, 15)}
+                        {elements.slice(9, 12)}
+                        {elements.slice(12, 14)}
                     </div>
 
                 </div>
