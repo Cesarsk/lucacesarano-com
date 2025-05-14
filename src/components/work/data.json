@@ -29,7 +29,7 @@
   },
   {
     "id": 6,
-    "name": "The three SRE Books, by Google (also known as The Bible)",
+    "name": "The three Google SRE Books (also known as The Bible)",
     "url": "https://sre.google/books/",
     "category": "books",
     "lang": "eng"
