@@ -33,7 +33,7 @@
     "url": "https://sre.google/books/",
     "category": "books",
     "lang": "eng",
-    "tags": ["SRE", "Reliability"]
+    "tags": ["Reliability"]
   },
   {
     "id": 7,
@@ -41,7 +41,7 @@
     "url": "https://www.manning.com/books/kubernetes-in-action",
     "category": "books",
     "lang": "eng",
-    "tags": ["Kubernetes", "Infrastructure"]
+    "tags": ["Infrastructure"]
   },
   {
     "id": 8,
@@ -49,7 +49,7 @@
     "url": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?crid=6XDJD1SAEY0X&keywords=code+clean&qid=1650671053&sprefix=code+cle%2Caps%2C166&sr=8-1",
     "category": "books",
     "lang": "eng",
-    "tags": ["Code Quality", "Craft"]
+    "tags": ["Software Design"]
   },
   {
     "id": 9,
@@ -57,7 +57,7 @@
     "url": "https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=sr_1_1?crid=27B5CYILRUYVP&keywords=clean+architecture&qid=1650671061&sprefix=clean+architectu%2Caps%2C149&sr=8-1",
     "category": "books",
     "lang": "eng",
-    "tags": ["Architecture", "Design"]
+    "tags": ["Software Design"]
   },
   {
     "id": 10,
@@ -65,7 +65,7 @@
     "url": "https://www.amazon.com/s?k=system+design+interview&crid=2GPU4J1AKC9U0&sprefix=system+design+intervie%2Caps%2C264",
     "category": "books",
     "lang": "eng",
-    "tags": ["System Design", "Interview"]
+    "tags": ["Software Design"]
   },
   {
     "id": 11,
@@ -73,7 +73,7 @@
     "url": "https://nostarch.com/tlpi",
     "category": "books",
     "lang": "eng",
-    "tags": ["Linux", "Systems"]
+    "tags": ["Infrastructure"]
   },
   {
     "id": 12,
@@ -81,7 +81,7 @@
     "url": "https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1950508404/ref=sr_1_1?crid=X5U454XQBXYP&keywords=the+devops+handbook&qid=1650671070&sprefix=the+devops+handbo%2Caps%2C155&sr=8-1",
     "category": "books",
     "lang": "eng",
-    "tags": ["DevOps", "Delivery"]
+    "tags": ["Reliability"]
   },
   {
     "id": 13,

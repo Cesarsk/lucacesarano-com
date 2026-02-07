@@ -4,10 +4,15 @@ import './work.css'
 import data from './data.json'
 
 const sections = [
-    { key: 'demos', title: 'Live demos' },
-    { key: 'opensource', title: 'Open source projects' },
+    { key: 'demos', title: 'Live Demos' },
+    { key: 'opensource', title: 'Open Source' },
     { key: 'publications', title: 'Publications' },
-    { key: 'university', title: 'University work' },
+    { key: 'university', title: 'University' },
+]
+
+const workFilterOptions = [
+    { key: 'All', title: 'All' },
+    ...sections.map((section) => ({ key: section.key, title: section.title })),
 ]
 
 const categoryLabels = {
@@ -39,6 +44,11 @@ const groupedSections = sections.map((section) => ({
 }))
 
 const bookItems = data.filter((item) => item.category === 'books')
+const bookTags = Array.from(
+    new Set(
+        bookItems.flatMap((item) => (item.tags || [])).map((tag) => tag.trim()).filter(Boolean)
+    )
+).sort((a, b) => a.localeCompare(b))
 
 const renderItem = (item, options = {}) => {
     const { includeCategory = true, tags = [] } = options
@@ -85,7 +95,28 @@ const renderItem = (item, options = {}) => {
 }
 
 export default class Work extends Component {
+    state = {
+        activeWorkFilter: 'All',
+        activeBookTag: 'All',
+    }
+
+    handleWorkFilterChange = (filter) => {
+        this.setState({ activeWorkFilter: filter })
+    }
+
+    handleBookTagChange = (tag) => {
+        this.setState({ activeBookTag: tag })
+    }
+
     render() {
+        const { activeBookTag, activeWorkFilter } = this.state
+        const visibleBookItems = activeBookTag === 'All'
+            ? bookItems
+            : bookItems.filter((item) => (item.tags || []).includes(activeBookTag))
+        const visibleSections = activeWorkFilter === 'All'
+            ? groupedSections
+            : groupedSections.filter((section) => section.key === activeWorkFilter)
+
         return (
             <div className="Work" id={this.props.id}>
                 <div className="Work-section">
@@ -105,10 +136,25 @@ export default class Work extends Component {
                         </a>
                         . I don&apos;t publish often, but I plan to share more — here&apos;s a list of work I&apos;ve done over the years.
                     </p>
+                    <div className="Work-filters" role="tablist" aria-label="Filter work by category">
+                        {workFilterOptions.map((option) => (
+                            <button
+                                key={option.key}
+                                type="button"
+                                className={
+                                    activeWorkFilter === option.key
+                                        ? 'Work-filter Work-filter--active'
+                                        : 'Work-filter'
+                                }
+                                onClick={() => this.handleWorkFilterChange(option.key)}>
+                                {option.title}
+                            </button>
+                        ))}
+                    </div>
                 </div>
 
                 <div className="Work-sections">
-                    {groupedSections.map((section) => {
+                    {visibleSections.map((section) => {
                         if (!section.items.length) {
                             return null
                         }
@@ -130,8 +176,23 @@ export default class Work extends Component {
                         <p className="Work-intro">
                             A small selection of books that shaped how I think about reliability, software, and systems.
                         </p>
+                        <div className="Work-filters" role="tablist" aria-label="Filter books by tag">
+                            {['All', ...bookTags].map((tag) => (
+                                <button
+                                    key={tag}
+                                    type="button"
+                                    className={
+                                        activeBookTag === tag
+                                            ? 'Work-filter Work-filter--active'
+                                            : 'Work-filter'
+                                    }
+                                    onClick={() => this.handleBookTagChange(tag)}>
+                                    {tag}
+                                </button>
+                            ))}
+                        </div>
                         <div className="Work-list">
-                            {bookItems.map((item) => renderItem(item, { includeCategory: false, tags: item.tags || [] }))}
+                            {visibleBookItems.map((item) => renderItem(item, { includeCategory: false, tags: item.tags || [] }))}
                         </div>
                     </div>
                 ) : null}

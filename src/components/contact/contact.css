@@ -1,6 +1,6 @@
 .Contact {
-  padding-top: 90px;
-  padding-bottom: 100px;
+  padding-top: var(--section-gap);
+  padding-bottom: var(--section-gap);
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -52,10 +52,17 @@
   flex-direction: column;
 }
 
+.Contact-heart {
+  margin-top: 60px;
+  align-self: center;
+  font-size: var(--font-size-lg);
+  color: #d11f1f;
+}
+
 @media all and (max-width: 700px) {
   .Contact {
-    padding-top: 70px;
-    padding-bottom: 80px;
+    padding-top: var(--section-gap-mobile);
+    padding-bottom: var(--section-gap-mobile);
   }
 
   
