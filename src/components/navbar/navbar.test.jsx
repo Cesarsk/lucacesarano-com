@@ -1,5 +1,10 @@
 import { render, screen } from '@testing-library/react'
+import { vi } from 'vitest'
 import Navbar from './navbar.jsx'
+
+vi.mock('react-scroll', () => ({
+  Link: ({ children }) => <span>{children}</span>,
+}))
 
 describe('Navbar', () => {
   it('renders the primary navigation items', () => {
