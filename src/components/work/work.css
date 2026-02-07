@@ -1,11 +1,11 @@
 .Work {
-  padding-top: 120px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 110px;
+  padding-bottom: 80px;
 }
 
 .Work-section {
@@ -31,6 +31,12 @@
   flex-direction: column;
   gap: 36px;
   padding-top: 20px;
+}
+
+.Work-books {
+  width: 100%;
+  max-width: 980px;
+  padding-top: 60px;
 }
 
 .Work-group {
@@ -93,6 +99,22 @@
   color: var(--muted-color);
   letter-spacing: 0.3px;
   font-weight: 500;
+}
+
+.Work-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.Work-tag {
+  font-size: var(--font-size-xs);
+  letter-spacing: 1px;
+  color: var(--muted-color);
+  border: 1px solid var(--nav-border-color);
+  border-radius: 999px;
+  padding: 3px 8px;
+  text-transform: uppercase;
 }
 
 @media all and (max-width: 600px) {

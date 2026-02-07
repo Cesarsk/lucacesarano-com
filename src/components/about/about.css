@@ -7,7 +7,7 @@
     font-size: var(--font-size-lg);
     color: var(--font-color);
     letter-spacing: 0.2px;
-    padding-bottom: 110px;
+    padding-bottom: 80px;
 }
 
 .About-row {
@@ -60,7 +60,7 @@
 
 .About-actions {
     display: flex;
-    gap: 14px;
+    gap: 32px;
     flex-wrap: wrap;
     padding-top: 6px;
     align-items: center;
@@ -148,6 +148,7 @@
 @media all and (min-width: 901px) {
     .About {
         padding-top: 190px;
+        padding-bottom: 90px;
     }
 }
 
