@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: justify;
+    text-align: left;
     font-size: 32px;
     color: var(--font-color);
     letter-spacing: 2px;
@@ -13,6 +13,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 980px;
+    align-items: center;
 }
 
 /* Profile Picture Column */
@@ -27,9 +30,6 @@
 }
 
 .About-profile-picture {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     display: block;
     height: 300px;
     width: 300px;
@@ -70,25 +70,31 @@
     padding-left: 10px;
     padding-right: 15px;
     padding-top: 20px;
+    display: flex;
     flex-direction: column;
+    gap: 10px;
     flex-basis: 100%;
     flex: 2;
 }
 
 .About-text-main {
-    display: inline;
+    display: block;
     font-size: 36px;
     line-height: 1.5em;
+    margin: 0;
 }
 
 .About-text-subtitle {
     font-size: 24px;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .About-text {
     font-size: 12px;
     line-height: 2em;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .About-relocate {
@@ -111,13 +117,21 @@
     animation-name: colorcyclepic;
 }
 
-.Inline {
-    display: inline;
-}
-
 .About-link {
     color: var(--link-color);
     text-decoration: none;
+}
+
+.About-link:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 4px;
+    border-radius: 6px;
+}
+
+.About-heart {
+    color: #ff2100;
+    display: inline-block;
+    margin: 0 2px;
 }
 
 @keyframes colorcyclepic {

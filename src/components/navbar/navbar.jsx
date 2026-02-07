@@ -4,14 +4,14 @@ import {Link} from 'react-scroll'
 
 export default class Navbar extends Component {
     state = {
-        shadowScroll: '0 0 0',
+        hasShadow: false,
     }
 
     listenScrollEvent = e => {
         if (window.scrollY > 120) {
-            this.setState({shadowScroll: '0 0px 0px rgba(0, 0, 0, 0.25), 0px 10px 10px rgba(0, 0, 0, 0.22)'})
+            this.setState({hasShadow: true})
         } else {
-            this.setState({shadowScroll: '0 0 0'})
+            this.setState({hasShadow: false})
         }
     }
 
@@ -19,9 +19,13 @@ export default class Navbar extends Component {
         window.addEventListener('scroll', this.listenScrollEvent)
     }
 
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.listenScrollEvent)
+    }
+
     render() {
         return (
-            <div style={{boxShadow: this.state.shadowScroll}} className='NavBar'>
+            <div className={this.state.hasShadow ? 'NavBar NavBar--shadow' : 'NavBar'}>
                 <div className='row'>
                     <div className='column'>
                         <div className='column'>

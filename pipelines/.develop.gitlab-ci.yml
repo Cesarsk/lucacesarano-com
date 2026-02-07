@@ -1,16 +1,16 @@
 develop:build:
   stage: build
   image:
-    name: node:16.13.1
+    name: node:20
   only:
     refs:
       - develop
   script:
-    - npm install react
+    - npm ci
     - npm run build
   artifacts:
     paths:
-      - ./build
+      - ./dist
     expire_in: 1 hour
 
 develop:deploy:

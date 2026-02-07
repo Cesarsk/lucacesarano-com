@@ -1,45 +1,68 @@
-# Welcome to lucacesarano.com
+# lucacesarano.com
 
-This is my enabled CI / CD website developed in React. Feel free to give it a look and if you need some info, just
-e-mail me.
+Personal presentation website built with React and hosted on Firebase.
 
-### You're free to work but...
-...I am curious to know how you're going to use this template, so send me a message! 
+## Overview
 
-## Technology Stack
+- Single page React app with sections for About, Work, and Contact
+- CI/CD via GitLab pipelines
+- Firebase Hosting with prod and beta sites
 
-### Frontend
+## Tech Stack
 
-For the website itself, React and Javascript are used. I'm not a frontend developer expert, so I use this website as a
-Sandbox to keep my content online and, at the same, to experiment with the said technology.
+- React (Vite)
+- React Bootstrap
+- React Scroll
+- Firebase Hosting
+- GitLab CI
 
-### Gitlab Runner
+## Local Development
 
-CI / CD is set up in the project, there are two pipelines:
+Prerequisites:
 
-- develop:
+- Node.js LTS (18+ recommended, 20 LTS preferred)
 
-      code in this pipeline are built and then deployed on beta.lucacesarano.com
-- master:
+Run:
 
-      a marge request triggers this pipeline that buidl and deploy on lucacesarano.com
+```bash
+npm install
+npm start
+```
 
-### Firebase
+Then open `http://localhost:3000`.
 
-Firebase was used for hosting the content, behind a Cloudflare provider for the domain. It's free (Spark Plan) so it's
-very useful to develop your website virtually for free.
+## Scripts
 
-## Run developing environment
+- `npm start` - run local dev server
+- `npm run build` - build production assets
+- `npm run preview` - preview the production build
 
-    clone repository
-    install dependencies in package.json
-    npm start
+## Security checks
 
-## About me
+- `npm audit` - review dependency advisories
 
-Check also out my other projects available on https://lucacesarano.com or get in contact and let's speak about
-technology.
+## CI/CD
 
-## Tags
+Pipelines are split by branch:
 
-*REACT, CI/CD, DEVOPS, PIPELINES, RUNNER, FREE, WEBSITE, CHEAP, DOMAIN, FIREBASE, CLOUDFLARE, JAVASCRIPT*
+- `develop` builds and deploys to `beta-lucacesarano-com`
+- `master` builds and deploys to `lucacesarano-com`
+
+Pipeline definitions:
+
+- `pipelines/.develop.gitlab-ci.yml`
+- `pipelines/.master.gitlab-ci.yml`
+
+## Hosting and Security
+
+Firebase Hosting settings are defined in `firebase.json`. It includes security
+headers (CSP, HSTS, and related policies) for both prod and beta sites.
+
+## Content
+
+Work items are stored in `src/components/work/data.json`.
+
+## Contact
+
+Website: https://lucacesarano.com
+Email: luca.cesarano1@gmail.com
