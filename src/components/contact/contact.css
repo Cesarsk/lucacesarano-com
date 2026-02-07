@@ -1,6 +1,6 @@
 .Contact {
-  padding-top: 120px;
-  padding-bottom: 140px;
+  padding-top: 90px;
+  padding-bottom: 100px;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -54,8 +54,8 @@
 
 @media all and (max-width: 700px) {
   .Contact {
-    padding-top: 90px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 80px;
   }
 
   

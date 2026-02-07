@@ -8,8 +8,8 @@ describe('Work', () => {
     expect(screen.getByText('Live demos')).toBeInTheDocument()
     expect(screen.getByText('Open source projects')).toBeInTheDocument()
     expect(screen.getByText('Publications')).toBeInTheDocument()
-    expect(screen.getByText('Book suggestions')).toBeInTheDocument()
     expect(screen.getByText('University work')).toBeInTheDocument()
+    expect(screen.getByText('Recommended Books')).toBeInTheDocument()
   })
 
   it('renders sample work items with links', () => {
