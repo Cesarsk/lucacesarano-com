@@ -6,7 +6,7 @@ prod:build:
     - if: $CI_COMMIT_BRANCH == "master"
     - when: never
   script:
-    - npm ci
+    - npm ci --omit=peer
     - npm test
     - npm run build
   artifacts:
