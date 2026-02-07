@@ -1,10 +1,11 @@
 .Work {
-  padding-top: 40px;
+  padding-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 110px;
 }
 
 .Work-section {
@@ -13,12 +14,13 @@
 }
 
 .Work-intro {
-  font-size: 12px;
+  font-size: var(--font-size-md);
   color: var(--font-color);
-  letter-spacing: 2px;
+  letter-spacing: 0.2px;
   text-align: left;
-  text-transform: uppercase;
-  line-height: 2em;
+  text-transform: none;
+  line-height: var(--line-height-loose);
+  font-weight: 500;
   margin: 0 0 12px;
 }
 
@@ -27,7 +29,7 @@
   max-width: 980px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 36px;
   padding-top: 20px;
 }
 
@@ -38,17 +40,19 @@
 }
 
 .Work-heading {
-  font-size: 13px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  font-size: var(--font-size-lg);
+  letter-spacing: 0.4px;
+  text-transform: none;
   margin: 0;
   color: var(--font-color);
+  font-weight: 700;
 }
 
 .Work-list {
   display: grid;
-  gap: 10px;
+  gap: 24px 48px;
   text-align: left;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .Work-link {
@@ -63,37 +67,37 @@
 }
 
 .Work-card {
-  background-color: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--nav-border-color);
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .Work-card .card-body {
-  padding: 10px 12px;
+  padding: 14px 0;
 }
 
-.Work-card .card-text {
+.Work-card-text {
   margin: 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: var(--font-size-md);
+  font-weight: 600;
 }
 
-.Work-lang {
-  font-size: 10px;
-  letter-spacing: 1px;
-  color: var(--font-color);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 999px;
-  padding: 2px 6px;
-  text-transform: uppercase;
+.Work-meta {
+  font-size: var(--font-size-sm);
+  color: var(--muted-color);
+  letter-spacing: 0.3px;
+  font-weight: 500;
 }
 
 @media all and (max-width: 600px) {
-  .Work-card .card-text {
-    flex-direction: column;
-    align-items: flex-start;
+  .Work-list {
+    grid-template-columns: 1fr;
   }
 }
 

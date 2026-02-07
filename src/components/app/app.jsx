@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from '../navbar/navbar'
 import About from '../about/about'
-import Footer from '../footer/footer'
+import Contact from '../contact/contact'
 import Work from '../work/work'
 export default class App extends Component {
 
@@ -11,7 +11,7 @@ export default class App extends Component {
         <Navbar />
         <About id="#about" />
         <Work id="#work" />
-        <Footer id="#contact" />
+        <Contact id="#contact" />
       </div>
     );
   }

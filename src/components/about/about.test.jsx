@@ -1,12 +1,17 @@
 import { render, screen } from '@testing-library/react'
+import { vi } from 'vitest'
 import About from './about.jsx'
 
+vi.mock('react-scroll', () => ({
+  Link: ({ children }) => <span>{children}</span>,
+}))
+
 describe('About', () => {
-  it('renders the intro headline and title', () => {
+  it('renders the intro headline and lead text', () => {
     render(<About />)
 
-    expect(screen.getByText("HELLO, I'M", { exact: false })).toBeInTheDocument()
-    expect(screen.getByText("I'M A COMPUTER ENGINEER")).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /hello/i })).toBeInTheDocument()
+    expect(screen.getByText(/luca/i)).toBeInTheDocument()
   })
 
   it('links to external references with safe attributes', () => {

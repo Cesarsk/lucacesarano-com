@@ -11,6 +11,14 @@ const sections = [
     { key: 'university', title: 'University work' },
 ]
 
+const categoryLabels = {
+    demos: 'Demo',
+    opensource: 'Open Source',
+    publications: 'Publication',
+    books: 'Book',
+    university: 'University',
+}
+
 const languageLabels = {
     eng: 'EN',
     ita: 'IT',
@@ -36,30 +44,32 @@ export default class Work extends Component {
         return (
             <div className="Work" id={this.props.id}>
                 <div className="Work-section">
-                    <p className="Work-intro">Here you will find everything about me.</p>
+                    <h2 className="Section-title">Selected Works</h2>
+                    <p className="Work-intro">Here you will find a curated snapshot of my work.</p>
                     <p className="Work-intro">
-                        My Resume is available at the following link:{' '}
+                        My resume is available at{' '}
                         <a
                             className="Work-link"
                             href="https://lucacesarano.com/resume"
                             target="_blank"
                             rel="noopener noreferrer">
-                            Lucacesarano.com/resume
-                        </a>.
+                            lucacesarano.com/resume
+                        </a>
+                        .
                     </p>
                     <p className="Work-intro">
-                        I enjoy developing lots of things, check it out on my{' '}
+                        I enjoy building systems and tools, check out my{' '}
                         <a className="Work-link" href="https://github.com/cesarsk" target="_blank" rel="noopener noreferrer">
-                            Github
+                            GitHub
                         </a>{' '}
                         page.
                     </p>
                     <p className="Work-intro">
-                        Check out my{' '}
+                        I share longer thoughts on my{' '}
                         <a className="Work-link" href="https://lucacesarano.medium.com/" target="_blank" rel="noopener noreferrer">
                             Medium blog
                         </a>
-                        , I publish cool projects developed in Python and extra nerd stuff.
+                        , including projects, notes, and experiments.
                     </p>
                 </div>
 
@@ -79,23 +89,26 @@ export default class Work extends Component {
                                             : null
                                         const languageName = item.lang ? (languageNames[item.lang] || item.lang) : null
                                         const languageCode = item.lang ? languageCodes[item.lang] : undefined
+                                        const categoryLabel = categoryLabels[item.category]
+                                        const metaParts = [categoryLabel, languageName].filter(Boolean)
+                                        const metaText = metaParts.join(' · ')
 
                                         return (
                                             <Card key={item.id} className="Work-card">
                                                 <Card.Body>
-                                                    <Card.Text>
-                                                        <a
-                                                            className="Work-link"
-                                                            href={item.url}
-                                                            target="_blank"
-                                                            rel="noopener noreferrer"
-                                                            lang={languageCode}>
-                                                            » {item.name}
-                                                        </a>
-                                                        {languageLabel ? (
-                                                            <span className="Work-lang" aria-label={`Language: ${languageName}`}>
-                                                                {languageLabel}
-                                                            </span>
+                                                    <Card.Text as="div" className="Work-card-text">
+                                                        <div className="Work-item-title">
+                                                            <a
+                                                                className="Work-link"
+                                                                href={item.url}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                lang={languageCode}>
+                                                                {item.name}
+                                                            </a>
+                                                        </div>
+                                                        {metaText ? (
+                                                            <div className="Work-meta">{metaText}</div>
                                                         ) : null}
                                                     </Card.Text>
                                                 </Card.Body>

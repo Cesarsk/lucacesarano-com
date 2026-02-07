@@ -27,10 +27,10 @@ describe('Work', () => {
     )
   })
 
-  it('shows language badges when provided', () => {
+  it('shows meta labels for category and language', () => {
     render(<Work />)
 
-    const badges = screen.getAllByText(/EN|IT/)
-    expect(badges.length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/Open Source/i).length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/English|Italian/i).length).toBeGreaterThan(0)
   })
 })

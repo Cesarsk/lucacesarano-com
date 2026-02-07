@@ -1,35 +1,45 @@
 import React, {Component} from 'react';
+import { Link } from 'react-scroll'
 import './about.css'
-import profilePic from '../../resources/profile-pic.jpg';
 
 function RenderContainer() {
     return (
         <div className="About-row">
-            <div className="About-profile-column">
-                <img className="About-profile-picture" alt="Portrait of Luca Cesarano" src={profilePic}></img>
-            </div>
-            <div className="About-bio-column">
-                <p className="About-text-main">
-                    HELLO, I'M <span className="About-text-name">LOU</span>
+            <div className="About-bio-column About-bio-column--center">
+                <h1 className="About-hero">Hello</h1>
+                <p className="About-lead">
+                    I&apos;m <span className="About-text-name">Luca</span>.
                 </p>
-                <p className="About-text-subtitle">I'M A COMPUTER ENGINEER</p>
-                <p className="About-text">Welcome to my space!</p>
-                <p className="About-text">
-                    I work as a Tech Lead{' '}
-                    <a className="About-link" href="https://sre.google/" target="_blank" rel="noopener noreferrer">
-                        Site Reliability Engineer
-                    </a>
-                </p>
-                <p className="About-text">
-                    AT{' '}
+                <p className="About-body">
+                    I work as Head of Platform SRE at{' '}
                     <a className="About-link" href="https://www.sygnum.com/" target="_blank" rel="noopener noreferrer">
-                        SYGNUM
+                        Sygnum
                     </a>{' '}
                     in Zürich, Switzerland.
                 </p>
-                <p className="About-text">
-                    I <span className="About-heart">❤</span> technology and its impact on the world.
+                <p className="About-body">
+                    I lead Platform SRE and focus on reliability, automation, and the tooling that keeps teams moving
+                    smoothly. I&apos;ve supported startups and scale-ups through different growth stages and worked with large
+                    financial institutions where stability and trust matter.
                 </p>
+                <div className="About-actions">
+                    <a
+                        className="Button"
+                        href="https://lucacesarano.com/resume"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        View Resume
+                    </a>
+                    <Link
+                        className="About-secondary-link"
+                        to="#contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}>
+                        Contact
+                    </Link>
+                </div>
             </div>
         </div>
     )
