@@ -5,10 +5,10 @@ describe('Work', () => {
   it('renders all work section headings', () => {
     render(<Work />)
 
-    expect(screen.getByText('Live demos')).toBeInTheDocument()
-    expect(screen.getByText('Open source projects')).toBeInTheDocument()
+    expect(screen.getByText('Live Demos')).toBeInTheDocument()
+    expect(screen.getByText('Open Source')).toBeInTheDocument()
     expect(screen.getByText('Publications')).toBeInTheDocument()
-    expect(screen.getByText('University work')).toBeInTheDocument()
+    expect(screen.getByText('University')).toBeInTheDocument()
     expect(screen.getByText('Recommended Books')).toBeInTheDocument()
   })
 
@@ -32,5 +32,12 @@ describe('Work', () => {
 
     expect(screen.getAllByText(/Open Source/i).length).toBeGreaterThan(0)
     expect(screen.getAllByText(/English|Italian/i).length).toBeGreaterThan(0)
+  })
+
+  it('shows book tag filters', () => {
+    render(<Work />)
+
+    expect(screen.getByRole('button', { name: 'All' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Reliability' })).toBeInTheDocument()
   })
 })

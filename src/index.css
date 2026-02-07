@@ -22,6 +22,8 @@
     --line-height-tight: 1.15;
     --line-height-normal: 1.55;
     --line-height-loose: 1.85;
+    --section-gap: 80px;
+    --section-gap-mobile: 60px;
 
     /* cycle colors */
     --cycle-first-color: #000000;

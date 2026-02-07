@@ -4,7 +4,7 @@ export default class Contact extends Component {
   render() {
     return (
       <section className="Contact" id={this.props.id}>
-        <h2 className="Section-title">Contact</h2>
+        <h2 className="Section-title">Contacts</h2>
         <p className="Contact-intro">Open to collaborations and interesting problems.</p>
         <div className="Contact-links">
           <a className="Contact-link Contact-link--row" href="https://www.linkedin.com/in/luca-cesarano-875034141" target="_blank" rel="noopener noreferrer">
@@ -20,6 +20,7 @@ export default class Contact extends Component {
             GitHub
           </a>
         </div>
+        <div className="Contact-heart" aria-hidden="true">❤</div>
       </section>
     )
   }
