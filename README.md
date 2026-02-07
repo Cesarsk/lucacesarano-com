@@ -38,6 +38,15 @@ Then open `http://localhost:5173`.
 - `npm run preview` - preview the production build
 - `npm test` - run the test suite
 
+## Deployment
+
+Deployments are performed in CI using the Firebase CLI Docker image. If you
+need to deploy locally, install the CLI globally:
+
+```bash
+npm install -g firebase-tools
+```
+
 ## Security checks
 
 - `npm audit` - review dependency advisories
