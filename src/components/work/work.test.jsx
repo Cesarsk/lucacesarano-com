@@ -5,11 +5,11 @@ describe('Work', () => {
   it('renders all work section headings', () => {
     render(<Work />)
 
-    expect(screen.getByText('Live Demos')).toBeInTheDocument()
-    expect(screen.getByText('Open Source')).toBeInTheDocument()
-    expect(screen.getByText('Publications')).toBeInTheDocument()
-    expect(screen.getByText('University')).toBeInTheDocument()
-    expect(screen.getByText('Recommended Books')).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Live Demos' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Open Source' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Publications' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'University' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Recommended Books' })).toBeInTheDocument()
   })
 
   it('renders sample work items with links', () => {
