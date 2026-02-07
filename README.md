@@ -29,13 +29,14 @@ npm install
 npm start
 ```
 
-Then open `http://localhost:3000`.
+Then open `http://localhost:5173`.
 
 ## Scripts
 
 - `npm start` - run local dev server
 - `npm run build` - build production assets
 - `npm run preview` - preview the production build
+- `npm test` - run the test suite
 
 ## Security checks
 
