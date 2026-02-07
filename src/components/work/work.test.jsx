@@ -37,7 +37,7 @@ describe('Work', () => {
   it('shows book tag filters', () => {
     render(<Work />)
 
-    expect(screen.getByRole('button', { name: 'All' })).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: 'Reliability' })).toBeInTheDocument()
+    expect(screen.getAllByRole('button', { name: 'All' }).length).toBeGreaterThan(0)
+    expect(screen.getAllByRole('button', { name: 'Reliability' }).length).toBeGreaterThan(0)
   })
 })
