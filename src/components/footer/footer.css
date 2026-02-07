@@ -14,6 +14,12 @@
   text-decoration: none;
 }
 
+.Footer-link:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
 .Inline {
   display: inline;
 }
@@ -21,6 +27,12 @@
 .Footer-copyright {
   padding: 30px;
   font-size: 11px;
+}
+
+.Footer-heart {
+  color: #ff2100;
+  display: inline-block;
+  margin: 0 2px;
 }
 
 .Footer-socials {

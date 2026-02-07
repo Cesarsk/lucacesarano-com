@@ -1,16 +1,17 @@
 prod:build:
   stage: build
   image:
-    name: node:16.13.1
-  only:
-    refs:
-      - master
+    name: node:20
+  rules:
+    - if: $CI_COMMIT_BRANCH == "master"
+    - when: never
   script:
-    - npm install react
+    - npm ci --omit=peer
+    - npm test
     - npm run build
   artifacts:
     paths:
-      - ./build
+      - ./dist
     expire_in: 1 hour
 
 prod:deploy:
@@ -19,9 +20,9 @@ prod:deploy:
     name: andreysenov/firebase-tools
   dependencies:
     - prod:build
-  only:
-    refs:
-      - master
+  rules:
+    - if: $CI_COMMIT_BRANCH == "master"
+    - when: never
   before_script:
     - echo $FIARD_PRIVATE_KEY > "$HOME/private-key.json"
     - export GOOGLE_APPLICATION_CREDENTIALS="$HOME/private-key.json"

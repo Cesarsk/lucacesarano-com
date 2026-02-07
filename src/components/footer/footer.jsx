@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './footer.css'
-import Socialbadge from '../socialbadge/socialbadge.js'
+import Socialbadge from '../socialbadge/socialbadge.jsx'
 import socials from '../socialbadge/socials.js'
 
-const socialComponents = socials.map(social => <Socialbadge key={social.id} link={social.link} path={social.path} />)
+const socialComponents = socials.map(social => (
+  <Socialbadge key={social.id} link={social.link} path={social.path} label={social.label} />
+))
 
 export default class Footer extends Component {
   render() {
@@ -24,7 +26,7 @@ export default class Footer extends Component {
           {socialComponents}
         </div>
         <div className = 'Footer-copyright'>
-          MADE WITH <p style={{ color: '#ff2100', display: 'inline' }}>❤</p> USING <a className="Footer-link" href="https://reactjs.org/">REACT</a>
+          MADE WITH <span className="Footer-heart">❤</span> USING <a className="Footer-link" href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">REACT</a>
         </div>
       </div>
     );

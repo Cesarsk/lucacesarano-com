@@ -1,16 +1,18 @@
 develop:build:
   stage: build
   image:
-    name: node:16.13.1
-  only:
-    refs:
-      - develop
+    name: node:20
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH && $CI_COMMIT_BRANCH != "master"
+    - when: never
   script:
-    - npm install react
+    - npm ci --omit=peer
+    - npm test
     - npm run build
   artifacts:
     paths:
-      - ./build
+      - ./dist
     expire_in: 1 hour
 
 develop:deploy:
@@ -19,9 +21,9 @@ develop:deploy:
     name: andreysenov/firebase-tools
   dependencies:
     - develop:build
-  only:
-    refs:
-      - develop
+  rules:
+    - if: $CI_COMMIT_BRANCH == "develop"
+    - when: never
   before_script:
     - echo $FIARD_PRIVATE_KEY > "$HOME/private-key.json"
     - export GOOGLE_APPLICATION_CREDENTIALS="$HOME/private-key.json"
