@@ -114,9 +114,9 @@
 }
 
 .Work-card:hover {
-  background-color: rgba(0, 0, 0, 0.06);
+  background-color: var(--hover-surface);
   transform: translateY(-2px);
-  border-color: rgba(0, 0, 0, 0.35);
+  border-color: var(--nav-border-strong);
 }
 
 .Work-card .card-body {

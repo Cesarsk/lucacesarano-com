@@ -38,9 +38,9 @@
 }
 
 .Contact-link--row:hover {
-  background-color: rgba(0, 0, 0, 0.06);
+  background-color: var(--hover-surface);
   padding-left: 12px;
-  border-color: rgba(0, 0, 0, 0.35);
+  border-color: var(--nav-border-strong);
 }
 
 .Contact-link:focus-visible {

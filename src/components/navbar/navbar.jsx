@@ -5,6 +5,13 @@ import {Link} from 'react-scroll'
 export default class Navbar extends Component {
     state = {
         hasShadow: false,
+        theme: 'light',
+    }
+
+    applyTheme = (theme) => {
+        document.documentElement.setAttribute('data-theme', theme)
+        localStorage.setItem('theme', theme)
+        this.setState({ theme })
     }
 
     listenScrollEvent = e => {
@@ -17,15 +24,56 @@ export default class Navbar extends Component {
 
     componentDidMount() {
         window.addEventListener('scroll', this.listenScrollEvent)
+        const storedTheme = localStorage.getItem('theme')
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        const initialTheme = storedTheme || (prefersDark ? 'dark' : 'light')
+        this.applyTheme(initialTheme)
     }
 
     componentWillUnmount() {
         window.removeEventListener('scroll', this.listenScrollEvent)
     }
 
+    handleThemeToggle = () => {
+        const nextTheme = this.state.theme === 'dark' ? 'light' : 'dark'
+        this.applyTheme(nextTheme)
+    }
+
     render() {
         return (
             <div className={this.state.hasShadow ? 'NavBar NavBar--shadow' : 'NavBar'}>
+                <button
+                    type="button"
+                    className="ThemeToggle"
+                    onClick={this.handleThemeToggle}
+                    aria-label="Toggle color theme"
+                    title={this.state.theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}>
+                    {this.state.theme === 'dark' ? (
+                        <svg
+                            className="ThemeToggle-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <circle cx="12" cy="12" r="4" />
+                            <path d="M12 2v2" />
+                            <path d="M12 20v2" />
+                            <path d="M4.93 4.93l1.41 1.41" />
+                            <path d="M17.66 17.66l1.41 1.41" />
+                            <path d="M2 12h2" />
+                            <path d="M20 12h2" />
+                            <path d="M6.34 17.66l-1.41 1.41" />
+                            <path d="M19.07 4.93l-1.41 1.41" />
+                        </svg>
+                    ) : (
+                        <svg
+                            className="ThemeToggle-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z" />
+                        </svg>
+                    )}
+                </button>
                 <div className='row'>
                     <div className='column'>
                         <div className='column'>
