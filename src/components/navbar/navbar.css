@@ -51,7 +51,7 @@
 .NavBar-inner {
     width: 100%;
     display: grid;
-    grid-template-columns: 34px 1fr 34px;
+    grid-template-columns: 40px 1fr 40px;
     align-items: center;
     padding: 0 12px;
     position: relative;
@@ -59,8 +59,8 @@
 }
 
 .NavBar-balance {
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
     justify-self: start;
 }
 
@@ -132,6 +132,7 @@
     cursor: pointer;
     transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
     z-index: 3;
+    flex-shrink: 0;
 }
 
 .ThemeToggle-icon {
@@ -161,8 +162,8 @@
     box-shadow: 0 12px 24px var(--shadow-color);
     display: none;
     flex-direction: column;
-    padding: 10px 0 8px;
-    gap: 10px;
+    padding: 0;
+    gap: 0;
     opacity: 0;
     transform: translateY(-6px);
     transition: opacity 0.2s ease, transform 0.2s ease, max-height 0.2s ease;
@@ -186,10 +187,11 @@
     text-transform: uppercase;
     padding: 0 20px;
     border-bottom: 1px solid var(--nav-border-color);
-    display: grid;
+    display: flex;
     align-items: center;
+    justify-content: flex-start;
     width: 100%;
-    height: 48px;
+    height: 52px;
     line-height: 1;
     box-sizing: border-box;
 }
@@ -210,9 +212,10 @@
     font-weight: 700;
     width: 100%;
     padding: 0 20px;
-    display: grid;
+    display: flex;
     align-items: center;
-    height: 48px;
+    justify-content: flex-start;
+    height: 52px;
     line-height: 1;
     box-sizing: border-box;
 }
@@ -298,7 +301,7 @@
 @media all and (min-width: 481px) and (max-width: 900px) {
     .NavBar-inner {
         padding: 0 10px;
-        grid-template-columns: 32px 1fr 32px;
+        grid-template-columns: 36px 1fr 36px;
     }
 
     .NavBar-links {
@@ -311,19 +314,24 @@
 
     .ThemeToggle,
     .NavBar-balance {
-        width: 32px;
-        height: 32px;
+        width: 36px;
+        height: 36px;
     }
 
     .ThemeToggle-icon {
         width: 16px;
         height: 16px;
     }
+
+    .ThemeToggle {
+        display: inline-flex;
+    }
 }
 
 @media all and (min-width: 901px) and (max-width: 1100px) {
     .NavBar-inner {
         padding: 0 12px;
+        grid-template-columns: 36px 1fr 36px;
     }
 
     .NavBar-links {
@@ -332,5 +340,15 @@
 
     .item {
         padding: 14px 12px;
+    }
+
+    .ThemeToggle,
+    .NavBar-balance {
+        width: 36px;
+        height: 36px;
+    }
+
+    .ThemeToggle {
+        display: inline-flex;
     }
 }
