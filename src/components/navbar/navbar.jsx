@@ -42,17 +42,13 @@ export default class Navbar extends Component {
         this.applyTheme(nextTheme)
     }
 
-    handleMenuToggle = (event) => {
+    handleMenuToggle = () => {
         const menuToggleEl = this.menuToggleRef.current
         const isMenuToggleVisible = menuToggleEl
             && window.getComputedStyle(menuToggleEl).display !== 'none'
 
         if (!isMenuToggleVisible) {
             return
-        }
-
-        if (event) {
-            event.preventDefault()
         }
 
         this.setState((prevState) => ({ isMenuOpen: !prevState.isMenuOpen }))
@@ -65,14 +61,18 @@ export default class Navbar extends Component {
     render() {
         return (
             <div className={this.state.hasShadow ? 'NavBar NavBar--shadow' : 'NavBar'}>
-                <div className='NavBar-inner' onClick={this.handleMenuToggle} data-testid="navbar-inner">
+                <div
+                    className='NavBar-inner'
+                    onClick={this.handleMenuToggle}
+                    onTouchEnd={this.handleMenuToggle}
+                    data-testid="navbar-inner">
                     <button
                         ref={this.menuToggleRef}
                         type="button"
                         className="NavBar-menuToggle"
                         onClick={(event) => {
                             event.stopPropagation()
-                            this.handleMenuToggle(event)
+                            this.handleMenuToggle()
                         }}
                         aria-label="Toggle menu"
                         aria-expanded={this.state.isMenuOpen}
