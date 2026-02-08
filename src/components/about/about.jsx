@@ -10,17 +10,27 @@ function RenderContainer() {
                 <p className="About-lead">
                     I&apos;m <span className="About-text-name">Luca</span>.
                 </p>
-                <p className="About-body">
-                    I work as Head of Platform SRE at{' '}
+                <p className="Section-intro About-body">
+                    I&apos;m Head of Platform SRE at{' '}
                     <a className="About-link" href="https://www.sygnum.com/" target="_blank" rel="noopener noreferrer">
                         Sygnum
                     </a>{' '}
                     in Zürich, Switzerland.
                 </p>
-                <p className="About-body">
-                    I lead Platform SRE and focus on reliability, automation, and the tooling that keeps teams moving
-                    smoothly. I&apos;ve supported startups and scale-ups through different growth stages and worked with large
-                    financial institutions where stability and trust matter.
+                <p className="Section-intro About-body">
+                    I lead a team of Site Reliability Engineers focused on reliability, automation, and platform tooling
+                    that reduces operational load and helps product teams ship safely. I&apos;ve supported startups and
+                    scale-ups through multiple growth stages, and I&apos;ve worked in financial environments where stability,
+                    security, and trust are non-negotiable.
+                </p>
+                <p className="Section-intro About-body">
+                    I value practical engineering: clear ownership, measurable reliability, and tools people actually
+                    use.
+                </p>
+                <p className="Section-intro About-body">
+                    Occasionally, I take on consulting and mentoring, from hands-on platform and SRE work to career
+                    guidance for students and professionals. If you&apos;d like to connect, even just for a tech chat, use the
+                    Contact button.
                 </p>
                 <div className="About-actions">
                     <a

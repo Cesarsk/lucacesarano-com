@@ -5,7 +5,7 @@
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: var(--section-gap);
+  padding-bottom: 0;
 }
 
 .Work-section {
@@ -14,14 +14,7 @@
 }
 
 .Work-intro {
-  font-size: var(--font-size-md);
-  color: var(--font-color);
-  letter-spacing: 0.2px;
   text-align: left;
-  text-transform: none;
-  line-height: var(--line-height-loose);
-  font-weight: 500;
-  margin: 0 0 12px;
 }
 
 .Work-sections {
@@ -101,6 +94,8 @@
 
 .Work-link:hover {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 .Work-link:focus-visible {
@@ -115,6 +110,13 @@
   border-bottom: 1px solid var(--nav-border-color);
   border-radius: 0;
   box-shadow: none;
+  transition: background-color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.Work-card:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+  border-color: rgba(0, 0, 0, 0.35);
 }
 
 .Work-card .card-body {
@@ -155,10 +157,23 @@
   text-transform: uppercase;
 }
 
+.Work-description {
+  margin-top: 8px;
+  font-size: var(--font-size-sm);
+  color: var(--muted-color);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
 @media all and (max-width: 600px) {
+  .Work-card:hover {
+    transform: none;
+    background-color: transparent;
+  }
+
   .Work {
     padding-top: var(--section-gap-mobile);
-    padding-bottom: var(--section-gap-mobile);
+    padding-bottom: 0;
   }
 
   .Work-books {

@@ -51,7 +51,7 @@ const bookTags = Array.from(
 ).sort((a, b) => a.localeCompare(b))
 
 const renderItem = (item, options = {}) => {
-    const { includeCategory = true, tags = [] } = options
+    const { includeCategory = true, tags = [], showDescription = false } = options
     const languageLabel = item.lang ? (languageLabels[item.lang] || item.lang.toUpperCase()) : null
     const languageName = item.lang ? (languageNames[item.lang] || item.lang) : null
     const languageCode = item.lang ? languageCodes[item.lang] : undefined
@@ -88,6 +88,9 @@ const renderItem = (item, options = {}) => {
                             ))}
                         </div>
                     ) : null}
+                    {showDescription && item.description ? (
+                        <div className="Work-description">{item.description}</div>
+                    ) : null}
                 </Card.Text>
             </Card.Body>
         </Card>
@@ -121,15 +124,18 @@ export default class Work extends Component {
             <div className="Work" id={this.props.id}>
                 <div className="Work-section">
                     <h2 className="Section-title">Selected Works</h2>
-                    <p className="Work-intro">Here you will find a curated snapshot of my work.</p>
-                    <p className="Work-intro">
+                    <p className="Section-intro Work-intro">
+                        Most of my contributions are private, but here is a curated snapshot of things I&apos;ve built and
+                        written over time.
+                    </p>
+                    <p className="Section-intro Work-intro">
                         I enjoy building systems and tools, check out my{' '}
                         <a className="Work-link" href="https://github.com/cesarsk" target="_blank" rel="noopener noreferrer">
                             GitHub
                         </a>{' '}
                         page.
                     </p>
-                    <p className="Work-intro">
+                    <p className="Section-intro Work-intro">
                         I share longer thoughts on my{' '}
                         <a className="Work-link" href="https://lucacesarano.medium.com/" target="_blank" rel="noopener noreferrer">
                             Medium blog
@@ -172,9 +178,9 @@ export default class Work extends Component {
 
                 {bookItems.length ? (
                     <div className="Work-books">
-                        <h2 className="Section-title">Recommended Books</h2>
-                        <p className="Work-intro">
-                            A small selection of books that shaped how I think about reliability, software, and systems.
+                        <h2 className="Section-title">Selected Books</h2>
+                        <p className="Section-intro Work-intro">
+                            A selection that shaped how I think about reliability, systems, and building software that lasts.
                         </p>
                         <div className="Work-filters" role="tablist" aria-label="Filter books by tag">
                             {['All', ...bookTags].map((tag) => (
@@ -192,7 +198,13 @@ export default class Work extends Component {
                             ))}
                         </div>
                         <div className="Work-list">
-                            {visibleBookItems.map((item) => renderItem(item, { includeCategory: false, tags: item.tags || [] }))}
+                            {visibleBookItems.map((item) =>
+                                renderItem(item, {
+                                    includeCategory: false,
+                                    tags: item.tags || [],
+                                    showDescription: true,
+                                })
+                            )}
                         </div>
                     </div>
                 ) : null}

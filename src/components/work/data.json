@@ -29,11 +29,12 @@
   },
   {
     "id": 6,
-    "name": "The three Google SRE Books (also known as The Bible)",
+    "name": "The three Google SRE Books",
     "url": "https://sre.google/books/",
     "category": "books",
     "lang": "eng",
-    "tags": ["Reliability"]
+    "tags": ["SRE"],
+    "description": "A must-read foundation for anyone doing SRE. They explain where SRE comes from and, more importantly, how to apply it at an organizational level across different stages of growth."
   },
   {
     "id": 7,
@@ -41,7 +42,8 @@
     "url": "https://www.manning.com/books/kubernetes-in-action",
     "category": "books",
     "lang": "eng",
-    "tags": ["Infrastructure"]
+    "tags": ["Infrastructure"],
+    "description": "A detailed, hands-on deep dive into how Kubernetes actually works. It can be demanding, but it repays the effort if you want real understanding rather than surface familiarity."
   },
   {
     "id": 8,
@@ -49,7 +51,8 @@
     "url": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?crid=6XDJD1SAEY0X&keywords=code+clean&qid=1650671053&sprefix=code+cle%2Caps%2C166&sr=8-1",
     "category": "books",
     "lang": "eng",
-    "tags": ["Software Design"]
+    "tags": ["Design"],
+    "description": "As AI accelerates coding, writing clear, maintainable code matters even more than micro-optimizing algorithms. This book is a strong guide to building habits that make code easier to read, change, and trust."
   },
   {
     "id": 9,
@@ -57,7 +60,8 @@
     "url": "https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=sr_1_1?crid=27B5CYILRUYVP&keywords=clean+architecture&qid=1650671061&sprefix=clean+architectu%2Caps%2C149&sr=8-1",
     "category": "books",
     "lang": "eng",
-    "tags": ["Software Design"]
+    "tags": ["Design"],
+    "description": "Complementary to Clean Code, but focused on system structure and design. It's useful for thinking in terms of boundaries, responsibilities, and architectures that stay adaptable over time."
   },
   {
     "id": 10,
@@ -65,7 +69,8 @@
     "url": "https://www.amazon.com/s?k=system+design+interview&crid=2GPU4J1AKC9U0&sprefix=system+design+intervie%2Caps%2C264",
     "category": "books",
     "lang": "eng",
-    "tags": ["Software Design"]
+    "tags": ["Design"],
+    "description": "A practical set of exercises for learning how to reason about real engineering trade-offs. Valuable even if you're not interviewing, because it trains the way you approach complex system problems."
   },
   {
     "id": 11,
@@ -73,7 +78,8 @@
     "url": "https://nostarch.com/tlpi",
     "category": "books",
     "lang": "eng",
-    "tags": ["Infrastructure"]
+    "tags": ["Infrastructure"],
+    "description": "One of the most challenging reads on the list, and also one of the deepest. It goes into the details of Linux internals and system interfaces, helping you understand what's happening under the hood."
   },
   {
     "id": 12,
@@ -81,7 +87,8 @@
     "url": "https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1950508404/ref=sr_1_1?crid=X5U454XQBXYP&keywords=the+devops+handbook&qid=1650671070&sprefix=the+devops+handbo%2Caps%2C155&sr=8-1",
     "category": "books",
     "lang": "eng",
-    "tags": ["Reliability"]
+    "tags": ["SRE"],
+    "description": "Recommended by a dear mentor of mine, the book that made me understand DevOps, then naturally led me into SRE. It's excellent for beginners and experienced engineers alike, especially for reframing the mindset: treat developers as customers and build systems that help them deliver safely."
   },
   {
     "id": 13,
