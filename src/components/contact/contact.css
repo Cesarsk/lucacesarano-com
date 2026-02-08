@@ -13,6 +13,7 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  box-sizing: border-box;
 }
 
 @media all and (max-width: 1024px) {
@@ -24,6 +25,7 @@
 
 .Contact-intro {
   text-align: left;
+  overflow-wrap: anywhere;
 }
 
 

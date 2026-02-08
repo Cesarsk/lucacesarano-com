@@ -75,4 +75,23 @@ test.describe('Navbar layout', () => {
     await page.mouse.click(navBox.x + 16, navBox.y + navBox.height / 2)
     await expect(menu).not.toHaveClass(/NavBar-menu--open/)
   })
+
+  test('contact section stays within mobile viewport', async ({ page }) => {
+    const viewportWidth = 390
+    await page.setViewportSize({ width: viewportWidth, height: 844 })
+    await page.goto('/')
+
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight))
+
+    const hasHorizontalOverflow = await page.evaluate(() => {
+      return document.documentElement.scrollWidth > document.documentElement.clientWidth
+    })
+    expect(hasHorizontalOverflow).toBeFalsy()
+
+    const contactSection = page.locator('.Contact')
+    const contactBox = await contactSection.boundingBox()
+    expect(contactBox).not.toBeNull()
+    expect(contactBox.x).toBeGreaterThanOrEqual(0)
+    expect(contactBox.x + contactBox.width).toBeLessThanOrEqual(viewportWidth)
+  })
 })
