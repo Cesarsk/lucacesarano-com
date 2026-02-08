@@ -58,4 +58,21 @@ test.describe('Navbar layout', () => {
     expect(itemBox.x).toBeLessThanOrEqual(1)
     expect(itemBox.x + itemBox.width).toBeGreaterThanOrEqual(viewportWidth - 1)
   })
+
+  test('mobile hit area toggles menu', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 })
+    await page.goto('/')
+
+    const menu = page.getByTestId('mobile-menu')
+    const navbarInner = page.getByTestId('navbar-inner')
+    const navBox = await navbarInner.boundingBox()
+    expect(navBox).not.toBeNull()
+    await expect(menu).not.toHaveClass(/NavBar-menu--open/)
+
+    await page.mouse.click(navBox.x + 16, navBox.y + navBox.height / 2)
+    await expect(menu).toHaveClass(/NavBar-menu--open/)
+
+    await page.mouse.click(navBox.x + 16, navBox.y + navBox.height / 2)
+    await expect(menu).not.toHaveClass(/NavBar-menu--open/)
+  })
 })

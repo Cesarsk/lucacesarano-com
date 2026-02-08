@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import { vi } from 'vitest'
 import Navbar from './navbar.jsx'
 
@@ -28,5 +28,23 @@ describe('Navbar', () => {
     expect(blogLink).toHaveAttribute('href', 'https://lucacesarano.medium.com/')
     expect(blogLink).toHaveAttribute('target', '_blank')
     expect(blogLink).toHaveAttribute('rel', 'noopener noreferrer')
+  })
+
+  it('toggles mobile menu state when hit area is clicked', () => {
+    const originalGetComputedStyle = window.getComputedStyle
+    window.getComputedStyle = vi.fn(() => ({ display: 'inline-flex' }))
+
+    render(<Navbar />)
+
+    const menu = screen.getByTestId('mobile-menu')
+    const hitArea = screen.getByTestId('mobile-hit-area')
+
+    expect(menu.className).not.toContain('NavBar-menu--open')
+    fireEvent.click(hitArea)
+    expect(menu.className).toContain('NavBar-menu--open')
+    fireEvent.click(hitArea)
+    expect(menu.className).not.toContain('NavBar-menu--open')
+
+    window.getComputedStyle = originalGetComputedStyle
   })
 })
