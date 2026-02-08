@@ -1,24 +1,119 @@
 :root {
-    --main-bg-color: #1D2021;
-    --font-color: #c9cacc;
-    --link-color: #fbd01d;
-    --hover-item-color: rgba(255, 255, 255, 0.22);
+    --main-bg-color: #ffffff;
+    --surface-color: #ffffff;
+    --font-color: #000000;
+    --muted-color: rgba(0, 0, 0, 0.65);
+    --link-color: #000000;
+    --hover-item-color: rgba(0, 0, 0, 0.1);
+    --nav-bg-color: rgba(255, 255, 255, 0.95);
+    --nav-border-color: rgba(0, 0, 0, 0.2);
+    --nav-border-strong: rgba(0, 0, 0, 0.35);
+    --card-bg-color: #ffffff;
+    --card-border-color: rgba(0, 0, 0, 0.12);
+    --icon-color: #000000;
+    --shadow-color: rgba(0, 0, 0, 0.12);
+    --hover-surface: rgba(0, 0, 0, 0.08);
+
+    /* typography scale */
+    --font-size-xxl: 64px;
+    --font-size-xl: 34px;
+    --font-size-lg: 22px;
+    --font-size-md: 17px;
+    --font-size-sm: 14px;
+    --font-size-xs: 12px;
+    --line-height-tight: 1.15;
+    --line-height-normal: 1.55;
+    --line-height-loose: 1.85;
+    --section-gap: 60px;
+    --section-gap-mobile: 48px;
 
     /* cycle colors */
-    --cycle-first-color: #38844B;
-    --cycle-second-color: #1E5ADF;
-    --cycle-third-color: #C63D2D;
-    --cycle-fourth-color: #F4AA3C;
+    --cycle-first-color: #000000;
+    --cycle-second-color: #000000;
+    --cycle-third-color: #000000;
+    --cycle-fourth-color: #000000;
+}
+
+:root[data-theme="dark"] {
+    --main-bg-color: #0f1113;
+    --surface-color: #0f1113;
+    --font-color: #f2f2f2;
+    --muted-color: rgba(242, 242, 242, 0.7);
+    --link-color: #f2f2f2;
+    --hover-item-color: rgba(255, 255, 255, 0.08);
+    --nav-bg-color: rgba(15, 17, 19, 0.95);
+    --nav-border-color: rgba(255, 255, 255, 0.18);
+    --nav-border-strong: rgba(255, 255, 255, 0.32);
+    --card-bg-color: #0f1113;
+    --card-border-color: rgba(255, 255, 255, 0.12);
+    --icon-color: #f2f2f2;
+    --shadow-color: rgba(0, 0, 0, 0.6);
+    --hover-surface: rgba(255, 255, 255, 0.08);
+    --cycle-first-color: #f2f2f2;
+    --cycle-second-color: #f2f2f2;
+    --cycle-third-color: #f2f2f2;
+    --cycle-fourth-color: #f2f2f2;
 }
 
 body {
     background-color: var(--main-bg-color);
-    font-family: 'Montserrat', sans-serif;
+    background-image: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-normal);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
+.Section-title {
+    font-size: var(--font-size-xxl);
+    line-height: var(--line-height-tight);
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    margin: 0 0 18px;
+    color: var(--font-color);
+}
+
+.Section-intro {
+    margin: 0 0 20px;
+    color: var(--muted-color);
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: var(--line-height-loose);
+    text-transform: none;
+}
+
+.Button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border-radius: 999px;
+    background-color: var(--font-color);
+    color: var(--surface-color);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    border: 1px solid var(--font-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.Button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px var(--shadow-color);
+}
+
+.Button--ghost {
+    background-color: transparent;
+    color: var(--font-color);
+}
+
+.Button:focus-visible {
+    outline: 2px solid var(--font-color);
+    outline-offset: 4px;
+}
+
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
