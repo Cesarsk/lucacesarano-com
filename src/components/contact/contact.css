@@ -15,6 +15,13 @@
   padding-right: 20px;
 }
 
+@media all and (max-width: 1024px) {
+  .Contact {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
 .Contact-intro {
   text-align: left;
 }

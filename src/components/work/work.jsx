@@ -128,20 +128,6 @@ export default class Work extends Component {
                         Most of my contributions are private, but here is a curated snapshot of things I&apos;ve built and
                         written over time.
                     </p>
-                    <p className="Section-intro Work-intro">
-                        I enjoy building systems and tools, check out my{' '}
-                        <a className="Work-link" href="https://github.com/cesarsk" target="_blank" rel="noopener noreferrer">
-                            GitHub
-                        </a>{' '}
-                        page.
-                    </p>
-                    <p className="Section-intro Work-intro">
-                        I share longer thoughts on my{' '}
-                        <a className="Work-link" href="https://lucacesarano.medium.com/" target="_blank" rel="noopener noreferrer">
-                            Medium blog
-                        </a>
-                        . I don&apos;t publish often, but I plan to share more — here&apos;s a list of work I&apos;ve done over the years.
-                    </p>
                     <div className="Work-filters" role="tablist" aria-label="Filter work by category">
                         {workFilterOptions.map((option) => (
                             <button

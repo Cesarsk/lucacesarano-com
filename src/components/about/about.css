@@ -17,6 +17,14 @@
     width: 100%;
     max-width: 980px;
     align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+@media all and (max-width: 1024px) {
+    .About-row {
+        padding: 0 24px;
+    }
 }
 
 .About-bio-column {
@@ -139,6 +147,11 @@
     .About-lead,
     .About-text-name {
         font-size: 22px;
+    }
+
+    .About-bio-column {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 

@@ -8,6 +8,13 @@
   padding-bottom: 0;
 }
 
+@media all and (max-width: 1024px) {
+  .Work {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
 .Work-section {
   width: 100%;
   max-width: 980px;
