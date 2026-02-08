@@ -2,6 +2,15 @@ prod:build:
   stage: build
   image:
     name: node:20
+  interruptible: true
+  variables:
+    NPM_CONFIG_CACHE: "$CI_PROJECT_DIR/.npm"
+    PLAYWRIGHT_BROWSERS_PATH: "$CI_PROJECT_DIR/.cache/ms-playwright"
+  cache:
+    key: "$CI_COMMIT_REF_SLUG"
+    paths:
+      - .npm/
+      - .cache/ms-playwright/
   rules:
     - if: $CI_COMMIT_BRANCH == "master"
     - when: never
@@ -12,8 +21,11 @@ prod:build:
     - npm run test:e2e -- --project=chromium
     - npm run build
   artifacts:
+    when: always
     paths:
       - ./dist
+      - ./playwright-report
+      - ./test-results
     expire_in: 1 hour
 
 prod:deploy:
