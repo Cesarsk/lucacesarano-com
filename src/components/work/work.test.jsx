@@ -9,7 +9,7 @@ describe('Work', () => {
     expect(screen.getByRole('heading', { name: 'Open Source' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Publications' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'University' })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'Recommended Books' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Selected Books' })).toBeInTheDocument()
   })
 
   it('renders sample work items with links', () => {
@@ -38,6 +38,6 @@ describe('Work', () => {
     render(<Work />)
 
     expect(screen.getAllByRole('button', { name: 'All' }).length).toBeGreaterThan(0)
-    expect(screen.getAllByRole('button', { name: 'Reliability' }).length).toBeGreaterThan(0)
+    expect(screen.getAllByRole('button', { name: 'SRE' }).length).toBeGreaterThan(0)
   })
 })
