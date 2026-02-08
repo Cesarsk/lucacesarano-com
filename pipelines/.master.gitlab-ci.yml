@@ -8,6 +8,8 @@ prod:build:
   script:
     - npm ci --omit=peer
     - npm test
+    - npx playwright install --with-deps chromium
+    - npm run test:e2e -- --project=chromium
     - npm run build
   artifacts:
     paths:
