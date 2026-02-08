@@ -3,6 +3,8 @@ import "./navbar.css"
 import {Link} from 'react-scroll'
 
 export default class Navbar extends Component {
+    menuToggleRef = React.createRef()
+
     state = {
         hasShadow: false,
         theme: 'light',
@@ -41,8 +43,11 @@ export default class Navbar extends Component {
     }
 
     handleMenuToggle = (event) => {
-        const isMobile = window.matchMedia && window.matchMedia('(max-width: 480px)').matches
-        if (!isMobile) {
+        const menuToggleEl = this.menuToggleRef.current
+        const isMenuToggleVisible = menuToggleEl
+            && window.getComputedStyle(menuToggleEl).display !== 'none'
+
+        if (!isMenuToggleVisible) {
             return
         }
 
@@ -62,6 +67,7 @@ export default class Navbar extends Component {
             <div className={this.state.hasShadow ? 'NavBar NavBar--shadow' : 'NavBar'}>
                 <div className='NavBar-inner' onClick={this.handleMenuToggle} data-testid="navbar-inner">
                     <button
+                        ref={this.menuToggleRef}
                         type="button"
                         className="NavBar-menuToggle"
                         onClick={(event) => {
