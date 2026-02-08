@@ -5,7 +5,6 @@ prod:unit:
   interruptible: true
   variables:
     NPM_CONFIG_CACHE: "$CI_PROJECT_DIR/.npm"
-    PLAYWRIGHT_BROWSERS_PATH: "$CI_PROJECT_DIR/.cache/ms-playwright"
   cache:
     key:
       files:
@@ -13,7 +12,6 @@ prod:unit:
     policy: pull-push
     paths:
       - .npm/
-      - .cache/ms-playwright/
   rules:
     - if: $CI_COMMIT_BRANCH == "master"
     - when: never
@@ -28,7 +26,7 @@ prod:e2e:
   interruptible: true
   variables:
     NPM_CONFIG_CACHE: "$CI_PROJECT_DIR/.npm"
-    PLAYWRIGHT_BROWSERS_PATH: "$CI_PROJECT_DIR/.cache/ms-playwright"
+    PLAYWRIGHT_BROWSERS_PATH: "/ms-playwright"
   cache:
     key:
       files:
@@ -36,7 +34,6 @@ prod:e2e:
     policy: pull-push
     paths:
       - .npm/
-      - .cache/ms-playwright/
   rules:
     - if: $CI_COMMIT_BRANCH == "master"
     - when: never
