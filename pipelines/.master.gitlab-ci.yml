@@ -24,7 +24,7 @@ prod:unit:
 prod:e2e:
   stage: build
   image:
-    name: node:20
+    name: mcr.microsoft.com/playwright:v1.58.2-jammy
   interruptible: true
   variables:
     NPM_CONFIG_CACHE: "$CI_PROJECT_DIR/.npm"
@@ -42,7 +42,6 @@ prod:e2e:
     - when: never
   script:
     - npm ci --omit=peer
-    - npx playwright install chromium
     - npm run test:e2e -- --project=chromium
   artifacts:
     when: always
