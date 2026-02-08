@@ -1,7 +1,17 @@
-develop:build:
+develop:unit:
   stage: build
   image:
     name: node:20
+  interruptible: true
+  variables:
+    NPM_CONFIG_CACHE: "$CI_PROJECT_DIR/.npm"
+  cache:
+    key:
+      files:
+        - package-lock.json
+    policy: pull-push
+    paths:
+      - .npm/
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
     - if: $CI_COMMIT_BRANCH && $CI_COMMIT_BRANCH != "master"
@@ -9,6 +19,59 @@ develop:build:
   script:
     - npm ci --omit=peer
     - npm test
+
+develop:e2e:
+  stage: build
+  image:
+    name: mcr.microsoft.com/playwright:v1.58.2-jammy
+  interruptible: true
+  variables:
+    NPM_CONFIG_CACHE: "$CI_PROJECT_DIR/.npm"
+    PLAYWRIGHT_BROWSERS_PATH: "/ms-playwright"
+  cache:
+    key:
+      files:
+        - package-lock.json
+    policy: pull-push
+    paths:
+      - .npm/
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH && $CI_COMMIT_BRANCH != "master"
+    - when: never
+  script:
+    - npm ci --omit=peer
+    - npm run test:e2e -- --project=chromium
+  artifacts:
+    when: always
+    paths:
+      - ./playwright-report
+      - ./test-results
+    expire_in: 1 hour
+
+develop:build:
+  stage: build
+  image:
+    name: node:20
+  interruptible: true
+  variables:
+    NPM_CONFIG_CACHE: "$CI_PROJECT_DIR/.npm"
+  cache:
+    key:
+      files:
+        - package-lock.json
+    policy: pull-push
+    paths:
+      - .npm/
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH && $CI_COMMIT_BRANCH != "master"
+    - when: never
+  needs:
+    - develop:unit
+    - develop:e2e
+  script:
+    - npm ci --omit=peer
     - npm run build
   artifacts:
     paths:
@@ -19,7 +82,7 @@ develop:deploy:
   stage: deploy
   image:
     name: andreysenov/firebase-tools
-  dependencies:
+  needs:
     - develop:build
   rules:
     - if: $CI_COMMIT_BRANCH == "develop"
