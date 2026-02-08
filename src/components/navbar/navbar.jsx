@@ -41,13 +41,13 @@ export default class Navbar extends Component {
     }
 
     handleMenuToggle = (event) => {
-        if (event) {
-            event.preventDefault()
-        }
-
         const isMobile = window.matchMedia && window.matchMedia('(max-width: 480px)').matches
         if (!isMobile) {
             return
+        }
+
+        if (event) {
+            event.preventDefault()
         }
 
         this.setState((prevState) => ({ isMenuOpen: !prevState.isMenuOpen }))
