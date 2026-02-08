@@ -61,11 +61,14 @@ export default class Navbar extends Component {
     render() {
         return (
             <div className={this.state.hasShadow ? 'NavBar NavBar--shadow' : 'NavBar'}>
-                <div
-                    className='NavBar-inner'
-                    onClick={this.handleMenuToggle}
-                    onTouchEnd={this.handleMenuToggle}
-                    data-testid="navbar-inner">
+                <div className='NavBar-inner' data-testid="navbar-inner">
+                    <button
+                        type="button"
+                        className="NavBar-hitArea"
+                        onClick={this.handleMenuToggle}
+                        aria-label="Open navigation menu"
+                        data-testid="mobile-hit-area"
+                    ></button>
                     <button
                         ref={this.menuToggleRef}
                         type="button"
