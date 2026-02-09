@@ -61,39 +61,40 @@ const renderItem = (item, options = {}) => {
     const tagList = tags.length ? tags : []
 
     return (
-        <Card key={item.id} className="Work-card">
-            <Card.Body>
-                <Card.Text as="div" className="Work-card-text">
-                    <div className="Work-item-title">
-                        <a
-                            className="Work-link"
-                            href={item.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            lang={languageCode}>
-                            {item.name}
-                        </a>
-                    </div>
-                    {metaText ? (
-                        <div className="Work-meta" aria-label={languageLabel ? `Language: ${languageName}` : undefined}>
-                            {metaText}
+        <a
+            key={item.id}
+            className="Work-card-link"
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            lang={languageCode}>
+            <Card className="Work-card">
+                <Card.Body>
+                    <Card.Text as="div" className="Work-card-text">
+                        <div className="Work-item-title">
+                            <span className="Work-link">{item.name}</span>
                         </div>
-                    ) : null}
-                    {tagList.length ? (
-                        <div className="Work-tags">
-                            {tagList.map((tag) => (
-                                <span key={`${item.id}-${tag}`} className="Work-tag">
-                                    {tag}
-                                </span>
-                            ))}
-                        </div>
-                    ) : null}
-                    {showDescription && item.description ? (
-                        <div className="Work-description">{item.description}</div>
-                    ) : null}
-                </Card.Text>
-            </Card.Body>
-        </Card>
+                        {metaText ? (
+                            <div className="Work-meta" aria-label={languageLabel ? `Language: ${languageName}` : undefined}>
+                                {metaText}
+                            </div>
+                        ) : null}
+                        {tagList.length ? (
+                            <div className="Work-tags">
+                                {tagList.map((tag) => (
+                                    <span key={`${item.id}-${tag}`} className="Work-tag">
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                        ) : null}
+                        {showDescription && item.description ? (
+                            <div className="Work-description">{item.description}</div>
+                        ) : null}
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+        </a>
     )
 }
 
@@ -153,7 +154,6 @@ export default class Work extends Component {
 
                         return (
                             <section key={section.key} className="Work-group">
-                                <h3 className="Work-heading">{section.title}</h3>
                                 <div className="Work-list">
                                     {section.items.map((item) => renderItem(item))}
                                 </div>

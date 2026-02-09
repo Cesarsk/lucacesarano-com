@@ -94,36 +94,42 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.Work-link {
-  color: var(--link-color);
+.Work-card-link {
   text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
-.Work-link:hover {
+.Work-card-link:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 6px;
+  border-radius: 10px;
+}
+
+.Work-card-link:hover .Work-link {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
 }
 
-.Work-link:focus-visible {
-  outline: 2px solid var(--link-color);
-  outline-offset: 4px;
-  border-radius: 6px;
+.Work-link {
+  color: var(--link-color);
 }
 
 .Work-card {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid var(--nav-border-color);
-  border-radius: 0;
+  border-radius: 8px;
   box-shadow: none;
-  transition: background-color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .Work-card:hover {
   background-color: var(--hover-surface);
   transform: translateY(-2px);
   border-color: var(--nav-border-strong);
+  box-shadow: 0 0 0 6px var(--hover-surface);
 }
 
 .Work-card .card-body {
