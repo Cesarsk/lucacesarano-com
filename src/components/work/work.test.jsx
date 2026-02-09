@@ -2,13 +2,13 @@ import { render, screen } from '@testing-library/react'
 import Work from './work.jsx'
 
 describe('Work', () => {
-  it('renders all work section headings', () => {
+  it('renders work filters and book section', () => {
     render(<Work />)
 
-    expect(screen.getByRole('heading', { name: 'Live Demos' })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'Open Source' })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'Publications' })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'University' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Live Demos' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Open Source' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Publications' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'University' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Selected Books' })).toBeInTheDocument()
   })
 
