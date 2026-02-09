@@ -15,7 +15,7 @@ describe('Navbar', () => {
     expect(screen.getByText('CONTACT')).toBeInTheDocument()
   })
 
-  it('links to resume and blog in new tabs', () => {
+  it('links to resume and blog destinations', () => {
     render(<Navbar />)
 
     const resumeLink = screen.getByText('RESUME').closest('a')
@@ -25,9 +25,15 @@ describe('Navbar', () => {
     expect(resumeLink).toHaveAttribute('target', '_blank')
     expect(resumeLink).toHaveAttribute('rel', 'noopener noreferrer')
 
-    expect(blogLink).toHaveAttribute('href', 'https://lucacesarano.medium.com/')
-    expect(blogLink).toHaveAttribute('target', '_blank')
-    expect(blogLink).toHaveAttribute('rel', 'noopener noreferrer')
+    expect(blogLink).toHaveAttribute('href', '/blog')
+  })
+
+  it('links contact to home section on blog pages', () => {
+    render(<Navbar isBlogPage />)
+
+    const contactLink = screen.getByText('CONTACT').closest('a')
+
+    expect(contactLink).toHaveAttribute('href', '/#contact')
   })
 
   it('toggles mobile menu state when hit area is clicked', () => {

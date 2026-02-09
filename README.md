@@ -72,6 +72,14 @@ headers (CSP, HSTS, and related policies) for both prod and beta sites.
 
 Work items are stored in `src/components/work/data.json`.
 
+Blog posts are stored in `src/content/blog` as Markdown files.
+
+## Blog Authoring
+
+For post format, frontmatter fields, local preview, and publishing steps, see:
+
+- `docs/blog-authoring.md`
+
 ## Contact
 
 Website: https://lucacesarano.com

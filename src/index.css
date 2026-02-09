@@ -13,6 +13,17 @@
     --icon-color: #000000;
     --shadow-color: rgba(0, 0, 0, 0.12);
     --hover-surface: rgba(0, 0, 0, 0.08);
+    --font-family-base: 'IBM Plex Sans', sans-serif;
+    --font-family-code: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    --code-inline-bg: rgba(15, 23, 42, 0.08);
+    --code-block-bg: #f4f6f8;
+    --code-block-border: rgba(0, 0, 0, 0.18);
+    --code-token-keyword: #0f4c81;
+    --code-token-string: #216e39;
+    --code-token-number: #8a4b08;
+    --code-token-title: #0b3a67;
+    --code-token-comment: #667085;
+    --code-token-variable: #0a5f5f;
 
     /* typography scale */
     --font-size-xxl: 64px;
@@ -49,6 +60,15 @@
     --icon-color: #f2f2f2;
     --shadow-color: rgba(0, 0, 0, 0.6);
     --hover-surface: rgba(255, 255, 255, 0.08);
+    --code-inline-bg: rgba(125, 211, 252, 0.14);
+    --code-block-bg: #151a20;
+    --code-block-border: rgba(255, 255, 255, 0.22);
+    --code-token-keyword: #7cc7ff;
+    --code-token-string: #8ddf9a;
+    --code-token-number: #ffc27a;
+    --code-token-title: #a6d6ff;
+    --code-token-comment: rgba(242, 242, 242, 0.58);
+    --code-token-variable: #8be0d0;
     --cycle-first-color: #f2f2f2;
     --cycle-second-color: #f2f2f2;
     --cycle-third-color: #f2f2f2;
@@ -64,7 +84,7 @@ body {
 body {
     background-color: var(--main-bg-color);
     background-image: none;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: var(--font-family-base);
     font-size: var(--font-size-md);
     line-height: var(--line-height-normal);
     -webkit-font-smoothing: antialiased;
@@ -122,5 +142,5 @@ body {
 }
 
 code {
-    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-family: var(--font-family-code);
 }

@@ -102,23 +102,27 @@ export default class Navbar extends Component {
                         </a>
 
                         <a
-                            href="https://lucacesarano.medium.com/"
-                            rel="noopener noreferrer"
-                            target="_blank"
+                            href="/blog"
                             className='NavBar-link'>
                             <div className='item'>BLOG</div>
                         </a>
 
-                        <Link
-                            activeClass="active"
-                            to="#contact"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                            className='NavBar-link'>
-                            <div className='item'>CONTACT</div>
-                        </Link>
+                        {this.props.isBlogPage ? (
+                            <a href="/#contact" className='NavBar-link'>
+                                <div className='item'>CONTACT</div>
+                            </a>
+                        ) : (
+                            <Link
+                                activeClass="active"
+                                to="#contact"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                                className='NavBar-link'>
+                                <div className='item'>CONTACT</div>
+                            </Link>
+                        )}
                     </div>
                     <button
                         type="button"
@@ -167,24 +171,28 @@ export default class Navbar extends Component {
                         <span className="NavBar-menuText">Resume</span>
                     </a>
                     <a
-                        href="https://lucacesarano.medium.com/"
-                        rel="noopener noreferrer"
-                        target="_blank"
+                        href="/blog"
                         className='NavBar-menuItem'
                         onClick={this.closeMenu}>
                         <span className="NavBar-menuText">Blog</span>
                     </a>
-                    <Link
-                        activeClass="active"
-                        to="#contact"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        className='NavBar-menuItem'
-                        onClick={this.closeMenu}>
-                        <span className="NavBar-menuText">Contact</span>
-                    </Link>
+                    {this.props.isBlogPage ? (
+                        <a href="/#contact" className='NavBar-menuItem' onClick={this.closeMenu}>
+                            <span className="NavBar-menuText">Contact</span>
+                        </a>
+                    ) : (
+                        <Link
+                            activeClass="active"
+                            to="#contact"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            className='NavBar-menuItem'
+                            onClick={this.closeMenu}>
+                            <span className="NavBar-menuText">Contact</span>
+                        </Link>
+                    )}
                     <button
                         type="button"
                         className='NavBar-menuItem NavBar-menuButton'
