@@ -93,3 +93,19 @@ develop:deploy:
   script:
     - firebase use "lucacesarano-com"
     - firebase deploy -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --only hosting:beta-lucacesarano-com --non-interactive
+
+develop:deploy:alpha:
+  stage: deploy
+  image:
+    name: andreysenov/firebase-tools
+  needs:
+    - develop:build
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME =~ /^feature\//
+    - when: never
+  before_script:
+    - echo $FIARD_PRIVATE_KEY > "$HOME/private-key.json"
+    - export GOOGLE_APPLICATION_CREDENTIALS="$HOME/private-key.json"
+  script:
+    - firebase use "lucacesarano-com"
+    - firebase deploy -m "MR $CI_MERGE_REQUEST_IID Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --only hosting:alpha-lucacesarano-com --non-interactive
