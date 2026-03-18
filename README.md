@@ -14,7 +14,7 @@ Personal presentation website built with React and hosted on Firebase.
 - React Bootstrap
 - React Scroll
 - Firebase Hosting
-- GitLab CI
+- GitHub Actions
 
 ## Local Development
 
@@ -53,15 +53,20 @@ npm install -g firebase-tools
 
 ## CI/CD
 
-Pipelines are split by branch:
+GitHub Actions workflow:
 
-- `develop` builds and deploys to `beta-lucacesarano-com`
-- `master` builds and deploys to `lucacesarano-com`
+- `.github/workflows/ci-cd.yml`
 
-Pipeline definitions:
+Behavior by branch/event:
 
-- `pipelines/.develop.gitlab-ci.yml`
-- `pipelines/.master.gitlab-ci.yml`
+- `pull_request` and `push`: unit + e2e + build
+- `feature/*` pushes with open PR: deploy to `alpha-lucacesarano-com`
+- `develop` pushes: deploy to `beta-lucacesarano-com`
+- `master` pushes: deploy to `lucacesarano-com`
+
+Migration details and required secrets are documented in:
+
+- `docs/github-migration.md`
 
 ## Hosting and Security
 
