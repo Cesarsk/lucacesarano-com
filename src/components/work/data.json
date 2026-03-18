@@ -15,8 +15,8 @@
   },
   {
     "id": 4,
-    "name": "This CI/CD enabled Website",
-    "url": "https://gitlab.com/lu.cesarano/lucacesarano-com",
+    "name": "lucacesarano.com",
+    "url": "https://github.com/Cesarsk/lucacesarano-com",
     "category": "opensource",
     "lang": "eng"
   },
