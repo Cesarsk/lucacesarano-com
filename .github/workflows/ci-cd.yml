@@ -101,7 +101,7 @@ jobs:
   check-open-pr:
     name: Check Open PR For Feature Branch
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && startsWith(github.ref_name, 'feature/')
+    if: github.event_name == 'push'
     outputs:
       has_open_pr: ${{ steps.check.outputs.has_open_pr }}
     steps:
@@ -112,6 +112,12 @@ jobs:
           script: |
             const { owner, repo } = context.repo;
             const branch = context.ref.replace('refs/heads/', '');
+
+            if (!branch.startsWith('feature/')) {
+              core.setOutput('has_open_pr', 'false');
+              return;
+            }
+
             const prs = await github.paginate(github.rest.pulls.list, {
               owner,
               repo,
@@ -121,35 +127,55 @@ jobs:
             });
             core.setOutput('has_open_pr', prs.length > 0 ? 'true' : 'false');
 
-  deploy-alpha:
-    name: Deploy Alpha (feature branches with open PR)
+  deploy-hosting:
+    name: Deploy Hosting
     runs-on: ubuntu-latest
     needs:
       - build
       - check-open-pr
-    if: github.event_name == 'push' && startsWith(github.ref_name, 'feature/') && needs.check-open-pr.outputs.has_open_pr == 'true'
+    if: github.event_name == 'push'
     concurrency:
-      group: alpha-deploy
+      group: hosting-${{ github.ref_name }}
       cancel-in-progress: true
     steps:
+      - name: Resolve deploy target
+        id: target
+        run: |
+          TARGET_SITE=""
+
+          if [ "${GITHUB_REF_NAME}" = "develop" ]; then
+            TARGET_SITE="${FIREBASE_BETA_SITE}"
+          elif [ "${GITHUB_REF_NAME}" = "master" ] || [ "${GITHUB_REF_NAME}" = "main" ]; then
+            TARGET_SITE="${FIREBASE_PROD_SITE}"
+          elif [[ "${GITHUB_REF_NAME}" == feature/* ]] && [ "${{ needs.check-open-pr.outputs.has_open_pr }}" = "true" ]; then
+            TARGET_SITE="${FIREBASE_ALPHA_SITE}"
+          fi
+
+          echo "target_site=${TARGET_SITE}" >> "$GITHUB_OUTPUT"
+
       - name: Checkout
+        if: steps.target.outputs.target_site != ''
         uses: actions/checkout@v4
 
       - name: Download dist artifact
+        if: steps.target.outputs.target_site != ''
         uses: actions/download-artifact@v4
         with:
           name: dist
           path: dist
 
       - name: Setup Node
+        if: steps.target.outputs.target_site != ''
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
 
       - name: Install Firebase CLI
+        if: steps.target.outputs.target_site != ''
         run: npm install -g firebase-tools
 
       - name: Prepare Firebase credentials
+        if: steps.target.outputs.target_site != ''
         id: firebase_creds
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
@@ -168,90 +194,6 @@ jobs:
           fi
           echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/private-key.json" >> "$GITHUB_ENV"
 
-      - name: Deploy to alpha
+      - name: Deploy to Firebase Hosting
         if: steps.firebase_creds.outputs.ready == 'true'
-        run: firebase deploy --project "$FIREBASE_PROJECT_ID" --only "hosting:$FIREBASE_ALPHA_SITE" --non-interactive
-
-  deploy-beta:
-    name: Deploy Beta (develop)
-    runs-on: ubuntu-latest
-    needs:
-      - build
-    if: github.event_name == 'push' && github.ref_name == 'develop'
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Download dist artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: dist
-          path: dist
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-
-      - name: Install Firebase CLI
-        run: npm install -g firebase-tools
-
-      - name: Prepare Firebase credentials
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-          FIARD_PRIVATE_KEY: ${{ secrets.FIARD_PRIVATE_KEY }}
-        run: |
-          if [ -n "$FIREBASE_SERVICE_ACCOUNT" ]; then
-            printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$HOME/private-key.json"
-          elif [ -n "$FIARD_PRIVATE_KEY" ]; then
-            printf '%s' "$FIARD_PRIVATE_KEY" > "$HOME/private-key.json"
-          else
-            echo "Missing FIREBASE_SERVICE_ACCOUNT (or legacy FIARD_PRIVATE_KEY) secret" >&2
-            exit 1
-          fi
-          echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/private-key.json" >> "$GITHUB_ENV"
-
-      - name: Deploy to beta
-        run: firebase deploy --project "$FIREBASE_PROJECT_ID" --only "hosting:$FIREBASE_BETA_SITE" --non-interactive
-
-  deploy-prod:
-    name: Deploy Production (master)
-    runs-on: ubuntu-latest
-    needs:
-      - build
-    if: github.event_name == 'push' && github.ref_name == 'master'
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Download dist artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: dist
-          path: dist
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-
-      - name: Install Firebase CLI
-        run: npm install -g firebase-tools
-
-      - name: Prepare Firebase credentials
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-          FIARD_PRIVATE_KEY: ${{ secrets.FIARD_PRIVATE_KEY }}
-        run: |
-          if [ -n "$FIREBASE_SERVICE_ACCOUNT" ]; then
-            printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$HOME/private-key.json"
-          elif [ -n "$FIARD_PRIVATE_KEY" ]; then
-            printf '%s' "$FIARD_PRIVATE_KEY" > "$HOME/private-key.json"
-          else
-            echo "Missing FIREBASE_SERVICE_ACCOUNT (or legacy FIARD_PRIVATE_KEY) secret" >&2
-            exit 1
-          fi
-          echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/private-key.json" >> "$GITHUB_ENV"
-
-      - name: Deploy to production
-        run: firebase deploy --project "$FIREBASE_PROJECT_ID" --only "hosting:$FIREBASE_PROD_SITE" --non-interactive
+        run: firebase deploy --project "$FIREBASE_PROJECT_ID" --only "hosting:${{ steps.target.outputs.target_site }}" --non-interactive
