@@ -127,7 +127,7 @@ jobs:
     needs:
       - build
       - check-open-pr
-    if: github.event_name == 'push' && startsWith(github.ref_name, 'feature/') && needs.check-open-pr.outputs.has_open_pr == 'true'
+    if: github.event_name == 'push' && startsWith(github.ref_name, 'feature/') && needs.check-open-pr.outputs.has_open_pr == 'true' && (secrets.FIREBASE_SERVICE_ACCOUNT != '' || secrets.FIARD_PRIVATE_KEY != '')
     concurrency:
       group: alpha-deploy
       cancel-in-progress: true
