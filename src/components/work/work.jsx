@@ -124,7 +124,7 @@ export default class Work extends Component {
         return (
             <div className="Work" id={this.props.id}>
                 <div className="Work-section">
-                    <h2 className="Section-title">Selected Works</h2>
+                    <h2 className="Section-title">Curated Works</h2>
                     <p className="Section-intro Work-intro">
                         Most of my contributions are private, but here is a curated snapshot of things I&apos;ve built and
                         written over time.
@@ -164,7 +164,7 @@ export default class Work extends Component {
 
                 {bookItems.length ? (
                     <div className="Work-books">
-                        <h2 className="Section-title">Selected Books</h2>
+                        <h2 className="Section-title">Curated Books</h2>
                         <p className="Section-intro Work-intro">
                             A selection that shaped how I think about reliability, systems, and building software that lasts.
                         </p>

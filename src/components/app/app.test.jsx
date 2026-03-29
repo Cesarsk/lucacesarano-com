@@ -11,7 +11,7 @@ describe('App', () => {
     render(<App />)
 
     expect(screen.getByText('RESUME')).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /selected works/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /curated works/i })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /contacts/i })).toBeInTheDocument()
   })
 })
