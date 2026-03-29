@@ -9,7 +9,7 @@ describe('Work', () => {
     expect(screen.getByRole('button', { name: 'Open Source' })).toBeInTheDocument()
     expect(screen.getByRole('button', { name: 'Publications' })).toBeInTheDocument()
     expect(screen.getByRole('button', { name: 'University' })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'Selected Books' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Curated Books' })).toBeInTheDocument()
   })
 
   it('renders sample work items with links', () => {
