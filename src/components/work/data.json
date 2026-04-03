@@ -98,6 +98,24 @@
     "description": "Recommended by a dear mentor of mine, the book that made me understand DevOps, then naturally led me into SRE. It's excellent for beginners and experienced engineers alike, especially for reframing the mindset: treat developers as customers and build systems that help them deliver safely."
   },
   {
+    "id": 17,
+    "name": "The Manager's Path",
+    "url": "https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897",
+    "category": "books",
+    "lang": "eng",
+    "tags": ["Management"],
+    "description": "My favorite management book by far. It gives a very grounded view of how technical organizations evolve and is especially useful if you're moving into a tech lead role, though I would recommend it to senior engineers too. The author suggests reading only up to your current level, but I think the later chapters are worth continuing with because they help you build intuition for more senior leadership responsibilities."
+  },
+  {
+    "id": 18,
+    "name": "Radical Candor",
+    "url": "https://www.radicalcandor.com/",
+    "category": "books",
+    "lang": "eng",
+    "tags": ["Management"],
+    "description": "I have mixed feelings about this one, but I still think it's worth reading. It offers practical advice on reducing toxicity, giving better feedback, and building healthier working relationships while staying aligned with your values. At the same time, the author's self-focused tone and repeated emphasis on high-profile companies can make parts of the book feel more ego-driven than they need to be."
+  },
+  {
     "id": 13,
     "name": "An application of Genetic Algorithms to a Multi-Agent-System",
     "url": "https://lucacesarano.com/genetic",
