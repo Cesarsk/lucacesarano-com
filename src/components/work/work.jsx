@@ -44,11 +44,30 @@ const groupedSections = sections.map((section) => ({
 }))
 
 const bookItems = data.filter((item) => item.category === 'books')
+const sortedBookItems = [...bookItems].sort((a, b) => (b.rating || 0) - (a.rating || 0))
 const bookTags = Array.from(
     new Set(
         bookItems.flatMap((item) => (item.tags || [])).map((tag) => tag.trim()).filter(Boolean)
     )
 ).sort((a, b) => a.localeCompare(b))
+
+const maxHeartRating = 5
+
+const renderHeartScale = (rating, heart) => (
+    <span className="Work-rating-scale" aria-hidden="true">
+        {Array.from({ length: maxHeartRating }, (_, index) => (
+            <span
+                key={`${heart}-${index}`}
+                className={
+                    index < rating
+                        ? 'Work-rating-heart Work-rating-heart--filled'
+                        : 'Work-rating-heart Work-rating-heart--empty'
+                }>
+                {heart}
+            </span>
+        ))}
+    </span>
+)
 
 const renderItem = (item, options = {}) => {
     const { includeCategory = true, tags = [], showDescription = false } = options
@@ -59,6 +78,7 @@ const renderItem = (item, options = {}) => {
     const metaParts = [categoryLabel, languageName].filter(Boolean)
     const metaText = metaParts.join(' · ')
     const tagList = tags.length ? tags : []
+    const rating = Number.isInteger(item.rating) ? Math.min(Math.max(item.rating, 1), maxHeartRating) : null
 
     return (
         <a
@@ -88,6 +108,12 @@ const renderItem = (item, options = {}) => {
                                 ))}
                             </div>
                         ) : null}
+                        {rating ? (
+                            <div className="Work-rating" aria-label={`Rating: ${rating} out of 5 hearts`}>
+                                <span className="Work-rating-light">{renderHeartScale(rating, '🖤')}</span>
+                                <span className="Work-rating-dark">{renderHeartScale(rating, '🤍')}</span>
+                            </div>
+                        ) : null}
                         {showDescription && item.description ? (
                             <div className="Work-description">{item.description}</div>
                         ) : null}
@@ -115,8 +141,8 @@ export default class Work extends Component {
     render() {
         const { activeBookTag, activeWorkFilter } = this.state
         const visibleBookItems = activeBookTag === 'All'
-            ? bookItems
-            : bookItems.filter((item) => (item.tags || []).includes(activeBookTag))
+            ? sortedBookItems
+            : sortedBookItems.filter((item) => (item.tags || []).includes(activeBookTag))
         const visibleSections = activeWorkFilter === 'All'
             ? groupedSections
             : groupedSections.filter((section) => section.key === activeWorkFilter)

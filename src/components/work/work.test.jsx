@@ -40,4 +40,23 @@ describe('Work', () => {
     expect(screen.getAllByRole('button', { name: 'All' }).length).toBeGreaterThan(0)
     expect(screen.getAllByRole('button', { name: 'SRE' }).length).toBeGreaterThan(0)
   })
+
+  it('shows book ratings with accessible labels', () => {
+    render(<Work />)
+
+    expect(screen.getAllByLabelText('Rating: 5 out of 5 hearts')[0]).toHaveTextContent('🖤🖤🖤🖤🖤')
+    expect(screen.getAllByLabelText('Rating: 4 out of 5 hearts')[0]).toHaveTextContent('🖤🖤🖤🖤🖤')
+    expect(screen.getAllByLabelText('Rating: 4 out of 5 hearts').length).toBeGreaterThan(0)
+    expect(screen.getAllByLabelText('Rating: 3 out of 5 hearts').length).toBeGreaterThan(0)
+  })
+
+  it('sorts books by highest rating first', () => {
+    render(<Work />)
+
+    const firstFiveHeartRating = screen.getAllByLabelText('Rating: 5 out of 5 hearts')[0]
+    const firstFourHeartRating = screen.getAllByLabelText('Rating: 4 out of 5 hearts')[0]
+    const position = firstFiveHeartRating.compareDocumentPosition(firstFourHeartRating)
+
+    expect(position & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
+  })
 })
