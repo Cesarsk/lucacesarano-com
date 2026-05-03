@@ -41,7 +41,8 @@
     "category": "books",
     "lang": "eng",
     "tags": ["SRE"],
-    "description": "A must-read foundation for anyone doing SRE. They explain where SRE comes from and, more importantly, how to apply it at an organizational level across different stages of growth."
+    "rating": 5,
+    "description": "A must-read foundation for anyone doing SRE. They explain where SRE comes from and, more importantly, how to apply it at an organizational level across different stages of growth. These books also capture why I fell in love with SRE: the mix of infrastructure engineering, software development, and strong reliability practices."
   },
   {
     "id": 7,
@@ -50,6 +51,7 @@
     "category": "books",
     "lang": "eng",
     "tags": ["Infrastructure"],
+    "rating": 3,
     "description": "A detailed, hands-on deep dive into how Kubernetes actually works. It can be demanding, but it repays the effort if you want real understanding rather than surface familiarity."
   },
   {
@@ -59,7 +61,8 @@
     "category": "books",
     "lang": "eng",
     "tags": ["Design"],
-    "description": "As AI accelerates coding, writing clear, maintainable code matters even more than micro-optimizing algorithms. This book is a strong guide to building habits that make code easier to read, change, and trust."
+    "rating": 3,
+    "description": "As AI accelerates coding, writing clear, maintainable code matters even more than micro-optimizing algorithms. This book is a strong guide to building habits that make code easier to read, change, and trust. It is a must-read for every software engineer because the discipline of writing clean code compounds across every project, team, and long-lived system."
   },
   {
     "id": 9,
@@ -68,6 +71,7 @@
     "category": "books",
     "lang": "eng",
     "tags": ["Design"],
+    "rating": 3,
     "description": "Complementary to Clean Code, but focused on system structure and design. It's useful for thinking in terms of boundaries, responsibilities, and architectures that stay adaptable over time."
   },
   {
@@ -77,7 +81,8 @@
     "category": "books",
     "lang": "eng",
     "tags": ["Design"],
-    "description": "A practical set of exercises for learning how to reason about real engineering trade-offs. Valuable even if you're not interviewing, because it trains the way you approach complex system problems."
+    "rating": 4,
+    "description": "A practical set of exercises for learning how to reason about real engineering trade-offs. Valuable even if you're not interviewing, because it trains the way you approach complex system problems. It is especially useful preparation for FAANG-style interviews, where communicating assumptions, constraints, and trade-offs clearly matters as much as the final architecture."
   },
   {
     "id": 11,
@@ -86,6 +91,7 @@
     "category": "books",
     "lang": "eng",
     "tags": ["Infrastructure"],
+    "rating": 4,
     "description": "One of the most challenging reads on the list, and also one of the deepest. It goes into the details of Linux internals and system interfaces, helping you understand what's happening under the hood."
   },
   {
@@ -95,6 +101,7 @@
     "category": "books",
     "lang": "eng",
     "tags": ["SRE"],
+    "rating": 3,
     "description": "Recommended by a dear mentor of mine, the book that made me understand DevOps, then naturally led me into SRE. It's excellent for beginners and experienced engineers alike, especially for reframing the mindset: treat developers as customers and build systems that help them deliver safely."
   },
   {
@@ -104,6 +111,7 @@
     "category": "books",
     "lang": "eng",
     "tags": ["Management"],
+    "rating": 5,
     "description": "My favorite management book by far. It gives a very grounded view of how technical organizations evolve and is especially useful if you're moving into a tech lead role, though I would recommend it to senior engineers too. The author suggests reading only up to your current level, but I think the later chapters are worth continuing with because they help you build intuition for more senior leadership responsibilities."
   },
   {
@@ -113,7 +121,18 @@
     "category": "books",
     "lang": "eng",
     "tags": ["Management"],
+    "rating": 2,
     "description": "I have mixed feelings about this one, but I still think it's worth reading. It offers practical advice on reducing toxicity, giving better feedback, and building healthier working relationships while staying aligned with your values. At the same time, the author's self-focused tone and repeated emphasis on high-profile companies can make parts of the book feel more ego-driven than they need to be."
+  },
+  {
+    "id": 19,
+    "name": "The Five Dysfunctions of a Team",
+    "url": "https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team",
+    "category": "books",
+    "lang": "eng",
+    "tags": ["Management"],
+    "rating": 4,
+    "description": "I love how this book starts with a short novel that shows the dysfunctions in practice, then follows with a clear explanation of the model. It's a really light read that I would suggest to everyone."
   },
   {
     "id": 13,

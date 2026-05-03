@@ -170,6 +170,39 @@
   text-transform: uppercase;
 }
 
+.Work-rating {
+  color: var(--font-color);
+  font-size: var(--font-size-md);
+  line-height: 1;
+}
+
+.Work-rating-scale {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.Work-rating-heart {
+  display: inline-flex;
+  width: 1.15em;
+  justify-content: center;
+}
+
+.Work-rating-heart--empty {
+  opacity: 0.22;
+}
+
+.Work-rating-dark {
+  display: none;
+}
+
+:root[data-theme="dark"] .Work-rating-light {
+  display: none;
+}
+
+:root[data-theme="dark"] .Work-rating-dark {
+  display: inline;
+}
+
 .Work-description {
   margin-top: 8px;
   font-size: var(--font-size-sm);
