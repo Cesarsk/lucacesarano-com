@@ -12,7 +12,7 @@ const firebaseConfig = {
   measurementId: 'G-L9N13B5HW0',
 }
 
-const analyticsHostname = 'lucacesarano.com'
+const analyticsHostnames = ['lucacesarano.com', 'www.lucacesarano.com']
 
 export const firebaseApp = initializeApp(firebaseConfig)
 
@@ -21,7 +21,7 @@ export const initializeFirebaseAnalytics = () => {
     return Promise.resolve(null)
   }
 
-  if (window.location.hostname !== analyticsHostname) {
+  if (!analyticsHostnames.includes(window.location.hostname)) {
     return Promise.resolve(null)
   }
 
