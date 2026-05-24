@@ -35,7 +35,7 @@ function RenderContainer() {
                 <div className="About-actions">
                     <a
                         className="Button"
-                        href="https://lucacesarano.com/resume"
+                        href="https://cesarsk.github.io/lucacesarano-resume/LucaCesaranoResume.pdf"
                         target="_blank"
                         rel="noopener noreferrer">
                         View Resume

@@ -94,7 +94,7 @@ export default class Navbar extends Component {
                     <div className="NavBar-balance" aria-hidden="true"></div>
                     <div className='NavBar-links' data-testid="navbar-links">
                         <a
-                            href="https://lucacesarano.com/resume"
+                            href="https://cesarsk.github.io/lucacesarano-resume/LucaCesaranoResume.pdf"
                             rel="noopener noreferrer"
                             target="_blank"
                             className='NavBar-link'>
@@ -159,7 +159,7 @@ export default class Navbar extends Component {
                     className={this.state.isMenuOpen ? 'NavBar-menu NavBar-menu--open' : 'NavBar-menu'}
                     data-testid="mobile-menu">
                     <a
-                        href="https://lucacesarano.com/resume"
+                        href="https://cesarsk.github.io/lucacesarano-resume/LucaCesaranoResume.pdf"
                         rel="noopener noreferrer"
                         target="_blank"
                         className='NavBar-menuItem'
