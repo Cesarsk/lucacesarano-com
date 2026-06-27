@@ -3,36 +3,25 @@
     "id": 1,
     "name": "An Application of Genetic Algorithms (GA) to a Multi-Agent-System",
     "url": "https://cesarsk.github.io/AI-GA-on-MAS/",
-    "category": "demos",
-    "lang": "eng"
+    "category": "university",
+    "lang": "eng",
+    "tags": ["2020", "AI"]
   },
   {
     "id": 2,
     "name": "Alfred - The Cyber Butler",
     "url": "https://github.com/FerrariAndrea/AlfredTheRealButler",
-    "category": "opensource",
-    "lang": "eng"
-  },
-  {
-    "id": 3,
-    "name": "Kraken Unleashed",
-    "url": "https://github.com/Cesarsk/kraken-unleashed/",
-    "category": "opensource",
-    "lang": "eng"
-  },
-  {
-    "id": 4,
-    "name": "This Website",
-    "url": "https://github.com/Cesarsk/lucacesarano-com",
-    "category": "opensource",
-    "lang": "eng"
+    "category": "university",
+    "lang": "eng",
+    "tags": ["2019"]
   },
   {
     "id": 5,
     "name": "IEEE ACCESS - A Real-time Energy-Saving Mechanism in Internet of Vehicles Systems",
     "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9624984",
     "category": "publications",
-    "lang": "eng"
+    "lang": "eng",
+    "tags": ["2021"]
   },
   {
     "id": 6,
@@ -40,7 +29,9 @@
     "url": "https://sre.google/books/",
     "category": "books",
     "lang": "eng",
-    "tags": ["SRE"],
+    "tags": [
+      "SRE"
+    ],
     "rating": 5,
     "description": "A must-read foundation for anyone doing SRE. They explain where SRE comes from and, more importantly, how to apply it at an organizational level across different stages of growth. These books also capture why I fell in love with SRE: the mix of infrastructure engineering, software development, and strong reliability practices."
   },
@@ -50,7 +41,9 @@
     "url": "https://www.manning.com/books/kubernetes-in-action",
     "category": "books",
     "lang": "eng",
-    "tags": ["Infrastructure"],
+    "tags": [
+      "Infrastructure"
+    ],
     "rating": 3,
     "description": "A detailed, hands-on deep dive into how Kubernetes actually works. It can be demanding, but it repays the effort if you want real understanding rather than surface familiarity."
   },
@@ -60,7 +53,9 @@
     "url": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?crid=6XDJD1SAEY0X&keywords=code+clean&qid=1650671053&sprefix=code+cle%2Caps%2C166&sr=8-1",
     "category": "books",
     "lang": "eng",
-    "tags": ["Design"],
+    "tags": [
+      "Design"
+    ],
     "rating": 3,
     "description": "As AI accelerates coding, writing clear, maintainable code matters even more than micro-optimizing algorithms. This book is a strong guide to building habits that make code easier to read, change, and trust. It is a must-read for every software engineer because the discipline of writing clean code compounds across every project, team, and long-lived system."
   },
@@ -70,7 +65,9 @@
     "url": "https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=sr_1_1?crid=27B5CYILRUYVP&keywords=clean+architecture&qid=1650671061&sprefix=clean+architectu%2Caps%2C149&sr=8-1",
     "category": "books",
     "lang": "eng",
-    "tags": ["Design"],
+    "tags": [
+      "Design"
+    ],
     "rating": 3,
     "description": "Complementary to Clean Code, but focused on system structure and design. It's useful for thinking in terms of boundaries, responsibilities, and architectures that stay adaptable over time."
   },
@@ -80,7 +77,9 @@
     "url": "https://www.amazon.com/s?k=system+design+interview&crid=2GPU4J1AKC9U0&sprefix=system+design+intervie%2Caps%2C264",
     "category": "books",
     "lang": "eng",
-    "tags": ["Design"],
+    "tags": [
+      "Design"
+    ],
     "rating": 4,
     "description": "A practical set of exercises for learning how to reason about real engineering trade-offs. Valuable even if you're not interviewing, because it trains the way you approach complex system problems. It is especially useful preparation for FAANG-style interviews, where communicating assumptions, constraints, and trade-offs clearly matters as much as the final architecture."
   },
@@ -90,7 +89,9 @@
     "url": "https://nostarch.com/tlpi",
     "category": "books",
     "lang": "eng",
-    "tags": ["Infrastructure"],
+    "tags": [
+      "Infrastructure"
+    ],
     "rating": 4,
     "description": "One of the most challenging reads on the list, and also one of the deepest. It goes into the details of Linux internals and system interfaces, helping you understand what's happening under the hood."
   },
@@ -100,7 +101,9 @@
     "url": "https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1950508404/ref=sr_1_1?crid=X5U454XQBXYP&keywords=the+devops+handbook&qid=1650671070&sprefix=the+devops+handbo%2Caps%2C155&sr=8-1",
     "category": "books",
     "lang": "eng",
-    "tags": ["SRE"],
+    "tags": [
+      "SRE"
+    ],
     "rating": 3,
     "description": "Recommended by a dear mentor of mine, the book that made me understand DevOps, then naturally led me into SRE. It's excellent for beginners and experienced engineers alike, especially for reframing the mindset: treat developers as customers and build systems that help them deliver safely."
   },
@@ -110,7 +113,9 @@
     "url": "https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897",
     "category": "books",
     "lang": "eng",
-    "tags": ["Management"],
+    "tags": [
+      "Management"
+    ],
     "rating": 5,
     "description": "My favorite management book by far. It gives a very grounded view of how technical organizations evolve and is especially useful if you're moving into a tech lead role, though I would recommend it to senior engineers too. The author suggests reading only up to your current level, but I think the later chapters are worth continuing with because they help you build intuition for more senior leadership responsibilities."
   },
@@ -120,7 +125,9 @@
     "url": "https://www.radicalcandor.com/",
     "category": "books",
     "lang": "eng",
-    "tags": ["Management"],
+    "tags": [
+      "Management"
+    ],
     "rating": 2,
     "description": "I have mixed feelings about this one, but I still think it's worth reading. It offers practical advice on reducing toxicity, giving better feedback, and building healthier working relationships while staying aligned with your values. At the same time, the author's self-focused tone and repeated emphasis on high-profile companies can make parts of the book feel more ego-driven than they need to be."
   },
@@ -130,7 +137,9 @@
     "url": "https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team",
     "category": "books",
     "lang": "eng",
-    "tags": ["Management"],
+    "tags": [
+      "Management"
+    ],
     "rating": 4,
     "description": "I love how this book starts with a short novel that shows the dysfunctions in practice, then follows with a clear explanation of the model. It's a really light read that I would suggest to everyone."
   },
@@ -139,27 +148,105 @@
     "name": "An application of Genetic Algorithms to a Multi-Agent-System",
     "url": "https://lucacesarano.com/genetic",
     "category": "university",
-    "lang": "eng"
+    "lang": "eng",
+    "tags": ["2020", "AI"]
   },
   {
     "id": 14,
     "name": "An Example of a MLP Classifier in KNIME",
     "url": "https://lucacesarano.com/mlp",
     "category": "university",
-    "lang": "eng"
+    "lang": "eng",
+    "tags": ["2019", "AI"]
   },
   {
     "id": 15,
     "name": "The Snake Game - A VHDL Version",
     "url": "https://lucacesarano.com/snake",
     "category": "university",
-    "lang": "ita"
+    "lang": "ita",
+    "tags": ["2019"]
   },
   {
-    "id": 16,
-    "name": "Simulation of a Project Proposal for VERTIS",
-    "url": "https://lucacesarano.com/vertis",
-    "category": "university",
-    "lang": "ita"
+    "id": 20,
+    "name": "Atlantis",
+    "url": "https://github.com/runatlantis/atlantis/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged",
+    "category": "opensource",
+    "lang": "eng",
+    "tags": [
+      "2026",
+      "Contributor",
+      "9.2k★"
+    ],
+    "description": "Terraform pull request automation for GitOps workflows."
+  },
+  {
+    "id": 21,
+    "name": "Unsloth",
+    "url": "https://github.com/unslothai/unsloth/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged",
+    "category": "opensource",
+    "lang": "eng",
+    "tags": [
+      "2026",
+      "Contributor",
+      "67k★",
+      "AI"
+    ],
+    "description": "LLM fine-tuning and inference framework focused on speed."
+  },
+  {
+    "id": 22,
+    "name": "aws-samples",
+    "url": "https://github.com/aws-samples/assignment-automation-4-aws-sso/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged",
+    "category": "opensource",
+    "lang": "eng",
+    "tags": [
+      "2026",
+      "Contributor"
+    ],
+    "description": "AWS's official samples org for reference implementations."
+  },
+  {
+    "id": 23,
+    "name": "OpenRGB",
+    "url": "https://gitlab.com/CalcProgrammer1/OpenRGB/-/merge_requests?scope=all&state=merged&author_username=lu.cesarano",
+    "category": "opensource",
+    "lang": "eng",
+    "tags": [
+      "2026",
+      "Contributor",
+      "3k★"
+    ],
+    "description": "Cross-platform RGB hardware control tool."
+  },
+  {
+    "id": 24,
+    "name": "windisplay",
+    "url": "https://github.com/zpix1/windisplay/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged",
+    "category": "opensource",
+    "lang": "eng",
+    "tags": [
+      "2026",
+      "Contributor"
+    ],
+    "description": "Windows display brightness control over DDC/CI."
+  },
+  {
+    "id": 3,
+    "name": "Kraken Unleashed",
+    "url": "https://github.com/Cesarsk/kraken-unleashed/",
+    "category": "opensource",
+    "lang": "eng",
+    "tags": ["2026", "Project"],
+    "description": "macOS/Linux control app for NZXT Kraken coolers, listed in OpenRGB's README under Related Projects."
+  },
+  {
+    "id": 4,
+    "name": "This Website",
+    "url": "https://github.com/Cesarsk/lucacesarano-com",
+    "category": "opensource",
+    "lang": "eng",
+    "tags": ["2022", "Project"],
+    "description": "Source for lucacesarano.com."
   }
 ]
