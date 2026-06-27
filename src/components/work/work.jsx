@@ -4,7 +4,6 @@ import './work.css'
 import data from './data.json'
 
 const sections = [
-    { key: 'demos', title: 'Live Demos' },
     { key: 'opensource', title: 'Open Source' },
     { key: 'publications', title: 'Publications' },
     { key: 'university', title: 'University' },
@@ -16,7 +15,6 @@ const workFilterOptions = [
 ]
 
 const categoryLabels = {
-    demos: 'Demo',
     opensource: 'Open Source',
     publications: 'Publication',
     books: 'Book',
@@ -126,7 +124,7 @@ const renderItem = (item, options = {}) => {
 
 export default class Work extends Component {
     state = {
-        activeWorkFilter: 'All',
+        activeWorkFilter: 'opensource',
         activeBookTag: 'All',
     }
 
@@ -152,8 +150,8 @@ export default class Work extends Component {
                 <div className="Work-section">
                     <h2 className="Section-title">Curated Works</h2>
                     <p className="Section-intro Work-intro">
-                        Most of my contributions are private, but here is a curated snapshot of things I&apos;ve built and
-                        written over time.
+                        Most of my work is private, but here is a snapshot of what I&apos;ve built, written, and contributed
+                        to publicly.
                     </p>
                     <div className="Work-filters" role="tablist" aria-label="Filter work by category">
                         {workFilterOptions.map((option) => (
@@ -181,7 +179,7 @@ export default class Work extends Component {
                         return (
                             <section key={section.key} className="Work-group">
                                 <div className="Work-list">
-                                    {section.items.map((item) => renderItem(item))}
+                                    {section.items.map((item) => renderItem(item, { tags: item.tags || [], showDescription: true }))}
                                 </div>
                             </section>
                         )

@@ -1,26 +1,37 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, fireEvent } from '@testing-library/react'
 import Work from './work.jsx'
 
 describe('Work', () => {
   it('renders work filters and book section', () => {
     render(<Work />)
 
-    expect(screen.getByRole('button', { name: 'Live Demos' })).toBeInTheDocument()
     expect(screen.getByRole('button', { name: 'Open Source' })).toBeInTheDocument()
     expect(screen.getByRole('button', { name: 'Publications' })).toBeInTheDocument()
     expect(screen.getByRole('button', { name: 'University' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Curated Books' })).toBeInTheDocument()
   })
 
-  it('renders sample work items with links', () => {
+  it('defaults to the Open Source view and renders its items with links', () => {
     render(<Work />)
 
-    const demoItem = screen.getByText(/Genetic Algorithms \(GA\)/i)
+    const contributionItem = screen.getByText(/Atlantis/i)
+    const projectItem = screen.getByText(/Kraken Unleashed/i)
     const bookItem = screen.getByText(/Google SRE Books/i)
-    const publicationItem = screen.getByText(/IEEE ACCESS/i)
 
-    expect(demoItem.closest('a')).toHaveAttribute('href', 'https://cesarsk.github.io/AI-GA-on-MAS/')
+    expect(contributionItem.closest('a')).toHaveAttribute(
+      'href',
+      'https://github.com/runatlantis/atlantis/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged'
+    )
+    expect(projectItem.closest('a')).toHaveAttribute('href', 'https://github.com/Cesarsk/kraken-unleashed/')
     expect(bookItem.closest('a')).toHaveAttribute('href', 'https://sre.google/books/')
+  })
+
+  it('reveals publications when the Publications filter is selected', () => {
+    render(<Work />)
+
+    fireEvent.click(screen.getByRole('button', { name: 'Publications' }))
+
+    const publicationItem = screen.getByText(/IEEE ACCESS/i)
     expect(publicationItem.closest('a')).toHaveAttribute(
       'href',
       'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9624984'
