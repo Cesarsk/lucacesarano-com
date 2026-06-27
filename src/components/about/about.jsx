@@ -28,6 +28,9 @@ function RenderContainer() {
                     use.
                 </p>
                 <p className="Section-intro About-body">
+                    I care about open source and contribute when I can.
+                </p>
+                <p className="Section-intro About-body">
                     Occasionally, I take on consulting and mentoring, from hands-on platform and SRE work to career
                     guidance for students and professionals. If you&apos;d like to connect, even just for a tech chat, use the
                     Contact button.
