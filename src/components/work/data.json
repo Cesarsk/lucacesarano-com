@@ -190,7 +190,7 @@
       "2026",
       "Contributor"
     ],
-    "description": "Official GitLab Terraform provider; added the issue_branch_template project attribute."
+    "description": "The official GitLab Terraform provider."
   },
   {
     "id": 21,
