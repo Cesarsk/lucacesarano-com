@@ -181,6 +181,18 @@
     "description": "Terraform pull request automation for GitOps workflows."
   },
   {
+    "id": 25,
+    "name": "terraform-provider-gitlab",
+    "url": "https://gitlab.com/gitlab-org/terraform-provider-gitlab/-/merge_requests?scope=all&state=merged&author_username=lu.cesarano",
+    "category": "opensource",
+    "lang": "eng",
+    "tags": [
+      "2026",
+      "Contributor"
+    ],
+    "description": "The official GitLab Terraform provider."
+  },
+  {
     "id": 21,
     "name": "Unsloth",
     "url": "https://github.com/unslothai/unsloth/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged",
