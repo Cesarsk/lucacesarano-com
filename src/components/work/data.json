@@ -244,6 +244,15 @@
     "description": "Windows display brightness control over DDC/CI."
   },
   {
+    "id": 26,
+    "name": "ike",
+    "url": "https://github.com/Cesarsk/ike",
+    "category": "opensource",
+    "lang": "eng",
+    "tags": ["2026", "Project"],
+    "description": "k9s-style terminal UI for Datadog, released on Homebrew; developed end-to-end by directing agentic AI workflows."
+  },
+  {
     "id": 3,
     "name": "Kraken Unleashed",
     "url": "https://github.com/Cesarsk/kraken-unleashed/",
