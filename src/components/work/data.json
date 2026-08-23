@@ -168,6 +168,18 @@
     "tags": ["2019"]
   },
   {
+    "id": 28,
+    "name": "terraform-provider-sonarqube",
+    "url": "https://github.com/jdamata/terraform-provider-sonarqube",
+    "category": "opensource",
+    "lang": "eng",
+    "tags": [
+      "2026",
+      "Maintainer"
+    ],
+    "description": "The most-used Terraform provider for SonarQube; 9.8M+ registry downloads."
+  },
+  {
     "id": 20,
     "name": "Atlantis",
     "url": "https://github.com/runatlantis/atlantis/pulls?q=is%3Apr+author%3Acesarsk+is%3Amerged",
