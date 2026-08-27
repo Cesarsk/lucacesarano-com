@@ -21,7 +21,7 @@ describe('Navbar', () => {
     const resumeLink = screen.getByText('RESUME').closest('a')
     const blogLink = screen.getByText('BLOG').closest('a')
 
-    expect(resumeLink).toHaveAttribute('href', 'https://cesarsk.github.io/lucacesarano-resume/LucaCesaranoResume.pdf')
+    expect(resumeLink).toHaveAttribute('href', 'https://resume.lucacesarano.com/generic/LucaCesaranoResume.pdf')
     expect(resumeLink).toHaveAttribute('target', '_blank')
     expect(resumeLink).toHaveAttribute('rel', 'noopener noreferrer')
 
